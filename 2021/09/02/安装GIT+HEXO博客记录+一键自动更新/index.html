@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      22
+      23
        分钟
     </span>
   
@@ -232,7 +232,7 @@
 <p>Hexo + Github Pages 搭建博客<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/Lin_Ting/article/details/55010885">https://blog.csdn.net/Lin_Ting/article/details/55010885</a><br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=Hexo">https://www.tuicool.com/search?kw=Hexo</a><br>hexo n test123<br>hexo g<br>hexo s<br>hexo clean<br>hexo deploy<br>hexo d</p>
 <p>npm install -g hexo-cli<br>npm install -g hexo<br>npm install -g hexo-deployer-git<br>npm install hexo-deployer-git –save</p>
 <p>shellsec.github.io<br><a target="_blank" rel="noopener" href="https://github.com/shellsec/shellsec.github.io.git">https://github.com/shellsec/shellsec.github.io.git</a></p>
-<p>git config –global user.email “<a href="mailto:&#x79;&#111;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x79;&#111;&#x75;&#64;&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
+<p>git config –global user.email “<a href="mailto:&#121;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;">&#121;&#x6f;&#x75;&#64;&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#x2e;&#x63;&#111;&#x6d;</a>“<br>git config –global user.name “Your Name”</p>
 <p>按照执行，就可以免输入密码<br>echo “# shellsec.github.io” &gt;&gt; README.md<br>git init<br>git add README.md<br>git commit -m “first commit”<br>git branch -M main<br>git remote add origin <a target="_blank" rel="noopener" href="https://github.com/shellsec/shellsec.github.io.git">https://github.com/shellsec/shellsec.github.io.git</a><br>git push -u origin main</p>
 <p>我这里默认的仓库分支为 main，所以HEXO配置文件设置下 branch: main</p>
 <p>hexo clean<br>hexo g<br>hexo d<br>hexo s</p>
@@ -296,6 +296,7 @@ Gitee 图床
 <p>图片不能重复上传，因为都会在同一个目录下，重复上传会有重名错误。<br>4、进行图片上传</p>
 <p>配置好PicGo后，我们就可以进行高效创作了，将图片拖拽到上传区，将会自动上传并复制访问链接，将链接粘贴到博文中就行了，访问速度杠杠的，此外PicGo还有相册功能，可以对已上传的图片进行删除，修改链接等快捷操作，PicGo还可以生成不同格式的链接、支持批量上传、快捷键上传、自定义链接格式、上传前重命名等，更多功能自己去探索吧！</p>
 <p>这里写得很详细了。<br>Hexo+PicGo+GitHub/Gitee Page 搭建静态博客带免费图床入门教程(手摸手带你构建免费博客)<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/prefectjava/article/details/111192741">https://blog.csdn.net/prefectjava/article/details/111192741</a></p>
+<p>Hexo—主题Fluid的优化<br><a target="_blank" rel="noopener" href="https://liwangc.gitee.io/2021/03/22/Hexo%E2%80%94%E4%B8%BB%E9%A2%98Fluid%E7%9A%84%E4%BC%98%E5%8C%96/">https://liwangc.gitee.io/2021/03/22/Hexo%E2%80%94%E4%B8%BB%E9%A2%98Fluid%E7%9A%84%E4%BC%98%E5%8C%96/</a></p>
 
             </div>
             <hr>
@@ -389,6 +390,43 @@ Gitee 图床
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('01/10/2007 8:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+
   </div>
   
 
