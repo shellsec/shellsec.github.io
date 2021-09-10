@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>自用效率工具推荐</title>
+    <link href="/2021/09/10/%E8%87%AA%E7%94%A8%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+    <url>/2021/09/10/%E8%87%AA%E7%94%A8%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/</url>
+    
+    <content type="html"><![CDATA[<p>需求：<br>专注做好一件事，然后让大脑休息下~<br>7款好用的番茄钟软件推荐<br><a href="https://www.v1tx.com/post/best-pomodoro-apps/">https://www.v1tx.com/post/best-pomodoro-apps/</a><br>Pomodoro 番茄工作法<br><a href="https://github.com/coolcode/tomato-clock">https://github.com/coolcode/tomato-clock</a><br>大道至简</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs elixir">pip install tomato-clock<br><span class="hljs-variable">$ </span>./tomato.py         <span class="hljs-comment"># start a 25 minutes tomato clock + 5 minutes break</span><br><span class="hljs-variable">$ </span>./tomato.py -t      <span class="hljs-comment"># start a 25 minutes tomato clock</span><br><span class="hljs-variable">$ </span>./tomato.py -t &lt;n&gt;  <span class="hljs-comment"># start a &lt;n&gt; minutes tomato clock</span><br><span class="hljs-variable">$ </span>./tomato.py -b      <span class="hljs-comment"># take a 5 minutes break</span><br><span class="hljs-variable">$ </span>./tomato.py -b &lt;n&gt;  <span class="hljs-comment"># take a &lt;n&gt; minutes break</span><br><span class="hljs-variable">$ </span>./tomato.py -h      <span class="hljs-comment"># help</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>电子书阅读器-口袋阅读-微信阅读-音频-质量书籍</title>
     <link href="/2021/09/08/%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E5%99%A8-%E5%8F%A3%E8%A2%8B%E9%98%85%E8%AF%BB-%E5%BE%AE%E4%BF%A1%E9%98%85%E8%AF%BB-%E9%9F%B3%E9%A2%91-%E8%B4%A8%E9%87%8F%E4%B9%A6%E7%B1%8D/"/>
     <url>/2021/09/08/%E7%94%B5%E5%AD%90%E4%B9%A6%E9%98%85%E8%AF%BB%E5%99%A8-%E5%8F%A3%E8%A2%8B%E9%98%85%E8%AF%BB-%E5%BE%AE%E4%BF%A1%E9%98%85%E8%AF%BB-%E9%9F%B3%E9%A2%91-%E8%B4%A8%E9%87%8F%E4%B9%A6%E7%B1%8D/</url>
