@@ -1,0 +1,542 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="安全时刻在，技术无止境,金钱永不眠">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+  <title>2021-11-认知吃饭学习 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="2021-11-认知吃饭学习">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-01 10:56" pubdate>
+        2021年11月1日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      6.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      75
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2021-11-认知吃饭学习</h1>
+            
+            <div class="markdown-body">
+              <p><a target="_blank" rel="noopener" href="https://www.ghxi.com/drawio.html">https://www.ghxi.com/drawio.html</a><br>【惊奇软件】Drawio v15.7.3 开源跨平台绘图软件<br>在线使用：<a target="_blank" rel="noopener" href="https://app.diagrams.net/?src=about">https://app.diagrams.net/?src=about</a> （语言设置先创建一个项目，右上角）<br>GitHub：<a target="_blank" rel="noopener" href="https://get.diagrams.net/">https://get.diagrams.net/</a><br><a target="_blank" rel="noopener" href="https://ghpym.lanzoui.com/b00zplh8h">https://ghpym.lanzoui.com/b00zplh8h</a><br>原有方案是： xmind+processon.com<br>目前可以为：xmind+Drawio</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/rIbMFvq">https://www.tuicool.com/articles/rIbMFvq</a><br>Gartner2021新兴技术成熟度曲线，AI与超自动化支撑数字化变革<br>RPA、低代码开发平台、流程挖掘、AI等创新技术。<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/e6vqayV">https://www.tuicool.com/articles/e6vqayV</a><br>工业企业工控安全人才能力矩阵</p>
+<p>靠谱是比聪明更重要的品质。 </p>
+<p>普通女孩没必要在深圳内卷，如果你外貌不差，阿姨指你一条明路，拿出所有的积蓄，去香港城大理大教大读个一年的水硕，不难申请的。<br>然后在这一年里以及毕业后的一年签证期限里用尽办法找工作留下来，重点关注在港中资企业，保险公司，国际学校……只要你为人够实际够拼，肯定能找到的。<br>有了工签就慢慢混嫁人这条路吧，这边男港漂挺多的，港女和他们有壁不太好找老婆，可以物色一下；找港男和老外也不是不行，但要识别出那些空心老倌和各类黄丝，而且这个群体拍拖爱AA，爱晚婚，还不爱买房，大概率浪费你的青春，谨慎。<br>讲真我发现不少内地人来港以后简直是降维打击，混得不要太好，说到底还是回去内卷太苦了，一来这边顿觉周围都是傻白甜。尤其是题主万一有几分姿色，那已经打败好多东南亚长相的港女，姿态放得够低的话，嫁个人肯定不成问题，而且港男根本不在乎你是内地哪个地方来的，毕竟他们眼里大陆人都是乡下人，娶你和娶个深圳人根本没差，好看听话就行。</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/YF3Y7nU">https://www.tuicool.com/articles/YF3Y7nU</a><br>双11刚过，杭州市税务局向雪梨、林珊珊追缴近亿税款</p>
+<p>SAMSUNG 三星 S32AM700PC 32英寸显示器（4K、65W）<br>1800<br>二手屏幕32寸2K屏幕-700-900</p>
+<p><a target="_blank" rel="noopener" href="https://masuit.com/1995">https://masuit.com/1995</a><br><a target="_blank" rel="noopener" href="https://masuit.com/author/%E7%BE%8E%E5%9B%BE%E5%9D%8A">https://masuit.com/author/%E7%BE%8E%E5%9B%BE%E5%9D%8A</a> 美图坊<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=Final+Cut+Pro+X&amp;t=1">https://www.tuicool.com/search?kw=Final+Cut+Pro+X&amp;t=1</a><br>MacOS最强视频剪辑软件——Apple Final Cut Pro X 10.6.1学习版<br>macOS 10.15.6 或更高版本、4GB 内存（建议 8GB 以用于 4K 编辑、3D 字幕和 360° 视频编辑）、支持 Metal 的图形卡（建议 1GB 显存以用于 4K 编辑、3D 字幕和 360° 视频编辑）、3.8GB 可用磁盘空间。<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/memI3m">https://www.tuicool.com/articles/memI3m</a><br>好莱坞新片《焦点》用Final Cut Pro X剪辑<br>整个剪辑过程，他们用到了多种苹果设备和软件，包括：<br>• Mac Pro<br>• iMac<br>• MacBook Pro<br>• iPad<br>• iPhone<br>• OS X<br>• Final Cut Pro X<br>• Logic Pro X（专业作曲、录音、编辑和混音的工具）<br>• Motion 5（配合 Final Cut Pro 使用的字幕、转场效果和特效工具）<br>• Xsan（公司企业级储存区域网络（SAN）解决方案）<br>某些功能需要互联网连接；上网可能需要付费。刻录 Blu-ray 光盘需要 Blu-ray 刻录机。</p>
+<p>吾爱破解python主题<br><a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum.php?mod=forumdisplay&amp;fid=24&amp;filter=typeid&amp;typeid=29">https://www.52pojie.cn/forum.php?mod=forumdisplay&amp;fid=24&amp;filter=typeid&amp;typeid=29</a></p>
+<p>主机VPS腿甲<br>vultr<br>linode</p>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/urgubkqCpjpSQsOYUuj_tg">https://mp.weixin.qq.com/s/urgubkqCpjpSQsOYUuj_tg</a><br>几种常见疾病的防与治！</p>
+<p><a target="_blank" rel="noopener" href="http://icyfenix.cn/">http://icyfenix.cn/</a><br>凤凰架构：构筑可靠的大型分布式系统</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/vmeYRrz">https://www.tuicool.com/articles/vmeYRrz</a><br>当连锁药店开始卖彩票<br>药店，便利店，水果店，钱大妈</p>
+<p>Crypto.com</p>
+<p><a target="_blank" rel="noopener" href="https://post.smzdm.com/p/amx086pv/">https://post.smzdm.com/p/amx086pv/</a><br>10个知乎值得收藏的高赞高质量回答最强汇总（附问题链接，免费拿走！）</p>
+<p>目前来看迪拜很有可能成为未来的区块链之度，币安和迪拜高层开始谈判，10月14日 Binance 宣布前迪拜金融服务管理局局长 Mark McGinness 加入担任首席监管联络官。迪拜对于中国签证落地签，工作签证也十分容易，买房可以获得3-10年签证。并且迪拜是免税港，没有公司所得税，个人所得税，资本利得税，天然适合虚拟货币交易。目前也就有个5%的VAT,相对于美国动辄10%的SALES TAX这已经十分仁慈了。美国真是万税万税万万税，有一瞬间绿卡不想要了。</p>
+<p>卖课，社群，培训</p>
+<p>1，聊‬天式成交销售<br>2，持续行‬动如何‬做成1件事<br>3,  从35岁转型‬职场到创业‬者</p>
+<p>孙宏斌的钱来自八个方面，（俗称八爪鱼）<br>一，启动资金，来自于原始积累（很少），绝非血汗钱和炒股收益。<br>二，来路不明的地下黑钱，包括美国财团，与红二代三代官倒有关，不太干净。<br>三、境内合作央企及国企资金，这是混合所有制的猫腻，官商勾结，利益输送。<br>四、房屋及土地杠杆撬来的银行贷款，搞地产的人都懂，他的套路深，盘子大。<br>五、民间融资，包括发债、基金、商票等等。<br>六、股东资金，包括明股实债，平安集团是主力军，平安是谁家的，你猜？<br>七、销售收入带来的现金流。并购资金庞大，开发利润无法支撑这个数据。<br>八、诈骗所得赃款，敲诈万达王健林及打劫金科黄红云。还伪造新疆商会会长赵长兵签名，伪造房产证及合同书，已涉嫌犯罪。</p>
+<p><a target="_blank" rel="noopener" href="https://www.toutiao.com/i7028617393467294220/">https://www.toutiao.com/i7028617393467294220/</a><br>这7款游戏让大家知道，没有什么“3A”是NS带不动的<br><a target="_blank" rel="noopener" href="https://www.toutiao.com/i7030615180384027168/">https://www.toutiao.com/i7030615180384027168/</a><br>人过三十，不要在朋友圈“显摆”这些</p>
+<p>三口之家来说，每年到手收入三十万，没有房贷车贷，正常生活已经没问题了。买点小保险，支付宝或者微信买就成，一年大概也就五六千，足够应对意外。吃饭七八万，实话说，已经可以经常下馆子了。孩子七八万，基本的培训费都有了。每年外出旅游两次，花费四五万也可以了。七七八八下来，每年开支其实就是在二十五万左右。<br>对普通人而言，年被动收入达到三十万，三口之家，基本就是宽松的财务自由了。在这个基础上，没想法岁月静好，安稳一生也很好。有想法，没有后顾之忧，大胆前进也不错。</p>
+<p>-》河南抖玩互娱网络科技有限公司，tk美元<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/people/xun-dun-fang-bao-ruan-jian">https://www.zhihu.com/people/xun-dun-fang-bao-ruan-jian</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/people/zhao-ze-peng-1">https://www.zhihu.com/people/zhao-ze-peng-1</a><br><strong>dating和game属于推广类任务</strong>，就是拿任务链接让用户注册即可，单任务佣金在2-7美金左右，这种具体的操作方法可以参考<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/422323245">利用TikTok做CPA/CPS项目实现月入十万，干货分享</a><br><strong>C任务的话是属于EMU模式</strong>，<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/423417177">国外CPA注册类offer的EMU操作案例！</a>，大家可以参考这个EMU，EMU说白了就是模拟真人完成任务操作，听着很复杂，其实做起来很简单</p>
+<p>北交所，吸纳流动性</p>
+<p>极限竞速——地平线5 Forza Horizon 5 v1.405.2 直装学习版<br><a target="_blank" rel="noopener" href="https://masuit.com/1633">https://masuit.com/1633</a><br>magnet:?xt=urn:btih:de6c18e009aaca54845e8b998abc7f6e88a6a2ca&amp;dn=rutor.info_Forza+Horizon+5%3A+Premium+Edition+%5Bv+1.405.2.0+%2B+DLCs%5D+%282021%29++PC+%7C+RePack+%D0%BE%D1%82+Chovka&amp;tr=udp://opentor.net:6969&amp;tr=udp://opentor.org:2710&amp;tr=<a target="_blank" rel="noopener" href="http://retracker.local/announce">http://retracker.local/announce</a><br>B站视频<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av34646946?zw">https://www.bilibili.com/video/av34646946?zw</a><br>买个方向盘撸赛车？<br><a target="_blank" rel="noopener" href="https://item.jd.com/30741781221.html">https://item.jd.com/30741781221.html</a></p>
+<p>测试转研发的一年总结<br><a target="_blank" rel="noopener" href="https://testerhome.com/topics/31643">https://testerhome.com/topics/31643</a></p>
+<p>通胀买入最稀缺资产！BTC，芯片</p>
+<p>抖音靠推荐算法-用户画像-喂食-吃广告-写作者分佣<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95&amp;t=1">https://www.tuicool.com/search?kw=%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95&amp;t=1</a></p>
+<p>不忘初心,继续前行 只有不停奔跑,才能留在原地!<br>大佬基本都是收割大佬才能搞到钱<br>尼采：凡不能毁灭我的，必使我更强大</p>
+<p>人算不如天算，玄学还事需要个算卦，自己没有主意的话让给天算<br>别老说吗，吧，可能，好像，应该，你要玩就搜哈</p>
+<p>TokenPocket是全球最大的数字货币_钱包_,支持包括BTC、ETH、BSC、HECO、TRON、OKExChain、Polkadot、Kusama、EOS等在内的所有主流公链及Layer 2,已为全球近千万用户提供可信赖的数字货币资产管理服</p>
+<p>清华大学：2021 元宇宙研究报告！<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/jUyt0H9kw84_TdvmQQj6xw">https://mp.weixin.qq.com/s/jUyt0H9kw84_TdvmQQj6xw</a><br>目前进场：<br>FB,TX，字节 还有其他，NFT<br>目前应用还是各种链币-平台币-NFT游戏平台，Play to Earn模式是个不错的玩法，入门门槛不高，然后有钱，模式就可以持续，有点变相传销的感觉。</p>
+<p>Facebook的VR产品 Oculus Quest2一体机VR眼镜steam头戴虚拟性游乐设备体感游戏用品<br>字节跳动 pico<br>pico neo3</p>
+<p>元宇宙<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=%E5%85%83%E5%AE%87%E5%AE%99&amp;t=1">https://www.tuicool.com/search?kw=%E5%85%83%E5%AE%87%E5%AE%99&amp;t=1</a><br>机构-币圈-消费端-元宇宙-》新增<br>算力-》芯片-》交易和流量-》币圈造神</p>
+<p>P2E(Play to Earn)模式简析 - Axie Infinity为例 小白也能看懂的区块链游戏科普文<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/394983283">https://zhuanlan.zhihu.com/p/394983283</a><br>趣味的游戏机制：所有人都想玩游戏的同时赚钱<br>疫情下的菲律宾经济状况持续恶化，大学毕业生面临着将近1/3的失业率。一位在当地经营家庭超市的老人抱怨道“平日里50到60的买卖到了如今变成可怜的五、六美刀”。与此同时。Axie能让任何一个愿意全身心投入的市民最高可获得300的收入（正常工作也堪堪提供200$，且多为体力劳动）。这也就不难理解Axie在当地病毒式的流行，上至耄耋之年的老年人口下至中学生，无论是很少接到客人三轮车司机，抑或是失业在家的大学毕业生都在切身地实践何为“Play to Earn”<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/387414055">https://zhuanlan.zhihu.com/p/387414055</a><br><a target="_blank" rel="noopener" href="https://axieinfinity.com/">https://axieinfinity.com/</a><br>目前的入门最低也要500U</p>
+<p>区块链<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/topic/19901773/hot">https://www.zhihu.com/topic/19901773/hot</a></p>
+<p>律师被“白嫖”是一种怎样的体验？<br><a target="_blank" rel="noopener" href="http://www.360doc.com/content/19/1015/10/53381643_866885652.shtml">http://www.360doc.com/content/19/1015/10/53381643_866885652.shtml</a></p>
+<p>干货！复盘TFAAMG超级科技股的财报季操作！<br><a target="_blank" rel="noopener" href="https://www.laohu8.com/post/840765112?lang=zh_CN&amp;invite=ZTNZC">https://www.laohu8.com/post/840765112?lang=zh_CN&amp;invite=ZTNZC</a><br>2021年股市输的最惨一年（复盘）<br><a target="_blank" rel="noopener" href="https://www.laohu8.com/post/849813490">https://www.laohu8.com/post/849813490</a></p>
+<p>450天41万倍，他创造了人类投资史的奇迹<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/427131991">https://zhuanlan.zhihu.com/p/427131991</a><br>毕竟，在1年多的时间里，看着账户里1.3万美元升值至57亿美元，没有几个人能无动于衷。<br>币圈稳健投资9大方法分享<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/401998055">https://zhuanlan.zhihu.com/p/401998055</a><br><a target="_blank" rel="noopener" href="https://www.shibatoken.com/">https://www.shibatoken.com/</a></p>
+<p>如何看待李笑来新书《财富自由之路》在豆瓣获得9.4评分？<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/answer/2192340984">https://www.zhihu.com/answer/2192340984</a></p>
+<p>千尺豪宅，多数也是普通人买的。我告诉你套路，主要是置换。<br>1，外地大学生小王，和他那个小县城的中产媳妇，在老家拼死拼活凑出了，100个首付，接盘了张阿姨的老破小。<br>2，张阿姨用300个首付，接盘了赵阿姨的老破中。<br>以此类推，分级改善。<br>3，最后，李老伯卖掉了25年前爸妈老单位分的老破大，得款680，再加上自己家这些年存款，一步登天，为儿子搞了一个1100w的千尺豪宅，幸福的生活在了漂亮小区里面了。李老伯的孙儿就是大户人家的娃了。<br>这个连环套，分级改善，一般要50年。丝丝怒了，“什么时候发房子？我不想辛苦了。”呵呵，你慢慢等，不要急，急生不出儿子。</p>
+<p>跟随着 iPhone 一年一更的脚步，我在这三年里也从 11 Pro Max 一路用到了 13 Pro。我总是和不少数码爱好者们一样期待，iPhone 能给我带来什么不一样的东西，但 Apple 这些年推出的产品却在让我们「可持续性地让失望」。Apple 还是那个 Apple，iPhone 也还是那个 iPhone。如果我有 1 万元的预算成本，买一台 Android 手机和相机，也能过得非常舒服，干起活来其实也比 iPhone 更带劲。</p>
+<p>感觉每个人都在保命保位置，或者说活着，现实太残酷，唯有苟活着。</p>
+<p>稻盛和夫<br>稻盛和夫曾说，“利己则生,利他则久。敬人者人恒敬之,爱人者人恒爱之”，利他是一种高级的“利己”。<br>利他思维<br>真正优秀的人，都懂得通过“利他”来成就自己<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/77390140">https://zhuanlan.zhihu.com/p/77390140</a></p>
+<p>关于我作为睿派克论坛站长被抓捕的那些事情<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/4UOKO5hirXWF5qaoIggR8Q">https://mp.weixin.qq.com/s/4UOKO5hirXWF5qaoIggR8Q</a></p>
+<p>云原生安全：攻防实践与体系构建》资料仓库<br><a target="_blank" rel="noopener" href="https://github.com/shellsec/cloud-native-security-book">https://github.com/shellsec/cloud-native-security-book</a></p>
+<p>一个20几万粉丝的vlog博主，每个月能赚多少钱？＃短视频 ＃赚钱<br><a target="_blank" rel="noopener" href="https://v.ixigua.com/RrSeTof/">https://v.ixigua.com/RrSeTof/</a></p>
+<p>Real Vision 创始人：加密资产不是泡沫，是当今年轻一代逆天改命的希望<br><a target="_blank" rel="noopener" href="https://www.chainnews.com/articles/593853693287.htm">https://www.chainnews.com/articles/593853693287.htm</a></p>
+<p> 美股情报局<br>微信号<br>mgqbj666<br>功能介绍<br>华盛通（新浪集团成员）美股资讯栏目，全天候追踪热点，解读上市公司最新动作，帮助投资者掌握最新行情！</p>
+<p>VNPY全套课程<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1sz4y1f7FP?p=1">https://www.bilibili.com/video/BV1sz4y1f7FP?p=1</a><br><a target="_blank" rel="noopener" href="https://github.com/vnpy/vnpy">https://github.com/vnpy/vnpy</a></p>
+<p>5分钟，4万人账户清零，创始人突然跑路，“鱿鱼币”从2861美元跌到0.0007美元，投资者：“真是鱿鱼游戏”<br>8000美元十四个月变57亿！柴犬币暴涨造就史上最赚钱交易<br><a target="_blank" rel="noopener" href="https://www.36kr.com/p/1468809909373696">https://www.36kr.com/p/1468809909373696</a><br><a target="_blank" rel="noopener" href="https://new.qq.com/omn/20211030/20211030A00CLX00.html?utm_source=tuicool&amp;utm_medium=referral">https://new.qq.com/omn/20211030/20211030A00CLX00.html?utm_source=tuicool&amp;utm_medium=referral</a></p>
+<p>支付宝开始猛喊私域<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzU3NTU5NDc0NA==&amp;mid=2247530620&amp;idx=1&amp;sn=e4bb5e2cb84cbe523800c1b7ce7cb8f9">https://mp.weixin.qq.com/s?__biz=MzU3NTU5NDc0NA==&amp;mid=2247530620&amp;idx=1&amp;sn=e4bb5e2cb84cbe523800c1b7ce7cb8f9</a></p>
+<p>“不用多久，我就会升职加薪、当上总经理、出任CEO、迎娶白富美、走上人生巅峰，想想还有点小激动。”</p>
+<p><a target="_blank" rel="noopener" href="https://www.reddit.com/">https://www.reddit.com/</a><br>马斯克的探月激情就传播到了Telegram、TikTok和Reddit上</p>
+<p>Messari报告：Solana NFT发展开始挑战以太坊NFT主导地位<br><a target="_blank" rel="noopener" href="http://www.ccvalue.cn/article/1368055.html">http://www.ccvalue.cn/article/1368055.html</a><br>上上个月已经调研出来，SOL公链和FTT交易所为下一代NFT主币</p>
+<p>根据相关的规定：参保人死亡后，个人账户余额是可以继承的，那这里也分为两种情况，一是参保人在退休前死亡的，个人账户余额可以全部继承，二是参保人在退休后死亡的，个人账户继承额度按以下公式计算：<br>个人账户继承额＝本人退休时个人账户储存额＋退休后个人账户利息-个人账户月养老金×已领取养老金的月数。<br>简单来说，参保人在退休前死亡的，个人账户的本息都可以一次性继承，参保人员在退休后死亡的，个人账户的本息减去已领养老金的额度，剩余的部分可以一次性继承。</p>
+<p>Java资深开发：这不得40k起步呀 最近一直在研究成为大佬，需要掌握那些技术<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/VRNVzqY">https://www.tuicool.com/articles/VRNVzqY</a></p>
+<p>哦，这就是大佬的生活？sunware<br>存款一亿的黑客大佬怒怼银行，开劳斯莱斯取500w现金，顶级程序员的炫富生活我看不懂<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzA5MjE3NDQ1Mw==&amp;mid=2649721183&amp;idx=1&amp;sn=a298235dbc4ba415debd2d7f142bb01e&amp;utm_source=tuicool&amp;utm_medium=referral">https://mp.weixin.qq.com/s?__biz=MzA5MjE3NDQ1Mw==&amp;mid=2649721183&amp;idx=1&amp;sn=a298235dbc4ba415debd2d7f142bb01e&amp;utm_source=tuicool&amp;utm_medium=referral</a></p>
+<p>币圈大佬，V神，孙宇晨<br>要多向大佬学习</p>
+<p>16孙宇晨：财务自由（完结）<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1xbscrwU26Soynh83PQ-Pfw">https://pan.baidu.com/s/1xbscrwU26Soynh83PQ-Pfw</a></p>
+<p>互联网超级地图合集高清电子版（62张）<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/10tqv0jyDFbw1Sa6YrNxY1w">https://pan.baidu.com/s/10tqv0jyDFbw1Sa6YrNxY1w</a><br>cpts</p>
+<p>068_清华EMBA课程<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bxMAm1qQWFRy3JICYO3-LQ">https://pan.baidu.com/s/1bxMAm1qQWFRy3JICYO3-LQ</a><br>0dez</p>
+<p>经得起各种诱惑和烦恼的考验，才算达到了最完美的心灵健康。——弗·培根</p>
+<p>人人都能听懂的项目管理课<br><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/RNDwuCqcoKo">https://www.aliyundrive.com/s/RNDwuCqcoKo</a><br>最全行业地图<br><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/XdtMBJfJJLE">https://www.aliyundrive.com/s/XdtMBJfJJLE</a></p>
+<p>在无效的市场中赚有效的钱<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/EGpbVN_nWWpD9HdWVgSQdA">https://mp.weixin.qq.com/s/EGpbVN_nWWpD9HdWVgSQdA</a><br>懂分析趋势、政策、指数、市场、行业与企业。</p>
+<p>学知识和种树一样，在前期可能只是浇水，浇肥料，再浇水，重复性的动作可能会让人感觉很乏累。<br>学知识也是如此，可能在前期会很累，但是当它生根，发芽，结出果实时，才会发现，原来前面浇的肥料，真的有用。<br>你输入的每个知识，都是在种一棵树，在未来的某一天，它们终会发芽结果。<br>愿你我都能等到，它茁壮成长的一天。<br>成长的关键在于外部的信息促进，信息就是很好的肥料，当你拥有优质的信息源，有优质的信息进行学习，吸收时，成长才会与之而来。</p>
+<p>生财有术<br><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/NFv1tcM5KZa">https://www.aliyundrive.com/s/NFv1tcM5KZa</a><br><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/nPksQK7N9FD">https://www.aliyundrive.com/s/nPksQK7N9FD</a><br>生财日历2020 生财有术2020高清完整pdf.pdf<br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1sGSiOHOReNwreqwbi3kCIw">https://pan.baidu.com/s/1sGSiOHOReNwreqwbi3kCIw</a><br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1d_IQv_ilccK0o9dG7S7RTg">https://pan.baidu.com/s/1d_IQv_ilccK0o9dG7S7RTg</a><br>王叔也加入了生财社群，然后在实战，目前社群人数4k人，变现数打码<br>总结：<br>做啥都需要圈子和执行力才能看到更远</p>
+<p>项目可参考生财有术-圈子<br><a target="_blank" rel="noopener" href="https://www.shengcaiyoushu.com/">https://www.shengcaiyoushu.com/</a><br><a target="_blank" rel="noopener" href="http://search.shengcaiyoushu.com/">http://search.shengcaiyoushu.com/</a><br>我从生财有术学到 2 件事，彻底破除了赚钱焦虑<br><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1690669306129654073">https://baijiahao.baidu.com/s?id=1690669306129654073</a><br>从状态上看，人为赚钱焦虑，可以分为 2 点 ——<br>1 现在赚钱少，所以焦虑2 未来赚钱少，所以焦虑<br>事实上，大部分人都是为后者焦虑，而不是前者。<br>因为「现在赚钱少」，这是一个事实。一件已经发生的事情，人们普遍不会焦虑。<br>我们更担心的是，这件事情会造成什么巨大的影响？<br>换句话说，我们看到自己现在赚钱少，会莫名的担心，自己未来是不是还会赚钱少？<br>如果是的话，那就太恐怖了。<br>因为一想到未来要结婚、要生孩子、要买房、买车、教育，而自己却没有足够的收入来负担，一股未知的恐惧就扑面而来，焦虑就由此产生。<br><a target="_blank" rel="noopener" href="https://www.kindkp.com/">https://www.kindkp.com/</a><br>生财有术解答问题：<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/59757721/answer/1039064118">https://www.zhihu.com/question/59757721/answer/1039064118</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/450094644/answer/1788506393">https://www.zhihu.com/question/450094644/answer/1788506393</a> 要看下面的回答帖子<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/363029936">https://zhuanlan.zhihu.com/p/363029936</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/362142297">https://zhuanlan.zhihu.com/p/362142297</a><br>生财日历2020完整版.pdf<br><a target="_blank" rel="noopener" href="https://max.book118.com/html/2020/1220/6040155020003040.shtm">https://max.book118.com/html/2020/1220/6040155020003040.shtm</a><br>知识星球2021生财有术第5期价值2465元<br><a target="_blank" rel="noopener" href="https://52kt.net/7978.html">https://52kt.net/7978.html</a><br><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/RHBMWAAqBay">https://www.aliyundrive.com/s/RHBMWAAqBay</a><br>2021年第五期生财有术（全）<br><a target="_blank" rel="noopener" href="http://www.mmfang.cc/">http://www.mmfang.cc/</a><br>只要我们能找到用户需求，就是找到了一件能赚钱的事情。</p>
+<p>字节重新调整产品线<br>抖音、大力教育、飞书、火山引擎、朝夕光年和TikTok</p>
+<p><a target="_blank" rel="noopener" href="https://www.jiguang.cn/portal/">https://www.jiguang.cn/portal/</a><br>开发者后台-智能营销有大数据人群分析</p>
+<p>海参，石斛，鱼胶，白兰氏鸡精<br>日常枸杞和人参水补气，戒色吧，少吃冷的和甜食，白开水</p>
+<p>币圈半个月，人间一辈子。<br>10.22，投1000买入狗自拉，3天500倍，本金变了50万。<br>10.28，把60万投入自拉狗，一小时10倍，本金变600万。<br>11.2日，600万投入鱿鱼，3天500倍，本金变3个亿。<br>11.4日，3个亿投入老鹰，十分钟，貔貅跑路。归零。<br>11.5日，睡桥洞 </p>
+<p>南孚5号一次性电池(碱性电池、聚能环技术)的额定电压为1.5V ,1500毫安。可用在电动玩具、剃须刀、遥控器等家用设备中。 南孚5号镍氢充电电池是标有额定容量的,数码型的南孚5号镍氢充电电池额定容量在2450mAh左右,耐用型的南孚5号镍氢充电电池额定容量在1650mAh左右。<br>需求：<br>电池一起充虽然都是绿灯，但是实际上没充满，用电量检测<br>需要对每个电池有精准的充电状态，独立通道<br>飞狮（Camelion) 八槽多功能LCD智能液晶显示快速充电套装(8节5号2700毫安充电电池）玩具/KTV麦克风/闪光灯<br><a target="_blank" rel="noopener" href="https://item.jd.com/100005826983.html">https://item.jd.com/100005826983.html</a><br>原理跟红绿灯其实也差不多，充电确实挺快的，2700的电池三个多小时就充好了，有2种接口，C口很方便，不过测试了下不支持20W以上的C2C的大功率充电器，最后还是用U2C的10W充电器，不过速度也足够快了<br><a target="_blank" rel="noopener" href="https://item.jd.com/100005826981.html">https://item.jd.com/100005826981.html</a><br>飞狮（Camelion) 八槽多功能LCD智能液晶显示快速充电器（单充电器）可充1号/2号/5号/7号 镍氢/镍镉充电电池<br>实测<br>买的是充电器和5号7号各4个，有电源显示充满进度比较舒服，送的是TP-C线，自己准备个充电头即可。</p>
+<p>互联网产品各种会员购买<br>购物类<br>JD-茅台-99-ok30元无限制卷<br>TB-全家桶-优酷网易云饿了么天猫-88-ok<br>工具类-日常下载还是要的<br>wps<br><a target="_blank" rel="noopener" href="https://www.jd.com/pinpai/1-4053-408950.html">https://www.jd.com/pinpai/1-4053-408950.html</a>  329<br>WPS超级会员3年卡1116天 加送6个月 PPT等模板资源 客服消息自动发兑换码 秒到账<br>JD 280 两年<br>淘宝 两年 300 加送6个月<br>淘宝 179 年卡<br>迅雷会员<br>玩客云-ok+BT<br>—官网3年送6个月339-ok<br>百度云<br>百度网盘超级会员SVIP年卡12个月自动充值 官方直充到账 178-ok<br>一年 298<br><a target="_blank" rel="noopener" href="https://search.jd.com/Search?keyword=%E7%99%BE%E5%BA%A6%E4%BA%91%E8%B6%85%E7%BA%A7%E4%BC%9A%E5%91%98">https://search.jd.com/Search?keyword=百度云超级会员</a> 年<br>淘宝的 228<br>视频类-貌似没时间看了，而且淘宝+优酷了<br>爱优腾B站<br>音频类<br>酷我-破解的<br>网易云<br>山姆会员店-ok<br>其他联名<br>爱企查<br>吃饭类<br>美团会员<br>饿了么-TB会员自带<br>超级会员类<br><a target="_blank" rel="noopener" href="https://s.taobao.com/search?q=%E4%BC%9A%E5%91%98+%E5%85%85%E5%80%BC">https://s.taobao.com/search?q=会员+充值</a><br><a target="_blank" rel="noopener" href="https://s.taobao.com/search?q=%E8%B6%85%E7%BA%A7%E4%BC%9A%E5%91%98">https://s.taobao.com/search?q=超级会员</a><br>P站？<br>总费用<br>99+88+178+329=694</p>
+<p>早上开车想到的，烧钱不是烧品牌就是烧连接<br>C2C<br>B2C<br>B2B2C<br>M2C<br>M2B2C<br>资本都在往源头前置，垄断源头，流量，生产，销售，服务<br>操盘手需要精通复盘和预判</p>
+<p><a target="_blank" rel="noopener" href="https://bigbenthings.com/">https://bigbenthings.com/</a><br>大班哥的事 - 各式 APP 開箱/實測<br>蛮好玩的一个站，实测</p>
+<p><a target="_blank" rel="noopener" href="https://earning.tw/">https://earning.tw/</a><br>懒人经济学</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/shellsec/regular-investing-in-box">https://github.com/shellsec/regular-investing-in-box</a><br>定投 —— 大佬的自我修养</p>
+<p>Tradeingview.com</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/search?type=content&amp;q=%E4%B9%A6%E5%8D%95">https://www.zhihu.com/search?type=content&amp;q=%E4%B9%A6%E5%8D%95</a><br>书单-》之前撸的口袋阅和kindle+wifi热点<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/FfYZZre">https://www.tuicool.com/articles/FfYZZre</a><br>首先，成为一个好的投资者，需要具备资金、判断、耐心、运气4个因素。<br>一级基金投资要具备看底层项目的判断能力。判断基金也要预判未来收益率，保持定期比对更新，对优质项目要主动跟踪。<br>二级投资要结合分析情况，“资金＋心理作用＝发展趋势”，估值的评估其实是一项心理变量。<br>第二，长期跟踪和研究，拥抱变化。<br>要保持长期深入研究，才能沉淀出自己的认知体系，从而理解变化，具有洞察力和判断力，并抓住先机。<br>当然，对事物本质的深刻研究，方法见仁见智。我们看趋势，不只看1-2年，而是要看5-10年。<br>同时，为了增加确定性，我们看趋势也会结合国家的发展战略，“在时代发展的潮流中发展”，国家支持的产业发展方向往往是雪厚坡长的好赛道。<br>比如，国家现在强调科技自立自强，提出碳达峰、碳中和目标，建设健康中国，这些对应着在硬科技、新能源和生物医药等赛道将有历史性机会。<br>同时，我们还会结合社会需要，看一个项目、一个企业有没有创造价值，有没有解决实际问题。只要能够给社会持续创造价值，公司就会有成长性，就有投资意义。<br>要研究新的趋势，提升全员认知，努力从国家政策、产业趋势、社会价值、科创前沿等方面早一些发掘增长型企业。<br>只有这样，才有机会早于市场和他人发现优秀的企业。<br>第三，设立一个市场化的有效激励机制。<br>好的激励机制才能促进团队的拼劲，干劲，发挥主观能动性，最终形成利益一致的绑定，构建内部核心竞争力。<br>打造学习型组织，全员提升认知水平，家办对团队的跟投机制需灵活开放。<br>第四，学会分享和帮助。<br>生活的秘诀是给予，强者的标志也是给予，而非索取。与他人分享，会提升你的快乐体验，而且会重新系统化自己的思考，这是一个反省自己的良好契机。<br>把自己置于一种给予别人的状态，每天找到一种方式，让自己感激别人更多。当你每天都能给予别人时，说明你每天都在进步。<br>第五，学会复盘，多学习交流。<br>家办职业经理人要经常见优秀人才，交流学习。每个项目、每次投资都要复盘，与高手学习才能形成专业化的判断能力。能力进化、认知提升，最重要的阶梯就是学习。学习不停歇，成长进步不停歇，给予不停歇。<br>第六，建立一个高效的内部沟通和审批流程机制。<br>线上办公、审批，拨付资金，系统化流程管理，这样能提升决策和执行效率，也可以很好地控制风险。<br>第七，长期价值投资。<br>由于家办通常为自有资金，因此投资时多以长期发展的角度看待问题，可以经受周期和波动。</p>
+<p>门槛越低，参与感越强，付费率越高<br><a target="_blank" rel="noopener" href="https://www.niaogebiji.com/article-82156-1.html">https://www.niaogebiji.com/article-82156-1.html</a><br>「终身学习」的职场人，该如何搭建你的知识系统</p>
+<p>数据运营增长黑客-鸟哥<br><a target="_blank" rel="noopener" href="https://www.niaogebiji.com/pc/article/search?keyword=%E6%95%B0%E6%8D%AE">https://www.niaogebiji.com/pc/article/search?keyword=%E6%95%B0%E6%8D%AE</a></p>
+<p>战略层，战术层，执行层</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/11/01/%E6%88%98%E7%95%A5%E7%8B%97%E5%92%8C%E6%89%A7%E8%A1%8C%E7%8B%97/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">战略狗和执行狗</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/10/28/%E6%AE%8B%E9%85%B7%E4%BA%8B%E5%AE%9E%EF%BC%9A%E7%A8%8B%E5%BA%8F%E5%91%98%E6%B2%A1%E6%9C%89%E7%9C%9F%E6%AD%A3%E7%9A%84%E3%80%8C%E7%9D%A1%E5%90%8E%E6%94%B6%E5%85%A5%E3%80%8D%EF%BC%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%E6%98%AF%E5%88%A9%E7%94%A8%E3%80%8C%E5%A4%8D%E5%88%A9%E6%80%9D%E7%BB%B4%E3%80%8D%E6%94%BE%E5%A4%A7%E3%80%8C%E5%A4%8D%E4%B8%9A%E6%94%B6%E5%85%A5%E3%80%8D%EF%BC%8CMBA%20%E5%AD%A6%E5%8E%86/">
+                        <span class="hidden-mobile">残酷事实：程序员没有真正的「睡后收入」，解决办法是利用「复利思维」放大「复业收入」，MBA 学历</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('01/10/2007 8:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

@@ -1,0 +1,490 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="安全时刻在，技术无止境,金钱永不眠">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+  <title>神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-07 14:07" pubdate>
+        2021年9月7日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      16
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
+            
+            <div class="markdown-body">
+              <p>目标：<br>从构建PC端页面功能，系统，到小程序、APP端构建生成。</p>
+<p>1、<br>黑马Python6.5就业班学习-基础-高级-miniweb应用<br>主要PPT和命令，最好敲代码<br>工具：<br><a target="_blank" rel="noopener" href="https://www.python.org/">https://www.python.org/</a><br>down：<br><a target="_blank" rel="noopener" href="https://www.python.org/downloads/source/">https://www.python.org/downloads/source/</a><br>或简单点下这个：<br>Anaconda3<br><a target="_blank" rel="noopener" href="https://www.anaconda.com/">https://www.anaconda.com/</a><br>pycharm激活版本<br><a target="_blank" rel="noopener" href="https://www.ghxi.com/pycharm.html">https://www.ghxi.com/pycharm.html</a></p>
+<p>2、Django+vue全栈管理系统<br>VUE前端官网：<br><a target="_blank" rel="noopener" href="https://cn.vuejs.org/">https://cn.vuejs.org/</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.django-vue-admin.com/">https://www.django-vue-admin.com/</a><br>环境跑起来，前后端分离，前段模块js<br>学习文档<br><a target="_blank" rel="noopener" href="https://www.django-vue-admin.com/document/">https://www.django-vue-admin.com/document/</a><br><a target="_blank" rel="noopener" href="https://gitee.com/liqianglog/django-vue-admin">https://gitee.com/liqianglog/django-vue-admin</a></p>
+<p>最好学习docker，环境配置是个很烦的问题，而且到时上线docker也很方便，后期可熟悉K8S,容器化必会，后期CICD<br><a target="_blank" rel="noopener" href="https://www.runoob.com/docker/docker-compose.html">https://www.runoob.com/docker/docker-compose.html</a><br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/windows/wsl/install-win10">https://docs.microsoft.com/zh-cn/windows/wsl/install-win10</a><br>PowerShell<br>wsl –list –verbose<br>wsl –set-default-version 2<br>wsl –list –online<br>wsl.exe –update<br>wsl –install –d Debian<br>一开始装wsl –install –d Ubuntu-20.04，然后发现docker文件里是Debian，所以更换了<br>wsl 删除<br>先输入 wslconfig /l<br>再输入 wslconfig /u docker-desktop-data #debian替换为你想卸载的名字<br>win10怎么卸载wsl子系统<br><a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/a17d52852b37aac199c8f251.html">https://jingyan.baidu.com/article/a17d52852b37aac199c8f251.html</a><br>win10 WSL2问题解决WslRegisterDistribution failed with error: 0x800701bc<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_18625805/article/details/109732122">https://blog.csdn.net/qq_18625805/article/details/109732122</a><br>Win10 WSL2 安装Docker<br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a20c2d58eaac">https://www.jianshu.com/p/a20c2d58eaac</a><br>替换下加速配置：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs json">&#123;<br>  <span class="hljs-attr">&quot;registry-mirrors&quot;</span>:[<span class="hljs-string">&quot;https://hub-mirror.c.163.com/&quot;</span>,<br>    <span class="hljs-string">&quot;https://reg-mirror.qiniu.com&quot;</span>,<br>    <span class="hljs-string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>],<br>  <span class="hljs-attr">&quot;insecure-registries&quot;</span>: [],<br>  <span class="hljs-attr">&quot;debug&quot;</span>: <span class="hljs-literal">false</span>,<br>  <span class="hljs-attr">&quot;experimental&quot;</span>: <span class="hljs-literal">false</span>,<br>  <span class="hljs-attr">&quot;features&quot;</span>: &#123;<br>    <span class="hljs-attr">&quot;buildkit&quot;</span>: <span class="hljs-literal">true</span><br>  &#125;,<br>  <span class="hljs-attr">&quot;builder&quot;</span>: &#123;<br>    <span class="hljs-attr">&quot;gc&quot;</span>: &#123;<br>      <span class="hljs-attr">&quot;enabled&quot;</span>: <span class="hljs-literal">true</span>,<br>      <span class="hljs-attr">&quot;defaultKeepStorage&quot;</span>: <span class="hljs-string">&quot;20GB&quot;</span><br>    &#125;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>下载源码解压：<br><a target="_blank" rel="noopener" href="https://gitee.com/liqianglog/django-vue-admin">https://gitee.com/liqianglog/django-vue-admin</a><br> Docker-compose 部署<br> <a target="_blank" rel="noopener" href="https://www.django-vue-admin.com/document/hjbs.html#docker-compose-%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90">https://www.django-vue-admin.com/document/hjbs.html#docker-compose-%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90</a><br> 先安装docker-compose (自行百度安装),执行此命令等待安装<br>docker-compose up</p>
+<p>–》运行完毕后关掉再次运行，执行下面的即可<br>初始化后端数据(第一次执行即可)<br>docker exec -ti dvadmin-django bash<br>python3 manage.py init -y<br>exit<br>前端地址：<a target="_blank" rel="noopener" href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a><br>后端地址：<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/">http://127.0.0.1:8000</a><br>账号：admin 密码：123456</p>
+<p>docker exec -ti dvadmin-django bash<br>apt-get install -y python3.7-dev libpq-dev libopencv-dev python-opencv<br>apt-get install python3-dev </p>
+<p>0、去掉每次django覆盖配置文件操作<br>django-vue-admin\docker_env\django\Dockerfile<br>django-vue-admin\docker_env\celery\Dockerfile</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gradle"><span class="hljs-keyword">COPY</span> .<span class="hljs-regexp">/dvadmin-backend/</span>conf<span class="hljs-regexp">/env.example.py /</span>dvadmin-backend<span class="hljs-regexp">/conf/</span>env.py<br></code></pre></td></tr></table></figure>
+<p>1、去除登录验证码<br>django-vue-admin\dvadmin-backend\conf\env.py</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-comment"># 只允许访问的ip地址列表</span><br><span class="hljs-attr">ALLOWED_HOSTS</span> = [<span class="hljs-string">&#x27;*&#x27;</span>]<br><span class="hljs-comment"># 允许跨域源</span><br><span class="hljs-attr">CORS_ORIGIN_ALLOW_ALL</span> = <span class="hljs-literal">True</span><br><span class="hljs-comment"># 允许ajax请求携带cookie</span><br><span class="hljs-attr">CORS_ALLOW_CREDENTIALS</span> = <span class="hljs-literal">False</span><br><span class="hljs-comment"># 验证码状态</span><br><span class="hljs-attr">CAPTCHA_STATE</span> = <span class="hljs-literal">False</span><br><span class="hljs-comment"># 操作日志配置</span><br><span class="hljs-attr">API_LOG_ENABLE</span> = <span class="hljs-literal">True</span><br><span class="hljs-attr">API_LOG_METHODS</span> = [<span class="hljs-string">&#x27;POST&#x27;</span>, <span class="hljs-string">&#x27;DELETE&#x27;</span>, <span class="hljs-string">&#x27;PUT&#x27;</span>] <span class="hljs-comment"># &#x27;ALL&#x27; or [&#x27;POST&#x27;, &#x27;DELETE&#x27;]</span><br><span class="hljs-comment"># 接口权限</span><br><span class="hljs-attr">INTERFACE_PERMISSION</span> = <span class="hljs-literal">False</span><br><span class="hljs-comment"># 是否开启登录ip转换成城市位置</span><br><span class="hljs-attr">ENABLE_LOGIN_LOCATION</span> = <span class="hljs-literal">True</span><br></code></pre></td></tr></table></figure>
+<p>验证码状态<br>2、去掉每次vue打包-docker-compose.yml</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs dts"><br>        <span class="hljs-meta"># npm install --registry=https:<span class="hljs-comment">//registry.npm.taobao.org</span></span><br>        <span class="hljs-meta"># rm -rf /dvadmin-ui/dist</span><br>        <span class="hljs-meta"># npm run build:prod</span><br><span class="hljs-symbol"></span><br><span class="hljs-symbol">version:</span> <span class="hljs-string">&quot;3&quot;</span><br><span class="hljs-symbol">services:</span><br>  dvadmin-ui:<br><span class="hljs-symbol">    container_name:</span> dvadmin-ui<br><span class="hljs-symbol">    ports:</span><br>      - <span class="hljs-string">&quot;8080:8080&quot;</span><br><span class="hljs-symbol">    build:</span><br><span class="hljs-symbol">      context:</span> ./<br><span class="hljs-symbol">      dockerfile:</span> ./docker_env<span class="hljs-meta-keyword">/vue-ui/</span>Dockerfile<br><span class="hljs-symbol">    environment:</span><br><span class="hljs-symbol">      TZ:</span> Asia/Shanghai<br><span class="hljs-symbol">    volumes:</span><br>      - <span class="hljs-string">&quot;./dvadmin-ui:/dvadmin-ui&quot;</span><br><span class="hljs-symbol">    command:</span><br>      - <span class="hljs-meta-keyword">/bin/</span>bash<br>      - -c<br>      - |<br>        cd /dvadmin-ui<br>        npm run dev<br></code></pre></td></tr></table></figure>
+<p>3、Python报错：OperationalError:(MySQLdb._exceptions.OperationalError) (1366, “Incorrect string value:)  uft8m64<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/happy_wealthy/article/details/118157397">https://blog.csdn.net/happy_wealthy/article/details/118157397</a><br>utf8mb4_unicode_ci<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/yzh_1346983557/article/details/89643071">https://blog.csdn.net/yzh_1346983557/article/details/89643071</a></p>
+<p>4、为啥后台登录会错误<br>数据导入还需要初始化<br>django-vue-admin\dvadmin-backend\docker_start.sh<br>python ./manage.py makemigrations<br>python ./manage.py migrate</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">python</span> ./manage.<span class="hljs-keyword">py</span> init<br></code></pre></td></tr></table></figure>
+
+
+<p>linux安装docker-compose<br><a target="_blank" rel="noopener" href="https://github.com/docker/compose">https://github.com/docker/compose</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/shary-blue/p/14002987.html">https://www.cnblogs.com/shary-blue/p/14002987.html</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/pzk7788/p/10180197.html">https://www.cnblogs.com/pzk7788/p/10180197.html</a><br>网络报错：<a target="_blank" rel="noopener" href="https://theorangeone.net/posts/increase-docker-ip-space/">https://theorangeone.net/posts/increase-docker-ip-space/</a><br><code>vi /etc/docker/daemon.json</code><br>{<br>    “registry-mirrors”: [<br>        “<a target="_blank" rel="noopener" href="https://hub-mirror.c.163.com/&quot;">https://hub-mirror.c.163.com/&quot;</a>,<br>        “<a target="_blank" rel="noopener" href="https://reg-mirror.qiniu.com&quot;/">https://reg-mirror.qiniu.com&quot;</a>,<br>        “<a target="_blank" rel="noopener" href="https://docker.mirrors.ustc.edu.cn&quot;/">https://docker.mirrors.ustc.edu.cn&quot;</a><br>    ],<br> “default-address-pools”:[{“base”:”172.80.0.0/16”,”size”:24},<br>    {“base”:”172.90.0.0/16”,”size”:24}]<br>}</p>
+<p>案例：<br>Django+Vue+Docker搭建接口测试平台实战<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jinjiangongzuoshi/p/14711858.html">https://www.cnblogs.com/jinjiangongzuoshi/p/14711858.html</a></p>
+<p>利用python,jieba,bm25,django,nginx半小时打造一个基本可用的中文全文检索的搜索引擎<br><a target="_blank" rel="noopener" href="http://blog.54chen.com/post/chinese-search/">http://blog.54chen.com/post/chinese-search/</a></p>
+<p>其他ps：<br>python+vue<br>pip3.9 install –user -r requirements.txt</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tar -xvf node-v16.8.0-linux-x64.tar.xz -C /usr/<span class="hljs-built_in">local</span>/<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">ln -s /usr/<span class="hljs-built_in">local</span>/node-v16.8.0-linux-x64/bin/node /usr/bin/node<br>ln -s /usr/<span class="hljs-built_in">local</span>/node-v16.8.0-linux-x64/bin/npm /usr/bin/npm<br></code></pre></td></tr></table></figure>
+<p>创建虚拟环境<br><a target="_blank" rel="noopener" href="https://docs.python.org/zh-cn/3/tutorial/venv.html">https://docs.python.org/zh-cn/3/tutorial/venv.html</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/09/07/python3.9%E5%AE%89%E8%A3%85/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/09/04/2021%E6%8A%95%E8%B5%84%E6%80%BB%E7%BB%93%E5%92%8C%E4%B8%8B%E5%8D%8A%E5%B9%B4%E6%93%8D%E4%BD%9C/">
+                        <span class="hidden-mobile">2021投资总结和下半年操作</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('01/10/2007 8:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

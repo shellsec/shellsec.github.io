@@ -18,7 +18,7 @@
   <meta name="author" content="shellsec">
   <meta name="keywords" content="">
   
-  <title>战略狗和执行狗 - 神刀安全网www.shellsec.com</title>
+  <title>神刀安全网www.shellsec.com</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="战略狗和执行狗">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-11-01 15:56" pubdate>
-        2021年11月1日 下午
+      <time datetime="2021-11-23 11:09" pubdate>
+        2021年11月23日 上午
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      397 字
+      613 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      4
+      9
        分钟
     </span>
   
@@ -225,16 +225,67 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">战略狗和执行狗</h1>
+            <h1 style="display: none"></h1>
             
             <div class="markdown-body">
-              <p>战略定了就必须执行和复盘</p>
-<p>离不开的问题先想好，想清楚了，一辈子都不会白活。<br>生死有命富贵在天<br>1、想下自己退休需要多少钱？<br>2、退休需要做什么事？<br>3、死后留点啥给下一代</p>
-<p>人生三个核心需要执行的指标<br>1、生存概率<br>2、逃离成本线<br>3、成功率</p>
-<p>ps:看谁活得更久才是真正战略<br>对标企业来说以上就是护城河。</p>
-<p>没有太多可能成功的话千万别高负债行为<br>始于利润表，陷于现金流量表，忠于资产负债表<br><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1669015379237671072&amp;wfr=spider&amp;for=pc">https://baijiahao.baidu.com/s?id=1669015379237671072&amp;wfr=spider&amp;for=pc</a></p>
-<p>项目的自动化的尽量自动化和系统化，人的变数太大，主要因为人性。<br>交学费不是白交，何为有价值的交？<br>1、输出可用的一套认知投资系统；<br>2、积累相关重要的核心资源，生产资料或流量IP；<br>3、什么时候套现利润出场是非常重要；<br>4、黑天鹅识别。</p>
-<p>凡事在初期必须要自己死磕，除非你超级有钱。<br>就最近几年的观察来看，当初谈论的风声水起的项目，以这种心态做事的创始人，都灰溜溜的离场了。 反而那些自己踏实的切入，一点点积累的人，反而做出了一些可见的成绩。 普通人，唯有踏实的干，做自己想做的，喜欢做的，能亲自上手做的，路才能越走越宽。</p>
+              <p>RobotFrameWork+Appium+python3 MAC环境安装</p>
+<p>Robotframework的官方nokia公司已经推出了支持Python3的图形界面编辑工具RED<strong>，</strong>下载链接：<br><a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/nokia/RED">https://github.com/nokia/RED</a></p>
+<h3 id="1、安装python3（有很多方法，这里只提供一种，已安装的跳过）"><a href="#1、安装python3（有很多方法，这里只提供一种，已安装的跳过）" class="headerlink" title="1、安装python3（有很多方法，这里只提供一种，已安装的跳过）"></a>1、安装python3（有很多方法，这里只提供一种，已安装的跳过）</h3><h4 id="安装homebrew："><a href="#安装homebrew：" class="headerlink" title="安装homebrew："></a>安装homebrew：</h4><p>/usr/bin/ruby -e “$(curl -fsSL <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Homebrew/install/master/install">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)”</p>
+<h4 id="检查brew："><a href="#检查brew：" class="headerlink" title="检查brew："></a>检查brew：</h4><p>brew doctor       #输出：“Your system is ready to brew” 表示安装成功</p>
+<h4 id="查找python3"><a href="#查找python3" class="headerlink" title="查找python3:"></a>查找python3:</h4><p>brew search python3</p>
+<h4 id="安装python3"><a href="#安装python3" class="headerlink" title="安装python3:"></a>安装python3:</h4><p>brew  install python3</p>
+<h4 id="配置环境变量："><a href="#配置环境变量：" class="headerlink" title="配置环境变量："></a>配置环境变量：</h4><p>open -e .bash_profile</p>
+<p>打开的文件内粘贴以下内容</p>
+<p>    PATH=/usr/local/Cellar/python/3.6.5/bin:${PATH} </p>
+<p>    export PATH</p>
+<p>保存关闭文件，输入  source /etc/.bash_profile并回车，使配置生效</p>
+<h3 id="2、安装JAVA-SDK（已安装的跳过）"><a href="#2、安装JAVA-SDK（已安装的跳过）" class="headerlink" title="2、安装JAVA SDK（已安装的跳过）"></a>2、安装JAVA SDK（已安装的跳过）</h3><h4 id="下载java："><a href="#下载java：" class="headerlink" title="下载java："></a>下载java：</h4><p>从<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=http://www.oracle.com/technetwork/java/javase/downloads/index.html">官网</a>下载需要的JDK版本</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=http://www.oracle.com/technetwork/java/javase/downloads/">http://www.oracle.com/technetwork/java/javase/downloads/</a></p>
+<h4 id="配置环境变量：-1"><a href="#配置环境变量：-1" class="headerlink" title="配置环境变量："></a>配置环境变量：</h4><p>cd ~</p>
+<p>open e .open .bash_profile</p>
+<p>打开配置文件</p>
+<p>在文件中加入以下配置</p>
+<p>JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/    #配置为当前环境实际java SDK地址</p>
+<p>CLASSPAHT=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</p>
+<p>PATH=$JAVA_HOME/bin:$PATH:</p>
+<p>export JAVA_HOME</p>
+<p>export CLASSPATH</p>
+<p>export PATH</p>
+<p>修改文档之后，保存退出，输入  source /etc/.bash_profile并回车，使配置生效</p>
+<h3 id="3、安装Robotframework-3-0"><a href="#3、安装Robotframework-3-0" class="headerlink" title="3、安装Robotframework 3.0"></a>3、安装Robotframework 3.0</h3><p>pip install robotframework</p>
+<h3 id="4、安装RED："><a href="#4、安装RED：" class="headerlink" title="4、安装RED："></a>4、安装RED：</h3><p><a target="_blank" rel="noopener" href="https://links.jianshu.com/go?to=https://github.com/nokia/RED">https://github.com/nokia/RED</a></p>
+<h3 id="5、安装Appium"><a href="#5、安装Appium" class="headerlink" title="5、安装Appium"></a>5、安装Appium</h3><p>Appium官网：<a target="_blank" rel="noopener" href="http://appium.io/">http://appium.io/</a></p>
+<h3 id="6、安装Android-Studio"><a href="#6、安装Android-Studio" class="headerlink" title="6、安装Android Studio"></a>6、安装Android Studio</h3><p>主要目的是提供打包工具和Android SDK，提供adb命令支持，安装完成要给adb 命令添加</p>
+<p>环境变量配置，加在java配置之下：</p>
+<p>export ANDROID_HOME=/Users/cynthia/Library/Android/sdk</p>
+<p>export ANDROID_TOOLS=”$ANDROID_HOME/tools/“</p>
+<p>export ANDROID_BUILD_TOOLS=”$ANDROID_HOME/build-tools/28.0.3/“</p>
+<p>export PATH=”$ANDROID_HOME/:$PATH”</p>
+<p>export PATH=”$ANDROID_HOME/platform-tools/:$PATH”</p>
+<p>export PATH=”$ANDROID_HOME/tools/:$PATH”</p>
+<p>export PATH=”$ANDROID_HOME/emulator/:$PATH”</p>
+<p>export PATH=”$ANDROID_BUILD_TOOLS:$PATH”</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><br></code></pre></td></tr></table></figure>
+
+<p>配置完成，保存退出，输入  source /etc/.bash_profile并回车，使配置生效</p>
+<p>命令行检查是否生效：</p>
+<p>echo $JAVA_HOME</p>
+<p>/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home</p>
+<p>echo $ANDROID_HOME</p>
+<p>/Users/cynthia/Library/Android/sdk</p>
+<p>文件配置完成后示例（我本人的）：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shellsec/shellsec_gitblog_imgdoc//img/image2020-4-7_14-0-23.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="7、安装wxPython"><a href="#7、安装wxPython" class="headerlink" title="7、安装wxPython"></a>7、安装wxPython</h3><p>用于支持robotframework的IDE ride，下载地址选择对应版本即可  <a target="_blank" rel="noopener" href="http://wxpython.org/download.php#stable">http://wxpython.org/download.php#stable</a></p>
+<h3 id="8、robotframework-ride安装："><a href="#8、robotframework-ride安装：" class="headerlink" title="8、robotframework-ride安装："></a>8、robotframework-ride安装：</h3><p>pip install robotframework-ride</p>
+<p>pip install robotframework-ride -i <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/">mirrors.aliyun.com</a></p>
+<p>也可以用附件文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shellsec/shellsec_gitblog_imgdoc//img/robotframework-ride-1.7.4.1.zip" srcset="/img/loading.gif" lazyload></p>
+<h3 id="9、Appium-Python-Client安装-："><a href="#9、Appium-Python-Client安装-：" class="headerlink" title="9、Appium-Python-Client安装 ："></a>9、Appium-Python-Client安装 ：</h3><p>pip install Appium-Python-Client</p>
+<p>pip install Appium-Python-Client -i <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/">mirrors.aliyun.com</a></p>
+<h3 id="10、robotframework-appiumlibrary安装："><a href="#10、robotframework-appiumlibrary安装：" class="headerlink" title="10、robotframework appiumlibrary安装："></a>10、robotframework appiumlibrary安装：</h3><p> pip install robotframework-appiumlibrary</p>
+<p>pip install robotframework-appiumlibrary -i <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/pypi/simple">http://mirrors.aliyun.com/pypi/simple</a> –trusted-host <a target="_blank" rel="noopener" href="http://mirrors.aliyun.com/">mirrors.aliyun.com</a></p>
+<h3 id="11、robotframework-selenium2library安装："><a href="#11、robotframework-selenium2library安装：" class="headerlink" title="11、robotframework-selenium2library安装："></a>11、robotframework-selenium2library安装：</h3><p>pip install robotframework-selenium2library</p>
+<h3 id="12、设置Appium"><a href="#12、设置Appium" class="headerlink" title="12、设置Appium"></a>12、设置Appium</h3><p>SDK自动化用例是使用命令行启动Appium，可不用设置</p>
 
             </div>
             <hr>
@@ -255,9 +306,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/11/19/Python%E9%AB%98%E7%BA%A7%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%8F%8D%E7%88%AC%E8%99%AB%E5%8F%8A%E5%BA%94%E5%AF%B9%E6%96%B9%E6%A1%88(%E5%8F%AF%E8%83%BD%E6%98%AF%E6%9C%80%E5%85%A8%E7%9A%84%E5%BA%94%E5%AF%B9%E6%96%B9%E6%A1%88)/">
+                      <a href="/2021/11/24/001_%E9%B8%A1%E5%9C%BA%E6%B5%81%E9%87%8F%E8%B4%B9%E7%94%A8%E6%AF%94%E4%BB%B7%E5%92%8C%E6%B3%A8%E5%86%8C%EF%BC%88%E4%BA%B2%E6%B5%8B%EF%BC%89/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Python高级编程之反爬虫及应对方案(可能是最全的应对方案)</span>
+                        <span class="hidden-mobile"></span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -265,8 +316,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/11/01/2021-11-%E8%AE%A4%E7%9F%A5%E5%90%83%E9%A5%AD%E5%AD%A6%E4%B9%A0%E5%88%86%E7%B1%BB/">
-                        <span class="hidden-mobile">2021-11-认知吃饭学习</span>
+                      <a href="/2021/11/22/2021.11%20%E4%BD%8E%E4%BB%A3%E7%A0%81%E5%B9%B3%E5%8F%B0+RPA+AI%E8%B0%83%E7%A0%94/">
+                        <span class="hidden-mobile">2021 低代码平台调研 低代码+RPA+AI</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

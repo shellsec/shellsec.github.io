@@ -1,0 +1,508 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="安全时刻在，技术无止境,金钱永不眠">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+  <title>2021 低代码平台调研 低代码+RPA+AI - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="2021 低代码平台调研 低代码+RPA+AI">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-11-22 07:56" pubdate>
+        2021年11月22日 早上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      34
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2021 低代码平台调研 低代码+RPA+AI</h1>
+            
+            <div class="markdown-body">
+              <p>Gartner2021新兴技术成熟度曲线，AI与超自动化支撑数字化变革<br>RPA、低代码开发平台、流程挖掘、AI等创新技术。</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=%E4%BD%8E%E4%BB%A3%E7%A0%81">https://www.tuicool.com/search?kw=%E4%BD%8E%E4%BB%A3%E7%A0%81</a><br>低代码<br><a target="_blank" rel="noopener" href="http://api.woshipm.com/search/list.html?key=%E4%BD%8E%E4%BB%A3%E7%A0%81">http://api.woshipm.com/search/list.html?key=%E4%BD%8E%E4%BB%A3%E7%A0%81</a><br>低代码-人人产品经理</p>
+<p>软件工程师如何抵御低代码的冲击<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/wx/3qQNJzq">https://www.tuicool.com/wx/3qQNJzq</a></p>
+<p>需求：<br>1、表单创建，数据展示，增删改查，任务下发，API化，数据库支持，自动化执行，echarts开发—-ok<br>2、报表平台、工作流设计，数据BI大屏，日志审计、消息推送、B端应用—-ok<br>3、RPA自动化平台，类似测试用例自动化平台，切入业务，接口平台<br>4、AI数据挖掘，数据价值，降本提效</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jeecg158/p/13992725.html">https://www.cnblogs.com/jeecg158/p/13992725.html</a><br>低代码开发平台有哪些？</p>
+<p>5款国产开源低代码开发平台推荐<br>1、J2PaaS低代码平台<br><a target="_blank" rel="noopener" href="https://gitee.com/j2paas/j2paas-framework">https://gitee.com/j2paas/j2paas-framework</a><br><a target="_blank" rel="noopener" href="http://zj-docs.51epedu.com/#/xitonghuangjinggl">http://zj-docs.51epedu.com/#/xitonghuangjinggl</a><br><a target="_blank" rel="noopener" href="https://ke.qq.com/course/3737600?taid=12500476548941824">https://ke.qq.com/course/3737600?taid=12500476548941824</a><br>社区：<br><a target="_blank" rel="noopener" href="https://bbs.jikaiyun.com/">https://bbs.jikaiyun.com</a><br>安装 <a target="_blank" rel="noopener" href="https://bbs.jikaiyun.com/getNewsById?id=173&amp;type=1">https://bbs.jikaiyun.com/getNewsById?id=173&amp;type=1</a></p>
+<p>J2PaaS是综合性低代码开发平台，覆盖了软件项目需求分析、设计、开发、测试、运行、维护与管理等全过程。平台为开发者提供开发引擎、运行引擎、项目管理， 打破传统开发用“代码编程”驱动产品的模式，升级为用“参数”驱动产品，打造可视化、组件化、低代码、拖拽式开发的在线敏捷开发平台。</p>
+<p>平台把常规需要程序员完成的功能集成在框架中，开发人员只需关注业务逻辑、页面的组装以及流程的设计等业务相关的功能，低层功能例如事务处理、 文件处理、 数据库操作等等开发平台已经内置自动完成。<br>源码下载：​ ​ <a target="_blank" rel="noopener" href="https://gitee.com/j2paas">https://gitee.com/j2paas</a> ​​ ​<br>官网介绍：​ ​ <a target="_blank" rel="noopener" href="https://jikaiyun.com/">https://jikaiyun.com</a> ​ ​<br>文档中心：​ ​<a target="_blank" rel="noopener" href="http://zj-docs.51epedu.com/#/J2PaaSgaishu%E2%80%8B">http://zj-docs.51epedu.com/#/J2PaaSgaishu​</a> ​<br>-》功能比较丰富，但是每个模块的应用不是很清晰，多而复杂了，前端界面看起来比较老式</p>
+<p>2、JeecgBoot<br><a target="_blank" rel="noopener" href="http://www.jeecg.com/">http://www.jeecg.com/</a><br><a target="_blank" rel="noopener" href="https://gitee.com/jeecg/jeecg-boot">https://gitee.com/jeecg/jeecg-boot</a><br>演示<br><a target="_blank" rel="noopener" href="http://boot.jeecg.com/dashboard/analysis">http://boot.jeecg.com/dashboard/analysis</a><br>界面vue比较顺滑<br>开发文档<br><a target="_blank" rel="noopener" href="http://doc.jeecg.com/2043868">http://doc.jeecg.com/2043868</a><br>视频教学：<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Nk4y1o7Qc">https://www.bilibili.com/video/BV1Nk4y1o7Qc</a><br><a target="_blank" rel="noopener" href="http://boot3.jeecg.com/">http://boot3.jeecg.com</a><br>官网博客<br><a target="_blank" rel="noopener" href="https://jeecg.blog.csdn.net/">https://jeecg.blog.csdn.net/</a><br>参与开源<br><a target="_blank" rel="noopener" href="http://jeecg.com/doc/join">http://jeecg.com/doc/join</a></p>
+<p>JeecgBoot-Vue3 是在 Vben-Admin 基础上研发的，适合于JeecgBoot的新版VUE3前端框架。<br>采用 Vue3.0、Vite、 Ant-Design-Vue、TypeScript 等新技术方案，包括二次封装组件、utils、hooks、动态菜单、权限校验、按钮级别权限控制等功能。</p>
+<blockquote>
+<p>全新的VUE3技术栈，不只是追赶技术潮流，用了之后才能体会到Vue3的好处，的确比2更加适合大型项目。</p>
+</blockquote>
+<h5 id="源码下载："><a href="#源码下载：" class="headerlink" title="源码下载："></a>源码下载：</h5><ul>
+<li>  <a target="_blank" rel="noopener" href="https://github.com/jeecgboot/jeecg-boot-vue3">https://github.com/jeecgboot/jeecg-boot-vue3</a></li>
+<li>  <a target="_blank" rel="noopener" href="https://gitee.com/jeecg/jeecg-boot-vue3">https://gitee.com/jeecg/jeecg-boot-vue3</a></li>
+</ul>
+<h5 id="相关文档："><a href="#相关文档：" class="headerlink" title="相关文档："></a>相关文档：</h5><ul>
+<li>  在线演示：<a target="_blank" rel="noopener" href="http://boot3.jeecg.com/">http://boot3.jeecg.com</a></li>
+<li>  Vben文档：<a target="_blank" rel="noopener" href="https://vvbin.cn/doc-next/">https://vvbin.cn/doc-next</a></li>
+<li>  Antd-vue文档： <a target="_blank" rel="noopener" href="https://2x.antdv.com/docs/vue/getting-started-cn">Ant-Design-Vue文档</a></li>
+</ul>
+<p>JeecgBoot 是一款基于代码生成器的低代码平台！强大的代码生成器让前后端代码一键生成，实现低代码开发! JeecgBoot 引领新的低代码开发模式(OnlineCoding-&gt; 代码生成器-&gt; 手工MERGE)， 帮助解决Java项目70%的重复工作，让开发更多关注业务。既能快速提高效率，节省研发成本，同时又不失灵活性！<br>源码下载：<a target="_blank" rel="noopener" href="https://gitee.com/jeecg">https://gitee.com/jeecg</a><br>大屏幕<br><a target="_blank" rel="noopener" href="http://www.jimureport.com/templates">http://www.jimureport.com/templates</a><br><a target="_blank" rel="noopener" href="https://gitee.com/jeecg">https://gitee.com/jeecg</a></p>
+<p>-》VUE3，入门门槛ok点，部署完，迁移数据，生成展示图</p>
+<p>3、Jabdp<br>jabdp是一款企业级web快速开发平台，采用新颖的在线开发部署模式，使开发变得更加简单、纯粹，减少web开发中80%的代码量，革命性的提高了开发的效率。常用的功能，例如表单列表的增删改查，只需简单的自定义和配置就能自动生成。复杂的业务功能，只需要会基本的sql语句和javascript语法，就能进行快速开发，满足其个性化的业务需求，设计出各种复杂的企业web应用。<br>源码下载：​ ​ <a target="_blank" rel="noopener" href="https://gitee.com/jabdp/jabdp">https://gitee.com/jabdp/jabdp</a> ​ ​<br>-》更新频次没多少，不考虑</p>
+<p>4、华炎魔方<br>华炎魔方使用元数据定义对象，字段，配置，代码，逻辑和页面布局，元数据可以导入到华炎魔方中，可以在可视化界面中进行修改，也可以同步到源码进行深度开发。<br>源码下载：​ ​ <a target="_blank" rel="noopener" href="https://github.com/steedos/steedos-platform">https://github.com/steedos/steedos-platform</a> ​ ​<br><a target="_blank" rel="noopener" href="https://www.steedos.cn/">https://www.steedos.cn/</a><br><a target="_blank" rel="noopener" href="https://github.com/steedos/steedos-platform/blob/1.22/README_cn.md">https://github.com/steedos/steedos-platform/blob/1.22/README_cn.md</a><br>-》没有在线试用，看不是很懂。</p>
+<p>5、NocoBase<br>NocoBase 是一个开源免费的无代码开发平台。 无论是不懂编程的业务主管，还是精通编程的开发人员，都可以快速搭建各类定制化、私有部署的协作平台、管理系统。<br>源码下载：<a target="_blank" rel="noopener" href="https://github.com/nocobase/nocobase">https://github.com/nocobase/nocobase</a><br>NocoBase 是一个可扩展性优先的开源无代码开发平台。 无需编程，分分钟用NocoBase搭建自己的协作平台、管理系统。</p>
+<p>主页： <a target="_blank" rel="noopener" href="https://www.nocobase.com/">https://www.nocobase.com/</a><br>在线演示： <a target="_blank" rel="noopener" href="https://demo.nocobase.com/new">https://demo.nocobase.com/new</a><br>节点：<br>    Node.js 12.20+<br>数据库：<br>    PostgreSQL 10.x+<br>    Sqlite 3+<br>-》演示版很卡，不合适。</p>
+<p>6、# Erupt Framework<br>注解·低代码 构建通用数据平台<br><a target="_blank" rel="noopener" href="https://github.com/erupts/erupt">https://github.com/erupts/erupt</a><br><a target="_blank" rel="noopener" href="https://github.com/erupts?tab=repositories">https://github.com/erupts?tab=repositories</a><br><a target="_blank" rel="noopener" href="https://www.erupt.xyz/">https://www.erupt.xyz</a><br>仅需了解 Spring Boot 基础知识即可上手开发<br><a target="_blank" rel="noopener" href="https://www.yuque.com/erupts/erupt/foa2bt">https://www.yuque.com/erupts/erupt/foa2bt</a><br><a target="_blank" rel="noopener" href="https://www.yuque.com/erupts/erupt/wdic2w">https://www.yuque.com/erupts/erupt/wdic2w</a><br>演示地址：<a target="_blank" rel="noopener" href="https://www.erupt.xyz/demo">https://www.erupt.xyz/demo</a><br>账号密码：guest / guest<br>-》需要一定开发WEB基础</p>
+<p>7、iVX<br><a target="_blank" rel="noopener" href="https://www.ivx.cn/">https://www.ivx.cn/</a><br>一款比较完备的0代码产品，测试以后发现可以不用任何代码完成所有的开发。工具达到了制作较复杂应用的能力，其官网也是由iVX直接生成的，做到了应用闭环。再加之其不错的加载和运行速度，这款产品让我感觉非常惊艳。</p>
+<p>iVX组件完备，对象封装完整；支持各种小程序、原生、WebApp、游戏开发，总得来说功能非常强大。产品交互设计合理，开发效率高，前端后台（前端React后台Go）编译出程序的运行效率很高，但教学还有待完善，感觉内容较少，初学者一开始上手时可能会有点麻烦。 iVX收费项目比较多，对于开发者或者企业成本有点高。<br>-》基本很多功能需要收费，不是很友好</p>
+<p>8、django-vue-admin脚手架<br><a target="_blank" rel="noopener" href="https://www.django-vue-admin.com/">https://www.django-vue-admin.com/</a><br><a target="_blank" rel="noopener" href="https://gitee.com/liqianglog/django-vue-admin">https://gitee.com/liqianglog/django-vue-admin</a><br>学习文档<br><a target="_blank" rel="noopener" href="https://www.django-vue-admin.com/document/">https://www.django-vue-admin.com/document/</a><br>go<br><a target="_blank" rel="noopener" href="https://www.gin-vue-admin.com/docs/">https://www.gin-vue-admin.com/docs/</a><br>-》基础的菜单生成器，GO语言，功能模块相对简单</p>
+<p>总结：<br>最终选择 JeecgBoot低代码平台测试，开发人员主打开发高绩效的复杂逻辑应用和切入业务相关开发模块。</p>
+<p>后端<br>    基础框架：Spring Boot 2.3.5.RELEASE<br>    微服务框架： Spring Cloud Alibaba 2.2.3.RELEASE<br>    持久层框架：Mybatis-plus 3.4.3.1、Minidao<br>    报表工具： jimureport 1.3.78<br>    安全框架：Apache Shiro 1.7.0，Jwt 3.11.0<br>    微服务技术栈：Spring Cloud Alibaba、Nacos、Gateway、Sentinel、Skywalking<br>    数据库连接池：阿里巴巴Druid 1.1.22<br>    缓存框架：redis<br>    日志打印：logback<br>    其他：fastjson，poi，Swagger-ui，quartz, lombok（简化代码）等。<br>前端<br>    Vue 2.6.10,Vuex,Vue Router<br>    Axios<br>    ant-design-vue<br>    webpack,yarn<br>    vue-cropper - 头像裁剪组件<br>    @antv/g2 - Alipay AntV 数据可视化图表<br>    Viser-vue - antv/g2 封装实现<br>    eslint，@vue/cli 3.2.1<br>    vue-print-nb - 打印</p>
+<hr>
+<p>小型团队增效管理工具<br>钉钉管理组织-企业邮箱-阿里宜搭（内部业务流）-对外小程序+功能<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=%E5%AE%9C%E6%90%AD">https://www.tuicool.com/search?kw=%E5%AE%9C%E6%90%AD</a><br><a target="_blank" rel="noopener" href="https://www.aliwork.com/">https://www.aliwork.com/</a><br>Forrester在报告中还举例说明了低代码平台在中国各类行业：如银行、保险、零售、医疗保健、政府、制造、电信和建筑等领域的广泛应用场景。Forrester在报告中写道：“家居零售企业居然之家使用阿里巴巴旗下产品宜搭，开发了400多个管理和财务应用程序，将运营效率提升了60%。”</p>
+<p>RPA+AI<br>低代码指南<br><a target="_blank" rel="noopener" href="https://github.com/zenitysec/awesome-low-code">https://github.com/zenitysec/awesome-low-code</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/rMBf6bz">https://www.tuicool.com/articles/rMBf6bz</a><br>6个开源工具机器人过程自动化RPA工具<br>测评平台<br>行业产品参考：<br><a target="_blank" rel="noopener" href="https://www.aliyun.com/product/codestore">https://www.aliyun.com/product/codestore</a><br>阿里云RPA推出的数字员工，可使流程处理成本降低多达80%。绝大多企业可在12个月内取得 正投资回报，预计累积成本可进一步降低20%。</p>
+<p>平台：<br><a target="_blank" rel="noopener" href="https://robotframework.org/">https://robotframework.org/</a><br>Robot Framework 是一个通用的开源自动化框架。 它可用于测试自动化和机器人过程自动化 (RPA)。<br>这个主要开发测试组在使用，测试用例，适配各个机型<br><a target="_blank" rel="noopener" href="https://robotframework.org/rpa/">https://robotframework.org/rpa/</a><br>Robot Framework 是一种开源机器人流程自动化 (RPA) 解决方案，用于自动化业务流程。 它是开放和可扩展的，这意味着它几乎可以与任何其他工具集成，以创建强大而灵活的 RPA 解决方案。<br>Robot 的核心框架是一个通用的自动化平台，在测试自动化中非常流行，并且拥有一个由数千名开发人员组成的活跃社区，许多行业领先的公司在他们的软件开发中使用它。 这意味着 Robot Framework 得到积极支持并不断改进。<br>Robot Framework 的可扩展性是由其构建在扩展库之上的模块化架构实现的。 Robot Framework 社区开发和维护这些库，提供光学图像识别、数据库访问、HTTP API、iOS 和 Android 应用程序支持以及远程执行等功能。 使用 Python 或 Java 代码创建新库也非常容易，这使任何用户都可以将新功能集成到 Robot Framework 中。<br>开源还意味着 Robot Framework 可以免费使用，无需许可成本，您可以并行运行任意数量的 Robot Framework RPA 流程。 企业级项目中的编排功能可通过 Jenkins 插件获得。<br><a target="_blank" rel="noopener" href="https://github.com/robotframework/robotframework">https://github.com/robotframework/robotframework</a></p>
+<p>总结：<br>初级RPA可以定义为自动按键精灵，低代码<br>中级RPA加入硬件支持，OCR识别，AI识别，容错率检测<br>高级RPA支持机器算法学习</p>
+<p>RPA这块开源平台基本没有，有的大部分都拿融资做企业应用了。<br>企业应用初级阶段自动化类的多，按键精灵，自动化处理</p>
+<p>AI就更多框架了<br><a target="_blank" rel="noopener" href="https://github.com/search?o=desc&amp;q=AI&amp;s=&amp;type=Repositories">https://github.com/search?o=desc&amp;q=AI&amp;s=&amp;type=Repositories</a><br>PyTorch、TensorFlow，GPT</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=PyTorch">https://www.tuicool.com/search?kw=PyTorch</a><br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=TensorFlow">https://www.tuicool.com/search?kw=TensorFlow</a><br><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=GPT">https://www.tuicool.com/search?kw=GPT</a></p>
+<p><a target="_blank" rel="noopener" href="https://view.inews.qq.com/a/20211122A08KOR00">https://view.inews.qq.com/a/20211122A08KOR00</a><br>我们找了 50GB 的医疗领域文本，训练出一个 35 亿参数的 GPT-2 模型。这个模型训练只训练了 7 天，完全没有任何人工干预，我们全交给了算力。</p>
+<p>大家可以看到，我们第一个输入的文本是“我得了流感，症状是”，得到的输出是“发烧、咳嗽、头痛、肌痛、喉咙痛、鼻塞和头痛。”第二个输入文本是“流感的治疗方法是”，输出是“抗病毒药物扎那米韦、奥司他韦和拉那米韦。”经查询，这些答案都是正确的。你看，这个模型已经开始对理解知识并且可以回答你的问题了。</p>
+<p>以上基本上组合成自动化中台。</p>
+<p>其他：<br>python 平台类<br><a target="_blank" rel="noopener" href="https://github.com/search?q=python+%E5%B9%B3%E5%8F%B0&amp;type=repositories">https://github.com/search?q=python+%E5%B9%B3%E5%8F%B0&amp;type=repositories</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/11/23/RobotFrameWork+Appium+python3%20MAC%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/19/Python%20%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%E4%B8%AD%E6%96%87%E7%89%88/">
+                        <span class="hidden-mobile">Python 资源大全中文版</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('01/10/2007 8:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
