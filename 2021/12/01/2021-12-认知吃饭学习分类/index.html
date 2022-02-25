@@ -1,0 +1,505 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="安全时刻在，技术无止境,金钱永不眠">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+  <title>2021-12-认知吃饭学习分类 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="2021-12-认知吃饭学习分类">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-12-01 10:56" pubdate>
+        2021年12月1日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      39
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2021-12-认知吃饭学习分类</h1>
+            
+            <div class="markdown-body">
+              <p>![[Pasted image 20211224114835.png]]</p>
+<p>安卓破解<br><a target="_blank" rel="noopener" href="http://www.downcc.com/android/list_473_1.html">http://www.downcc.com/android/list_473_1.html</a><br><a target="_blank" rel="noopener" href="http://www.downcc.com/">http://www.downcc.com/</a></p>
+<p>OPPO Find N充电速度跟时间评测<br>充电方面，使用官方的33瓦有线快充，实测充满4500mAh大电池需要60分钟。 在半小时的冲进入57%电量，10分钟冲进15%的电量。</p>
+<p>大家能推荐个最好用的日程管理app吗?<br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21745931/answer/1310826971">https://www.zhihu.com/question/21745931/answer/1310826971</a><br>什么 onenote、Evernote、有道、为知等常用的就不提了<br>我推荐几个强大的笔记软件：<br>RemNote（目前主用，强大 支持双向链，支持本地和云同步）<br>Mempad（必装，文本神器）<br>CatMemoNote（很NB，用了爱不释手）<br>Notation<br>Simplenote<br>minipad2（非常不错，可惜很久不更新了）<br>Typora（很多人喜欢，可我无感）<br>Dynalist（推荐）<br>Workflowy（无感）<br>ediary（中规中矩吧）<br>RightNote（功能非强大，强烈推荐，若加上内容折叠就没onenote事了）<br>Scrivener（长文写作专用 好用）<br>Notion（不支持本地，总担心资料安全，偶尔玩一玩）<br>Roam Research（同上）<br>EssentialPIM（工作学习个人主用，强大，可以做出个人wiki）<br>MyNotesKeeper（核心机密资料我只用它，强大且稳定，推荐）<br>TreeSheets （是那种用一下觉得简单无聊且很容易放弃的软件，实则功能强大NB）</p>
+<ul>
+<li>  两款时间管理软件推荐：</li>
+<li>  Todolist  <a target="_blank" rel="noopener" href="https://todoist.com/zh-CN/downloads">https://todoist.com/zh-CN/downloads</a><br>微软的todo <a target="_blank" rel="noopener" href="https://todo.microsoft.com/">https://todo.microsoft.com/</a></li>
+<li>  EssentialPIM<br><a target="_blank" rel="noopener" href="https://masuit.com/search/EssentialPIM">https://masuit.com/search/EssentialPIM</a><br><a target="_blank" rel="noopener" href="https://www.essentialpim.com/cn/">https://www.essentialpim.com/cn/</a></li>
+</ul>
+<p>深圳都市圈一体化2021年度报告<br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QRcrRyAZ0h4fYYzijGuKtg">https://mp.weixin.qq.com/s/QRcrRyAZ0h4fYYzijGuKtg</a><br>深圳都市圈环深边界地区融合发展态势明显，或将形成6个融合发展的跨界组团：包括宝安北-滨海湾新区组团以流量带动存量，观澜-塘厦-凤岗组团成为都市圈高品质低成本的产城融合组团，坪山-惠阳-大亚湾组团强调产业协同，产城协同；光明-松山湖组团打造世界级科创策源地，大鹏半岛-稔平半岛组团打造世界级滨海旅游休闲目的地，坪地-新圩组团探索零碳实践。<br><img src="https://mmbiz.qpic.cn/mmbiz_png/36RibRqVRbNwJkgHm0NTeeR3DVtiapVfHtxtoAiahrKYXyBPmhBGfwTAGdGCiaLTWByneVPPk7OCV03Xrtkyt4aBBg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" srcset="/img/loading.gif" lazyload alt="图片"><br><img src="https://mmbiz.qpic.cn/mmbiz_png/36RibRqVRbNwKS9qAPAHgs2YrJhv0qOQHxlrUajFib2ia97xTs5pWKjkZwGWNh94pCWUMRX4xG621BcJhr6icHF5LA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" srcset="/img/loading.gif" lazyload alt="图片"><br><img src="https://mmbiz.qpic.cn/mmbiz_png/36RibRqVRbNwKS9qAPAHgs2YrJhv0qOQHuSnMM5cIVUILYN9msjWrpLpu3G1qic2GDAKSaWic38ARlouKCibwKgVFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" srcset="/img/loading.gif" lazyload alt="图片"></p>
+<p>日本<br><a target="_blank" rel="noopener" href="https://www.letsgojp.cn/">https://www.letsgojp.cn/</a><br>极简汇率<br><a target="_blank" rel="noopener" href="https://www.xcurrency.com/">https://www.xcurrency.com/</a></p>
+<p> DooTask是一款轻量级的开源在线项目任务管理工具，提供各类文档协作工具、在线思维导图、在线流程图、项目管理、任务分发、即时IM，文件管理等工具。<br><a target="_blank" rel="noopener" href="http://www.dootask.com/">www.dootask.com</a><br><a target="_blank" rel="noopener" href="https://github.com/kuaifan/dootask">https://github.com/kuaifan/dootask</a><br><a target="_blank" rel="noopener" href="https://github.com/kuaifan/dootask/blob/master/README_CN.md">https://github.com/kuaifan/dootask/blob/master/README_CN.md</a></p>
+<p>SUMo(软件升级检测工具) v5.14.5.513 便携版<br><a target="_blank" rel="noopener" href="https://www.ghxi.com/sumo.html">https://www.ghxi.com/sumo.html</a><br>Windows 10 v21H2 19044.1415<br><a target="_blank" rel="noopener" href="https://www.ghxi.com/win1021h1zsb.html">https://www.ghxi.com/win1021h1zsb.html</a><br>下载神器——InternetDownloadManager(IDM) 6.40.2简体中文学习版<br><a target="_blank" rel="noopener" href="https://masuit.com/74?kw=Internet%20Download">https://masuit.com/74?kw=Internet%20Download</a></p>
+<p>2w精品电子书下载付费-这个模式就是单页爆款<br><a target="_blank" rel="noopener" href="https://www.taibeibao.cloud/dzs">https://www.taibeibao.cloud/dzs</a></p>
+<p>switch游戏<br><a target="_blank" rel="noopener" href="https://www.nintendo.com.hk/software/switch/">https://www.nintendo.com.hk/software/switch/</a><br><a target="_blank" rel="noopener" href="https://www.3dmgame.com/switch/">https://www.3dmgame.com/switch/</a><br>游戏库<br><a target="_blank" rel="noopener" href="https://indienova.com/gamedb/platform/nintendo-switch/p/1">https://indienova.com/gamedb/platform/nintendo-switch/p/1</a><br><a target="_blank" rel="noopener" href="https://switch520.com/">https://switch520.com/</a><br><a target="_blank" rel="noopener" href="https://www.52pojie.cn/search.php?mod=forum&amp;searchid=30558&amp;orderby=lastpost&amp;ascdesc=desc&amp;searchsubmit=yes&amp;kw=switch">https://www.52pojie.cn/search.php?mod=forum&amp;searchid=30558&amp;orderby=lastpost&amp;ascdesc=desc&amp;searchsubmit=yes&amp;kw=switch</a></p>
+<p>微信 支付 生成器<br><a target="_blank" rel="noopener" href="https://www.goodsunlc.com/status/screenshots/index.html">https://www.goodsunlc.com/status/screenshots/index.html</a><br><a target="_blank" rel="noopener" href="https://www.goodsunlc.com/status/screenshots/wxzd.html">https://www.goodsunlc.com/status/screenshots/wxzd.html</a></p>
+<p>JOHN BOSS 麦哲伦真空旅行壶 304奥氏体不锈钢 HH-1212<br><img src="https://gd1.alicdn.com/imgextra/i2/13656708/O1CN01qnTIbP1zQJWNbszjT_!!13656708.png_400x400.jpg" srcset="/img/loading.gif" lazyload><br><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?spm=a230r.1.14.4.2dc23401kHhdQB&amp;id=656602588871&amp;ns=1&amp;abbucket=8#detail">https://item.taobao.com/item.htm?spm=a230r.1.14.4.2dc23401kHhdQB&amp;id=656602588871&amp;ns=1&amp;abbucket=8#detail</a></p>
+<p>网易智造人体感应磁吸小夜灯<br><a target="_blank" rel="noopener" href="https://club.autohome.com.cn/bbs/thread/53fb2d06db4c64cf/79190183-1.html?pvareaid=2378135">https://club.autohome.com.cn/bbs/thread/53fb2d06db4c64cf/79190183-1.html?pvareaid=2378135</a></p>
+<p>obsidian安卓端下载<br><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=md.obsidian&amp;hl=zh&amp;gl=US">https://play.google.com/store/apps/details?id=md.obsidian&amp;hl=zh&amp;gl=US</a><br><a target="_blank" rel="noopener" href="https://apkpure.com/obsidian/md.obsidian">https://apkpure.com/obsidian/md.obsidian</a></p>
+<p>【卧室口碑推荐】极米NEW Z6X 投影仪家用 投影机轻薄（全自动梯形校正 真实高亮 哈曼卡顿音响） NEW Z6X 2999<br><a target="_blank" rel="noopener" href="https://item.jd.com/100009019727.html">https://item.jd.com/100009019727.html</a><br>需要开启游戏模式<br><a target="_blank" rel="noopener" href="https://www.xj123.info/7540.html">https://www.xj123.info/7540.html</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Tv411w7QH/">https://www.bilibili.com/video/BV1Tv411w7QH/</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av83188595">https://www.bilibili.com/video/av83188595</a><br>需求：<br>日常爱奇艺优酷，然后连sw玩点游戏即可，看看电影外接音响<br>已采购，外加百度网盘看高清电影</p>
+<p>微众银行区块链首席架构师张开翔：9个关键词，2万字漫谈元宇宙<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/articles/eqeEf2Z">https://www.tuicool.com/articles/eqeEf2Z</a></p>
+<p>不谈产品，理论为纲：构筑你的收纳系统<br><a target="_blank" rel="noopener" href="https://sspai.com/post/70041">https://sspai.com/post/70041</a><br>考物阁 03｜为了让主动消噪「效果拔群」，我放弃了 AirPods Pro<br><a target="_blank" rel="noopener" href="https://sspai.com/post/70083">https://sspai.com/post/70083</a><br>做好个人数据与隐私防护，从这份检查清单开始<br><a target="_blank" rel="noopener" href="https://sspai.com/post/56066">https://sspai.com/post/56066</a><br>个人信息保护法正式施行，隐私安全新篇章由此开启<br><a target="_blank" rel="noopener" href="https://sspai.com/post/69609">https://sspai.com/post/69609</a></p>
+<p>信用卡套现乱象调查：有的套现20万炒股有的买房<br><a target="_blank" rel="noopener" href="http://www.xinhuanet.com/fortune/2019-10/16/c_1210313895.htm">http://www.xinhuanet.com/fortune/2019-10/16/c_1210313895.htm</a><br>经常在生活、投资中用信用卡刷0.38%的用,资金利用率平均就算一个月,那算下来年利率 0.38%*12=4.56%<br>信用卡 透支金额从银行记账日起计息，透支利率为日利率万分之五,近似折算年化利率为18.25%，并按月计算复利（近似折算年化利率=日利率*365<br>信用卡_取现除了要取现手续费，还要按天计算利息。<br>TX1万60手续费，给你30-50多天的免息天。 还不满足吗，不T不收费。</p>
+<p>工行先息后本-一年-6.3%<br>招商银行闪电贷36期-等额还款-6.84%<br>网商贷-9%<br>微粒贷-10个月-利息高18.25%<br>信用卡</p>
+<p>【企业信用贷】利率4.25%，最高300万<br>额度：最高300万<br>利率：4.25%<br>年限：1年期<br>还款方式：先息后本、随借随还<br>产品优势：额度大，利率低<br>准入条件：企业成立满2年，上一年度交税3万以上<br>提前还款：可提前还款</p>
+<p>实测工行个人经营性抵押：利率3.85%，10年期先息后本 【2020.12月新版】<br>![[Pasted image 20211210113717.png]]<br>![[Pasted image 20211210113740.png]]<br>![[Pasted image 20211210113747.png]]</p>
+<p>龙膜G2隐形车衣<br>【深度测评】测试龙膜隐形车衣G2二代钻享漆面保护膜<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/81421381">https://zhuanlan.zhihu.com/p/81421381</a><br>途虎价格 21800 23800<br>京东 22000<br>淘宝 18000<br>线下熟人19000，主要出问题找到人<br>原有漆面小问题抛光处理一下<br>需要预定，贴膜时间大概需要2天，贴和放置时间</p>
+<p>成都一男子打鼾一夜呼吸暂停近300次！医生点赞华为智能手表<br><a target="_blank" rel="noopener" href="https://news.mydrivers.com/1/798/798019.htm">https://news.mydrivers.com/1/798/798019.htm</a><br><a target="_blank" rel="noopener" href="https://item.jd.com/100029206596.html">https://item.jd.com/100029206596.html</a><br>在健康和健身跟踪功能方面，华为 Watch GT 3 手表提供 24/7 心率跟踪、全天血氧监测、睡眠跟踪、100 + 训练模式、体温测量等功能。<br>在连接方面，华为 Watch GT 3 配备了双频五系统 GNSS、蓝牙 5.2 LE 和 Wi-Fi。就电池寿命而言， 华为 Watch GT 3 46mm 一次充电最多可使用 14 天，而 42mm 可使用 7 天 。<br>Amazfit GTR 3 Pro 是通过光电容积信号（PPG 信号）来测量血压的变化。在此过程中，首次测量血压需采集个体特征性生理数据，如性别、年龄、身高以及当前血压值。三次校准能够使准确性更高。校准完成后静坐好便可进行测量。<br>曝华为将在12月举行新品发布会：血压手表、墨水屏产品全都有<br>华米GTR 3 Pro智能手表来了！内置自研系统能测血压，30天超长续航，1099元起售<br>血压、血糖测量将成为智能手表标配，六大厂商军备竞赛打响<br>赶在「革命性」的 Apple Watch Series 8 到来之前，苹果、华米、三星、Garmin、华为、OPPO 在健康监测上卯足了劲。<br>苹果的供应商目前正在开发下一代传感器组件，采用红外分光光度计探测皮肤下的体征数据，实现血糖、血压等体征监测。基于此，明年的 Apple Watch Series 8 或将添加大量新的健康功能。<br>佳明，使用户外运动，滑雪地图，续航时间，跑步圈<br>血压血氧心率体温血糖<br>睡眠心脏呼吸暂停检测<br>可以等最终产品<br>基本功能-小米手环已经足够</p>
+<p>WizNote为知笔记清空数据<br><a target="_blank" rel="noopener" href="https://www.wiz.cn/">https://www.wiz.cn/</a><br>蚂蚁笔记支持导入功能，为知笔记，evenote<br>为知笔记私有部署Docker镜像，5用户以下免费<br><a target="_blank" rel="noopener" href="https://www.wiz.cn/zh-cn/docker">https://www.wiz.cn/zh-cn/docker</a><br>5 用户以下免费使用，超出 5 用户，按照用户数的方式按年收取费用<br>授权价格：199 元/用户/年<br>购买后，服务有效期内可享有一次免费数据迁移服务，并可使用线上增值服务，如邮件转发收藏、微信收藏、网页剪辑等<br>一次性购买 3 年，可升级为永久授权（可一直享受增值服务，并含 3 年售后服务）<br>500 用户以上团队推荐更可靠的技术架构和集成定制服务，请与我们售前客服联系<br>现在蚂蚁笔记也恶心了，不给导出html，只能pdf和图片<br>没法数据迁移的都可以当垃圾处理</p>
+<p>Obsidian 笔记跨设备同步方案<br><a target="_blank" rel="noopener" href="https://einverne.github.io/post/2020/11/obsidian-sync-acrose-devices-solution.html">https://einverne.github.io/post/2020/11/obsidian-sync-acrose-devices-solution.html</a><br>syncthing是一个免费的同步软件，下载地址：<a target="_blank" rel="noopener" href="https://syncthing.net/downloads/">https://syncthing.net/downloads/</a><br>自己动手组建可远程实时同步的obsidian<br><a target="_blank" rel="noopener" href="https://www.songma.com/news/txtlist_i68145v.html">https://www.songma.com/news/txtlist_i68145v.html</a><br>OneDrive同步数据<br><a target="_blank" rel="noopener" href="https://sspai.com/post/68565">https://sspai.com/post/68565</a></p>
+<p>书法字体生成<br><a target="_blank" rel="noopener" href="http://www.diyiziti.com/">http://www.diyiziti.com/</a></p>
+<p>年底清算计划<br>信用卡刷卡手续费<br>信用卡积分兑换<br>五常米<br>移动手机积分兑换<br><a target="_blank" rel="noopener" href="https://jf.10086.cn/#/">https://jf.10086.cn/#/</a><br>水果刀<br>各种续费的会员年费，最好在11续费优惠力度<br>年假休假过期-信用卡的权益机票酒店（高端卡50w搬砖）<br>优惠券过期，线下提货<br>公积金提取-补贴房租或物业费用（自己用哈哈哈）<br>贷款还款续约<br>新年预算和进度<br>家庭设备折旧清理和升级<br>家人身体健康体检和指标<br>货款尾款年终绩效到账-发票报销年报<br>人文关系维持</p>
+<p>增长黑客 学习<br><a target="_blank" rel="noopener" href="https://www.tuicool.com/sites/vEvEz2q">https://www.tuicool.com/sites/vEvEz2q</a></p>
+<p> 飞轮效应 这个概念来自于亚马逊创始人贝佐斯。它说的是， 首先我们要找到业务的各个关键要素，然后构建要素之间的动力传递体系，形成闭环。当一个环节被驱动后，它输出的动力持续在各环节间传递，而动力又最终反馈回起点，进而推动整个飞轮体系（业务体系）闭环运转，使业务持续自我增长，自我加速。此时，业务增长对外部驱动力（如广告宣传、地推拓展、付费引流）的依赖就可以减弱，进入良性循环。 </p>
+<p>硬需产品灰色<br><a target="_blank" rel="noopener" href="https://github.com/gucmes/zerlin">https://github.com/gucmes/zerlin</a></p>
+<p>房贷空手道.docx<br><a target="_blank" rel="noopener" href="https://github.com/Don-Jimmy/kongshoudao-fangdai">https://github.com/Don-Jimmy/kongshoudao-fangdai</a></p>
+<p>湿胸们 群里之前推荐的 车载高清拍照 是哪个型号牌子来的？准备拿来拍照举报<br>360 高清 车载 摄像头 前后 4K<br>盯盯拍X5PRO<br><a target="_blank" rel="noopener" href="https://item.jd.com/10033761482198.html">https://item.jd.com/10033761482198.html</a></p>
+<p><del>小米路由器ax9000刷openwrt-wifi6-刷不了<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv13825925">https://www.bilibili.com/read/cv13825925</a><br>首款支持原生Openwrt的WIFI 6路由器——GL-AX1800使用体验</del><br>虽然wifi6不错，但是实际支持的产品不多，打游戏速度还行<br>扔掉软路由吧 小米AX3600 刷 OpenWrt（qsdk)固件 XIAOMI AX3600<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV15K4y1A7Ku">https://www.bilibili.com/video/BV15K4y1A7Ku</a><br> [Redmi AX6] 【Openwrt开发版每周五更新】新版AX6/AX3600/AX9000(QSDK),NSS,组网,jd,多播,小猫咪<br><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum.php?mod=viewthread&amp;tid=4875974&amp;extra=page=1&filter=typeid&typeid=64">https://www.right.com.cn/forum/forum.php?mod=viewthread&amp;tid=4875974&amp;extra=page%3D1%26filter%3Dtypeid%26typeid%3D64</a><br><a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/forum-171-1.html">https://www.right.com.cn/forum/forum-171-1.html</a><br>路由器JD链接<br><a target="_blank" rel="noopener" href="https://search.jd.com/Search?keyword=ax3600">https://search.jd.com/Search?keyword=ax3600</a><br><a target="_blank" rel="noopener" href="https://search.jd.com/Search?keyword=ax9000">https://search.jd.com/Search?keyword=ax9000</a></p>
+<p>这波病毒至少持续10年保守预估，到第5年持续的话，经济受不了了，长远看股价还会继续跌<br>新冠病毒一般指2019新型冠状病毒。 2019新型冠状病毒（2019-nCoV，世卫组织2020年1月命名；SARS-CoV-2，国际病毒分类委员会2020年2月11日命名）。</p>
+<p>可怕yanzhi1999，号没了<br><a target="_blank" rel="noopener" href="https://twitter.com/yanzhi1999">https://twitter.com/yanzhi1999</a><br>妍芝(@yanzhi1999). 差一点点的零零后。超级反差，推特放飞自我。不卖图，不微信，偶尔拍照，商务看心情，随缘私信回复。. 杭州.</p>
+<p>《少数派》全部付费教程无偿分享<br><a target="_blank" rel="noopener" href="https://sspai.com/series">https://sspai.com/series</a><br>内容付费链接<br><img src="https://z3.ax1x.com/2021/08/08/fQqtNn.jpg" srcset="/img/loading.gif" lazyload><br>one-drive：直接下载，无需注册，不会用的百度。（不要说求度盘资源了，立马封）<br><a target="_blank" rel="noopener" href="https://savef-my.sharepoint.com/:f:/g/personal/x1134988726_savef_onmicrosoft_com/Ejpe_8O26H1Pta2bQDjuQL4BJvdYFVe9Fqcslmn1UZZUcQ?e=iIz8pM">https://savef-my.sharepoint.com/:f:/g/personal/x1134988726_savef_onmicrosoft_com/Ejpe_8O26H1Pta2bQDjuQL4BJvdYFVe9Fqcslmn1UZZUcQ?e=iIz8pM</a><br>密码：52pj<br>已传百度，1G</p>
+<p><a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum-66-1.html">https://www.52pojie.cn/forum-66-1.html</a><br><a target="_blank" rel="noopener" href="https://www.52pojie.cn/forum-8-1.html">https://www.52pojie.cn/forum-8-1.html</a></p>
+<p>加密货币公司收购金融科技公司反向输出趋势<br>12月1日消息，加密货币公司CoinShares International已同意以约1390万欧元（约合1580万美元）的价格收购法国金融科技公司Napoleon Crypto SAS，因为蓬勃发展的加密货币行业继续吸引投资者的资金。CoinShares周三表示，收购Napoleon Crypto SAS是其扩大技术和平台战略的一部分。（路透社）</p>
+<p>加密货币平台币金融来钱快+挖矿山寨币+P2E游戏+NTF元宇宙+宣传粉丝量大<br>如果利率真的开始再次上升，你应该远离加密货币，而转向蓝筹股。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/01/01/2022%E5%B9%B4%EF%BC%8C%E7%BB%99%E6%89%93%E5%B7%A5%E4%BA%BA%E7%9A%8418%E6%9D%A1%E5%BB%BA%E8%AE%AE/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2022年，给打工人的18条建议</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/11/24/001_%E9%B8%A1%E5%9C%BA%E6%B5%81%E9%87%8F%E8%B4%B9%E7%94%A8%E6%AF%94%E4%BB%B7%E5%92%8C%E6%B3%A8%E5%86%8C_%E4%BA%B2%E6%B5%8B/">
+                        <span class="hidden-mobile">001_鸡场流量费用比价和注册_亲测</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('01/10/2007 8:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
+
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
