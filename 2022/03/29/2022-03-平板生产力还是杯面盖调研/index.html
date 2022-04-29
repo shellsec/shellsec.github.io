@@ -1,0 +1,467 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="为啥买平板轻办公，不用带那么重的电脑，随手带刷剧，学习视频，b站 支持手机跨屏，手写记录和录音翻译，拍照不需要太过复杂的功能，基本都是云办公和网盘 支持内容创作，剪辑视频，4k，音效多增加个副屏幕，写代码 听书学习，学习mba，法律，財技，关系沟通视频处理 屏幕很舒服无纸化 b站学习，可能会充值买课学习，白嫖早上英语，听书午看下经济类晚上健身视频 https:&#x2F;&#x2F;www.tuicool.com&#x2F;s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2022-03-平板生产力还是杯面盖调研">
+<meta property="og:url" content="http://example.com/2022/03/29/2022-03-%E5%B9%B3%E6%9D%BF%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%BF%98%E6%98%AF%E6%9D%AF%E9%9D%A2%E7%9B%96%E8%B0%83%E7%A0%94/index.html">
+<meta property="og:site_name" content="神刀安全网www.shellsec.com">
+<meta property="og:description" content="为啥买平板轻办公，不用带那么重的电脑，随手带刷剧，学习视频，b站 支持手机跨屏，手写记录和录音翻译，拍照不需要太过复杂的功能，基本都是云办公和网盘 支持内容创作，剪辑视频，4k，音效多增加个副屏幕，写代码 听书学习，学习mba，法律，財技，关系沟通视频处理 屏幕很舒服无纸化 b站学习，可能会充值买课学习，白嫖早上英语，听书午看下经济类晚上健身视频 https:&#x2F;&#x2F;www.tuicool.com&#x2F;s">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-29T02:56:28.000Z">
+<meta property="article:modified_time" content="2022-04-06T07:52:17.996Z">
+<meta property="article:author" content="shellsec">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>2022-03-平板生产力还是杯面盖调研 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="2022-03-平板生产力还是杯面盖调研">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-29 10:56" pubdate>
+        2022年3月29日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.2k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      19 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">2022-03-平板生产力还是杯面盖调研</h1>
+            
+            <div class="markdown-body">
+              <p>为啥买平板<br>轻办公，不用带那么重的电脑，随手带<br>刷剧，学习视频，b站</p>
+<p>支持手机跨屏，手写记录和录音翻译，拍照<br>不需要太过复杂的功能，基本都是云办公和网盘</p>
+<p>支持内容创作，剪辑视频，4k，音效<br>多增加个副屏幕，写代码</p>
+<p>听书学习，学习mba，法律，財技，关系沟通<br>视频处理 屏幕很舒服<br>无纸化</p>
+<p>b站学习，可能会充值买课学习，白嫖<br>早上英语，听书<br>午看下经济类<br>晚上健身视频</p>
+<p><a target="_blank" rel="noopener" href="https://www.tuicool.com/search?kw=%E5%B9%B3%E6%9D%BF">https://www.tuicool.com/search?kw=%E5%B9%B3%E6%9D%BF</a></p>
+<p>oppad 2k多，说白就买个屏幕<br>OPPO Pad 还拥有配套的智能磁吸键盘和手写笔 OPPO Pencil。其中，手写笔支持 5g 出水压力、4096 级压感、磁吸无线快充，智能磁吸键盘则支持蓝牙连接、磁吸支撑。</p>
+<p>ipad air m1版 4388最低配 键盘和笔外置买</p>
+<p>华为平板 M6 推出 8GB+128GB 版本：麒麟 980 处理器 + 8.4 英寸 2K 屏，到手价 1949 元</p>
+<p>小米成京东2月安卓平板销量之王：1999元<br>小米宣布小米平板斩获2月京东自营安卓平板品类销量第一，目前小米京东自营旗舰店在售的平板是小米平板5和小米平板5 Pro， 起售价1999元。<br>核心配置上，小米平板5采用11英寸2560×1600显示屏，刷新率为120Hz， 搭载高通骁龙860处理器，前置800万，后置1300万像素，电池为8720mAh，支持33W快充。</p>
+<p>小米平板5 Pro采用11英寸全面屏，刷新率为2560×1600，搭载高通骁龙870旗舰处理器，前置800万，后置1300万+500万双摄，电池为8600mAh，支持67W快充。</p>
+<p>联想拯救者Y700游戏平板采用了一块8.8英寸120Hz高刷LCD电竞屏，分辨率达到2560x1600，支持100% DCI-P3广色域及240Hz触控采样率</p>
+<p>联想 YOGA Pad Pro 平板电脑 ZUI 13.1 OTA 4 内测招募开始：支持平行视窗新架构<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/375228602">https://zhuanlan.zhihu.com/p/375228602</a><br>首发价仅3299，配置了8+256G的大存储配置。相比于128G售价就2999元的基础款iPad，还是有很大的优势呀。<br>重点功能了：HDMI in视频输入功能。这使得YOGA Pad Pro可以变成一个便携屏幕，拥有10000毫安时的电池外加音效不错的音响，可以说是switch 游戏机最佳伴侣了。</p>
+<p>主流<br>11寸<br>支持2.5K分辨率和120Hz高刷<br>骁龙870处理器，8G内存<br>支持 44W 快充</p>
+<p>屏幕不带高刷，笔的话会拖，体验度不好<br>但是实际使用的频率高吗？<br>sw配个二手高刷屏不香吗？，平板就是可移动屏幕随时联机</p>
+<p>实际上在平板上开发的话，直接买苹果电脑更好<br>平板就是轻办公轻学习，我需要的是高效学习<br>快速学习-拆书会-方法论<br>现在通过拆别人的书卖钱已经成为一个越来越庞大的生意，绝大部分知识付费平台都在做，虽然没有明文的法律规定，也不可能受到什么惩罚，出版社和作者也没理由提起申诉，但这本质上也涉嫌侵权，这种行为在学习上属于反智行为。<br>拆书平台<br>阿里读书 樊登读书 喜马拉雅</p>
+<p>定位平板为<br>轻量级，专注力，学习板<br>在某个程度上，快5分钟，就是套利空间</p>
+<hr>
+<p>平板应装的<br>todo<br>云盘app<br>阿里云盘<br>百度云盘</p>
+<p>微信读书<br>京东读书</p>
+<p>爱优腾<br>TED</p>
+<p>投资类<br>资讯类</p>
+<p>内容创作<br>公众号<br>剪辑视频</p>
+<p>健身<br>英语语言学习</p>
+<p>喜马拉雅<br>蜻蜓</p>
+<p>放歌的音乐<br>设计画画插画师</p>
+<p>思维导图<br>wps</p>
+<p>在线视频，网课，会议</p>
+<p>知识付费也叫内容付费，是近些年兴起的概念，意思是花钱买知识，具体形式很多，罗辑思维的得到APP、樊登读书会、有书、短书、小鹅通、知乎LIVE等等，大都以平台的形势存在，罗辑思维和樊登读书会是最大的。</p>
+<p>电商分析师詹伟平研究了樊登读书前后的发展路径，“一句话总结，就是全方位无死角。出书、文章、视频、音频、直播、线下分销、书店，轮番轰炸。”<br>到现在，樊登读书会成为知识付费商业化的集大成者——单一IP、上万人代理、6年3000万会员、1万代理商，400+线下门店。在最近一次公开演讲中，樊登读书联合创始人田君琦提到，读书会的毛利率一直保持在99%。<br>“从樊登读书会实际的行动而不是它宣称的目标来看，樊登读书会是一个商业机构，能让读书少的人有一些获得感，就是它的目的。听众有没有真的明白了作者的思想，樊登读书会不关心。” 自媒体人左其盛总结。<br>樊登读书会走入第7年。樊登的名气一路飙升，认同“拆书”快餐的读者乐此不疲，代理商们赚得盆满钵满，从哪个方面看，这都是一门好生意。但考虑到传播的商品是知识，这一切就变了些味道。</p>
+<p>这里就需要-白嫖：<br>资源搜索网站，素材，破解app</p>
+<p>附加<br>加上tws蓝牙耳机，平板支架，键盘？</p>
+<hr>
+<p>早上 听早报，连接sw运动健身环，听歌学英语经济<br>上班时候带公司对接 成为副屏扩展，处理事项<br>中午看下 电子书，微信读书，京东读书-VIP<br>外接蓝牙鼠标和键盘，写公众号输出，短视频剪辑，记录，远程办公<br>晚上 健身打卡，下厨房，爱优腾，网课<br>加上网盘，阿里百度云盘，磁力下载<br>笔的话暂时不需要，这个学习和画画编辑可能需要，日常蓝牙鼠标和键盘即可<br>自带支架，方便立起，杜比音响</p>
+<p>YOGA Pad Pro搭载了一块13英寸16:10的低蓝光大屏幕，拥有2K高分辨率、400nits高亮度和100%sRGB高色域，能带给使用者绝佳的视觉体验。同时，该平板还搭载了JBL大音腔四扬声器，配合杜比全景声音效，带给用户堪比影院的震撼声音体验。性能方面，这台新品搭载的骁龙870移动平台，能很好地应对日常应用、大型游戏等<br>联想 YOGA Pad Pro 平板电脑预热：采用 13 英寸 2K 屏，支持小新触控笔</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/03/29/2022-03-2022%E6%8A%A4%E7%BD%91%E8%A1%8C%E5%8A%A8%E5%9C%A8%E5%8D%B3%EF%BC%8C%E5%85%B3%E4%BA%8E%E6%8A%A4%E7%BD%91%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2022-03-2022护网行动在即，关于护网的那些事儿</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/28/Hexo%E4%B8%BB%E9%A2%98%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/">
+                        <span class="hidden-mobile">Hexo主题升级方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

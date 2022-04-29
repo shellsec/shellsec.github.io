@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1 系统环境此次我的计算机环境如下：  上网方式：Wifi，无有线 Vpn环境：OpenVpn 虚拟机：Vmware 系统：Win10  2 描述虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vmware通过OpenVpn访问网络">
+<meta property="og:url" content="http://example.com/2022/04/11/Vmware%E9%80%9A%E8%BF%87OpenVpn%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C/index.html">
+<meta property="og:site_name" content="神刀安全网www.shellsec.com">
+<meta property="og:description" content="1 系统环境此次我的计算机环境如下：  上网方式：Wifi，无有线 Vpn环境：OpenVpn 虚拟机：Vmware 系统：Win10  2 描述虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-11T02:56:28.000Z">
+<meta property="article:modified_time" content="2022-04-11T03:38:30.005Z">
+<meta property="article:author" content="shellsec">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>Vmware通过OpenVpn访问网络 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Vmware通过OpenVpn访问网络">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-04-11 10:56" pubdate>
+        2022年4月11日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      935 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      8 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Vmware通过OpenVpn访问网络</h1>
+            
+            <div class="markdown-body">
+              <h3 id="1-系统环境"><a href="#1-系统环境" class="headerlink" title="1 系统环境"></a>1 系统环境</h3><p>此次我的计算机环境如下：</p>
+<blockquote>
+<p>上网方式：Wifi，无有线</p>
+<p>Vpn环境：OpenVpn</p>
+<p>虚拟机：Vmware</p>
+<p>系统：Win10</p>
+</blockquote>
+<h3 id="2-描述"><a href="#2-描述" class="headerlink" title="2 描述"></a>2 描述</h3><p>虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会直接死掉，ping的时候会显示网络不可用，这个问题也困扰我很久了，一直没找到问题所在。</p>
+<p>所以，现在就出现这么个问题了，使用桥接物理网卡，可以连接网络，但是无法通过openvpn访问内部网络；使用NAT方式，可以上网，可以通过OpenVpn访问内部网络，但是开启扫描的时候，虚拟网卡便会Down掉，导致网络出现问题。后来在好朋友的帮助下成功解决该问题，下面记录下。</p>
+<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3 解决"></a>3 解决</h3><p>首先我的电脑里安装了Nmap，Nmap会自动安装一个虚拟网卡Ncap Lookback Adapter，而就是这个网卡解决了这个问题。</p>
+<p>朋友刚开始给我说的解决方式是将OpenVpn的虚拟网卡分享给无线网卡，但是这样，两个便会冲突了，因为OpenVpn想要连接外部网络肯定是需要一个可以正常连接外网的网络的，而将自己的网络分享给无线网卡，而它本身没法连接外部网络，所以便会导致无网络。</p>
+<p>这时我看到电脑里有一个Nmap创建的网卡，于是我便想，分享给它行不行，于是便尝试着将OpenVpn的网络分享给了该网卡，然后我虚拟机再桥接到这个网卡上，虚拟机获取ip的方式为DHCP，可以正常获取IP，尝试着Ping了下远程的内部网络，可以ping通，到此，问题终于被解决了。</p>
+<p>注：</p>
+<blockquote>
+<p>分享网络的方式</p>
+<p>1.打开网络适配器</p>
+<p>2.选择要分享的网卡，右键选择属性</p>
+<p>3.属性打开后，上面有两个选项卡，选择共享选项卡</p>
+<p>4.勾选允许其他网络用户通过计算机的Internet连接来连接，并且在家庭网络连接选择要分享到的网卡</p>
+<p>5.点击确定</p>
+</blockquote>
+<h3 id="4-结语"><a href="#4-结语" class="headerlink" title="4 结语"></a>4 结语</h3><p>其实整个步骤很简单，耐何自己网络基础太差，对一些东西并不了解，才导致了这种问题，其实不是Nmap的网卡也是可以的，只是正好我这里只有它是多余的，所以就使用他了。看来以后有时间得补习下网络的基础了，大学学的网络全交给老师了，真丢人…..</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/04/29/%E4%BD%A0%E6%89%80%E4%BA%86%E8%A7%A3%E7%9A%84%E4%BA%BA%E6%80%A7%E6%98%AF%E6%80%8E%E6%A0%B7%E7%9A%84%EF%BC%9F/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">你所了解的人性是怎样的？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/04/08/%E8%A2%AB%E9%9A%94%E7%A6%BB%E9%9C%80%E8%A6%81%E5%B8%A6%E7%9A%84%E7%94%9F%E6%B4%BB%E5%BF%85%E9%9C%80%E5%93%81/">
+                        <span class="hidden-mobile">被隔离需要带的生活必需品</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

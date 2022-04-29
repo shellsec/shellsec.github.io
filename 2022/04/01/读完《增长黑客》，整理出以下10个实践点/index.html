@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="《增长黑客》，是一本关于“如何有效实现企业增长”的专业著作。作为一个专业术语，“增长黑客”是一个全新的、颠覆性的商业方法论，是一份值得每位奋斗在一线的创业者和企业高管们认真研读两遍的实战指南。而如果你是自媒体（如公众号）运营者，强烈建议你反复研读、吃透这本书，它一定能够帮到你。 在《一年顶十年》这本书里，作者提出一个非常重要的观点，就是“看完一本书后，一定要写出一份践行清单”。读完《增长黑客》，整">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读完《增长黑客》，整理出以下10个实践点">
+<meta property="og:url" content="http://example.com/2022/04/01/%E8%AF%BB%E5%AE%8C%E3%80%8A%E5%A2%9E%E9%95%BF%E9%BB%91%E5%AE%A2%E3%80%8B%EF%BC%8C%E6%95%B4%E7%90%86%E5%87%BA%E4%BB%A5%E4%B8%8B10%E4%B8%AA%E5%AE%9E%E8%B7%B5%E7%82%B9/index.html">
+<meta property="og:site_name" content="神刀安全网www.shellsec.com">
+<meta property="og:description" content="《增长黑客》，是一本关于“如何有效实现企业增长”的专业著作。作为一个专业术语，“增长黑客”是一个全新的、颠覆性的商业方法论，是一份值得每位奋斗在一线的创业者和企业高管们认真研读两遍的实战指南。而如果你是自媒体（如公众号）运营者，强烈建议你反复研读、吃透这本书，它一定能够帮到你。 在《一年顶十年》这本书里，作者提出一个非常重要的观点，就是“看完一本书后，一定要写出一份践行清单”。读完《增长黑客》，整">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-01T02:56:28.000Z">
+<meta property="article:modified_time" content="2022-04-01T02:27:59.423Z">
+<meta property="article:author" content="shellsec">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>读完《增长黑客》，整理出以下10个实践点 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="读完《增长黑客》，整理出以下10个实践点">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-04-01 10:56" pubdate>
+        2022年4月1日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.4k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      12 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">读完《增长黑客》，整理出以下10个实践点</h1>
+            
+            <div class="markdown-body">
+              <p>《增长黑客》，是一本关于“如何有效实现企业增长”的专业著作。作为一个专业术语，“增长黑客”是一个全新的、颠覆性的商业方法论，是一份值得每位奋斗在一线的创业者和企业高管们认真研读两遍的实战指南。<br>而如果你是自媒体（如公众号）运营者，强烈建议你反复研读、吃透这本书，它一定能够帮到你。</p>
+<p>在《一年顶十年》这本书里，作者提出一个非常重要的观点，就是“看完一本书后，一定要写出一份践行清单”。<br>读完《增长黑客》，整理出以下10个实践点，与诸君共勉。</p>
+<p>1.如果企业不在增长，那么就是在衰亡！增长是衡量一个企业最核心的方向标。<br>实践点：自查一下，你或你的企业，最近三年是否在持续、较快速地增长？</p>
+<p>2.现代企业必须不断创新，才能实现高效的增长。<br>实践点：每个月至少要尝试一个创新的做法，每年至少要有三项效果比较显著的创新举措，要把它们如实地记录下来。</p>
+<p>3.增长黑客的唯一使命就是增长，他们所做的每一件事都力求给产品带来持续增长的可能性，但绝大多数国内公司并没有一个专职负责“增长”的团队。<br>实践点：设立一个专职的增长团队，这是一项战略举措。</p>
+<p>4.我开始思考，Dropbox如何才能利用并扩大其强有力的口碑效应，使早期用户能够更有动力并且毫不费力地向他们的朋友宣传这个产品。我们决定像贝宝那样开展一个用户推荐计划。<br>实践点：建立一个用户推荐计划，包括线上用户和线下用户。</p>
+<p>5.即使是最具创意的产品和想法也会因为缺乏持续的改进而止步不前、最终陨灭，这在现实中常常发生，而增长团队则是避免这种惨痛结局的法宝。<br>实践点：建立一个持续改进的机制，这个机制要能够引导出大量的合理化建议和改善活动。</p>
+<p>6.增长黑客的基本原则之一就是：在确定你的产品是否不可或缺、为何不可或缺以及对谁来说不可或缺之前，不要进入快节奏试验阶段。也就是说，你必须要了解你的产品的核心价值是什么、对哪些客户来说具备这些核心价值以及为什么。<br>实践点：确定你的产品是否不可或缺。</p>
+<p>7.增长专家詹姆斯·柯里尔建议，公司1/3的工程时间都应该用于打造对的新用户体验。<br>实践点：持续收集和改进用户体验，尤其是新用户体验。</p>
+<p>8.为了完善增长等式、缩小关注范围，最好能够选择一个关键的能够决定最终成败的指标，以此指导所有的增长活动。增长黑客界有些人将这样的一个关键指标称为“唯一重要的指标”，有些人称之为“北极星指标”，它是保证用户体验到“啊哈时刻”的指标。比如，领英的北极星指标是在网站上创建电子简历的人数，易贝的北极星指标是待售物品的数量，WhatsApp的北极星指标是用户发送的信息数，Airbnb的北极星指标是客房的预订量。<br>实践点：找到你（或你公司）的北极星指标。</p>
+<p>9.只有少之又少的试验会带来巨大的成功。也就是说，寻求试验的成功是一个以量取胜的游戏，每一次成功不论大小都很重要。请记住，增长黑客的巨大成功往往来自一连串小成功的累加。一点一滴的认知学习都会带来更好的表现，催生出更好的试验想法，进而带来更多成功，最终将一次次小幅的改善转化为压倒性的竞争优势。<br>实践点：开展群众性的大量的改善活动。</p>
+<p>10.“点子”是增长的催化剂，你需要一系列的增长点子以形成稳定的增长动力。正如莱纳斯·鲍林所言，“形成一个好想法的最佳办法是提出很多想法”。正因如此，能够不加限制地提出想法对于增长黑客过程尤为关键。你需要鼓励增长团队成员充分发挥想象力并且对想法毫无保留。这能够保证团队形成足够多的想法，以便从中筛选最具价值的那些。<br>实践点：引导你的团队提出大量的想法。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/04/01/A%E8%82%A1%E6%89%93%E6%9D%BFlevel2%E6%8E%A5%E5%8F%A3lev2%E6%95%B0%E6%8D%AE%E8%82%A1%E7%A5%A8%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93%E7%A8%8B%E5%BA%8F%E5%8C%96%E4%BA%A4%E6%98%93%E9%80%9A%E8%BE%BE%E4%BF%A1%E6%8C%87%E6%A0%87%E4%BA%A4%E6%98%93%E5%90%8C%E8%8A%B1%E9%A1%BA%E8%87%AA%E5%8A%A8%E4%BA%A4%E6%98%93/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">A股打板level2接口lev2数据股票量化交易程序化交易通达信指标交易同花顺自动交易</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/29/2022-03-2022%E6%8A%A4%E7%BD%91%E8%A1%8C%E5%8A%A8%E5%9C%A8%E5%8D%B3%EF%BC%8C%E5%85%B3%E4%BA%8E%E6%8A%A4%E7%BD%91%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%84%BF/">
+                        <span class="hidden-mobile">2022-03-2022护网行动在即，关于护网的那些事儿</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

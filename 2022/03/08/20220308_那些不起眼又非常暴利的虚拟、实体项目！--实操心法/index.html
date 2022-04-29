@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="shellsec">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="今天给大家讲讲那些不起眼又非常暴力的虚拟、实体项目。 其实给宝宝起名、给公司起名，都是属于服务类的虚拟项目，用信息差与你的时间去为他人提供价值，但是每个人精力有限，你再亢奋、再暴利，一天售前、售后服务七八个人，时间就过去了。 想扩大规模，想搞把大的，必须得请几个脑袋机灵点的伙计，不然一个人去操作的收入，注定是有上限的。 但是如果足够忙的话，搞这种起名类的服务型虚拟项目，已经超过了大部分“社畜”的收">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20220308_那些不起眼又非常暴利的虚拟、实体项目！--实操心法">
+<meta property="og:url" content="http://example.com/2022/03/08/20220308_%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%B5%B7%E7%9C%BC%E5%8F%88%E9%9D%9E%E5%B8%B8%E6%9A%B4%E5%88%A9%E7%9A%84%E8%99%9A%E6%8B%9F%E3%80%81%E5%AE%9E%E4%BD%93%E9%A1%B9%E7%9B%AE%EF%BC%81--%E5%AE%9E%E6%93%8D%E5%BF%83%E6%B3%95/index.html">
+<meta property="og:site_name" content="神刀安全网www.shellsec.com">
+<meta property="og:description" content="今天给大家讲讲那些不起眼又非常暴力的虚拟、实体项目。 其实给宝宝起名、给公司起名，都是属于服务类的虚拟项目，用信息差与你的时间去为他人提供价值，但是每个人精力有限，你再亢奋、再暴利，一天售前、售后服务七八个人，时间就过去了。 想扩大规模，想搞把大的，必须得请几个脑袋机灵点的伙计，不然一个人去操作的收入，注定是有上限的。 但是如果足够忙的话，搞这种起名类的服务型虚拟项目，已经超过了大部分“社畜”的收">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-08T02:56:28.000Z">
+<meta property="article:modified_time" content="2022-03-08T07:00:33.317Z">
+<meta property="article:author" content="shellsec">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>20220308_那些不起眼又非常暴利的虚拟、实体项目！--实操心法 - 神刀安全网www.shellsec.com</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="20220308_那些不起眼又非常暴利的虚拟、实体项目！--实操心法">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-08 10:56" pubdate>
+        2022年3月8日 上午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.5k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22 分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">20220308_那些不起眼又非常暴利的虚拟、实体项目！--实操心法</h1>
+            
+            <div class="markdown-body">
+              <p>今天给大家讲讲那些不起眼又非常暴力的虚拟、实体项目。</p>
+<p>其实给宝宝起名、给公司起名，都是属于服务类的虚拟项目，用信息差与你的时间去为他人提供价值，但是每个人精力有限，你再亢奋、再暴利，一天售前、售后服务七八个人，时间就过去了。</p>
+<p>想扩大规模，想搞把大的，必须得请几个脑袋机灵点的伙计，不然一个人去操作的收入，注定是有上限的。</p>
+<p>但是如果足够忙的话，搞这种起名类的服务型虚拟项目，已经超过了大部分“社畜”的收入了。</p>
+<p>那么是否可以得出这么一个结论：服务型的商品，它的产品的价值就是在于时间本身。时间承载了卖家的信息差与给他人带来的价值，再传递给客户而已。</p>
+<p>比如大学的时候，我喜欢去捏脚，买的就是技师的时间与娴熟的手法，特别美妙的体验，不管她的手法如何，捏的快慢，到点了，服务结束。</p>
+<p>所以，服务型的商品，想要多赚一些，要么增加服务的价格，要么增加人手，要么用科技实现批量化的操作服务。</p>
+<p>对于单打独斗的人来说，甚至没有管理经验的人来讲，属实比较麻烦，那么解决之道是什么？</p>
+<p>============================<br>不要做以时间为载体的项目，不管是实体的还是虚拟的！</p>
+<p>解决方案在于：做可以批量化、重复性高的产品，与时间关联度较低的产品。个人的时间是非常有限的资源，凡是需要拿时间消耗完成一次产品销售的项目，都难以完成杠杆化与规模化。</p>
+<p>（当然像是单价高，如情感挽回、建筑设计等这样的虚拟服务，一单足以吃饱一个月，也可以了。）</p>
+<p>像煎饼果子大妈，购买者需要一张煎饼果子，她需要三分钟的时间去完成产品交付。如果一人要10张、100张，她需要相应倍数的时间去完成。一天的时间相当有限，她不可能一人一天产量10000张。</p>
+<p>如果煎饼果子大妈转变思路，既然出名了，进行一下IP的包装，把她通过煎饼果子月赚两三万的制作技术与思路，录制成视频、音频或者出书，开个网课或者线下培训，做社群，每人收费1000元/期，那么她将不再是拿时间来赚钱的大妈，转头一变成了创业指导师。课程与社群，成了她销售的产品，可以批量化，重复化销售。至于客户的售后服务，每天单独拿出时间来进行答疑和指导即可。</p>
+<p>别说我空谈，我的朋友圈里，包括诸位刷短视频的时候，难免会看到这样的例子。</p>
+<p>============================</p>
+<p>包括我自身做社群，做虚拟资源项目，不也是在这么操作吗？</p>
+<p>又一下子扯远了，本来是将本篇文章的内容，前面为何说了这么多？其实就是为了以下的结论。</p>
+<p>实操指南</p>
+<p>我们销售的产品，可以分为以下两类：</p>
+<ol>
+<li><p>实体类：实体类可以分为2种，1.利润低，但可以通过走量来获取利润；2.利润高，少量销售即可获得巨大利润 。</p>
+</li>
+<li><p>虚拟类：虚拟类也可以分为2种，1.信息类，比如课程、软件、社群、电子书、培训、视频、音频等等；2.服务类，比如起名，logo海报设计、法律咨询等等，都是需要时间去服务的，一个人难以批量化扩大规模。</p>
+</li>
+</ol>
+<p>回归正题，我推荐大家去做实体类的高利润产品，以及虚拟类的信息产品。因为他们同时符合一下两点：</p>
+<ol>
+<li><p>不以时间为载体，可以批量化生产；</p>
+</li>
+<li><p>利润高；</p>
+</li>
+</ol>
+<p>本文先将实体类的高利润产品，虚拟类的接下来也会发文说。</p>
+<p>这种产品常见的就是出现在之前的百度竞价里，比如一瓶几块钱，但是售价三五百的左旋肉碱减肥咖啡等等。</p>
+<p>但是现在的法制越来越完善，像这种减肥、祛斑、丰X、壮Y、增高类的“保健”产品，未来会撤离历史的舞台。</p>
+<p>那么，还有没有实体产品，满足刚需、利润大并且合法呢？最好还有重复购买率。</p>
+<p>如果没有思路，我建议你直接打开淘宝，京东，找到其产品类目，逐个查看，肯定会开拓你的思路，打通你的任督二脉。</p>
+<p>如果感觉某个产品，有可操作性，再同时打开阿里巴巴与百度竞价。阿里巴巴让你知其产品成本，百度竞价让你知其是否高利润。</p>
+<p>通过这个思路，尤其是在知乎上，可以确定，燕窝、海参等滋补类的产品，是一个优质的可选方案。</p>
+<p> 因为他满足了：</p>
+<ol>
+<li><p>合法。非保健品、金融类等可能2020年严打的产品；</p>
+</li>
+<li><p>高利润。高达50%的利润，找到一手渠道合作，成本可能更低；</p>
+</li>
+<li><p>复购率高。滋补品是消费品，感觉不错会持续在你这购买；</p>
+</li>
+<li><p>强需求。女人想变美，男人想强壮，是人需要健康。</p>
+</li>
+</ol>
+<p>为什么像是这样的产品这么高的利润，大部分是消费主义炒作的。</p>
+<p>冬虫夏草、燕窝海参、玛卡等皆是如此。虽然此类成产品，营养确实要高一点，但是确实不值这么高的溢价。300元的营养补品，250的智商税（个人比较偏激，喜欢吃此类产品的土豪勿喷）。</p>
+<p>像是冬虫夏草，阿里巴巴拿货基本上是在100~200元1g，但是通过百度竞价、网络引流、自媒体广告投放等渠道，可以卖到300元1g，利润相当可观。</p>
+<p>别说你知道了，就说坑爹。你得遵循市场的规律，只要消费者认可，合法可做，就有市场，你就去满足市场需即可。</p>
+<p>投放渠道不外乎竞价、微信公众号派单、信息流投放广告。</p>
+<p>公众号派单，可以推荐去新榜、微小宝和神赞。</p>
+<p>拿货渠道基本上都是通过阿里巴巴，或者去qq群搜索相关的关键词，会有一些价格低的供货商，但是也要注意产品及交易上的安全。</p>
+<p>如何打造朋友圈？朋友圈的文案及素材，百度竞价找到几个同行，添加其微信，复制之，优化之。或者直接从供货商那，谈好合作，直接朋友圈拿素材。</p>
+<p>把自己打造成一个滋补类领域的专家。</p>
+<p>遇见客户的咨询怎么办？加上20、50、100个同行的微信，当客户有问题的时候，拿小号与同行沟通，提出相同的问题。久而久之，你自然就打磨了一套属于自己的话术系统。</p>
+<p>发货呢？客户下单后，可以通过阿里巴巴的代发货的形式，下单到客户的地址。前期这么操作降低风险，如果有了资金及稳定客源以后，可以批发一些货。</p>
+<p>尤其是小白，不要总是想着创新，找什么蓝海、暴力项目，自己偷摸闷声发大财，哪有这么好的事？</p>
+<p>写在最后</p>
+<p>我之前研究塔罗，加到一些同行的微信，找到100个同行，学习他们的三大方面：</p>
+<ol>
+<li><p>推广方式。他们通过什么样的渠道，什么样的内容，如何进行引流；</p>
+</li>
+<li><p>盈利模式。他们是通过什么样的形式，进行变现与盈利的。他们的定价与服务是什么。</p>
+</li>
+<li><p>成交方法。他们是在微信，还是小商城等成交的，他们的文案及朋友圈素材（朋友圈激活用户付费方式），他们成交的话术与营销的活动是什么？…</p>
+</li>
+</ol>
+<p>这套路数，可以延伸到很多的项目上，是做项目的根本指南。</p>
+<p>学会这套操作，可以让你在互联网上，少走很多弯路，弯道超车。少交大几千元的韭菜费用。</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/03/09/%E5%B9%B4%E5%85%A5%E7%99%BE%E4%B8%87%EF%BC%8C%E8%B7%AF%E5%9C%A8%E4%BD%95%E6%96%B9%EF%BC%9F/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">年入百万，路在何方？</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/03/01/%E3%80%8A%E7%A9%BA%E8%85%B9%E5%90%83%E6%B0%B4%E6%9E%9C%EF%BC%8C%E5%8F%AF%E6%B2%BB%E7%98%89%20%E4%BA%BA%E7%B1%BB%E6%9C%80%E6%81%90%E6%80%96%E7%9A%84%EF%BD%9E%E7%99%8C%E7%97%87%EF%BC%81%E3%80%8B/">
+                        <span class="hidden-mobile">《空腹吃水果，可治瘉 人类最恐怖的～癌症！》</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
