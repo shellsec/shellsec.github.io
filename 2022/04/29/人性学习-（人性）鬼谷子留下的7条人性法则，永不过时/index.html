@@ -16,20 +16,20 @@
   <meta name="author" content="shellsec">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1 系统环境此次我的计算机环境如下：  上网方式：Wifi，无有线 Vpn环境：OpenVpn 虚拟机：Vmware 系统：Win10  2 描述虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会">
+    <meta name="description" content="鬼谷子 留给我们的七条人性法则，永不过时的人生智慧，一定要收藏起来。 一：穷者重利，以利切入。 跟没钱的人就不要谈啥理想愿景了，直接告诉他能赚多少钱就行了。跟操心柴米油盐的人谈什么琴棋书画有啥意义呢？ 第二条：弱者重尊，以谦切入，你求地位低下的人办事，你就要格外的尊重他，因为他最缺这个。 第三：强者重果，以事切入。强者，不喜欢跟弱者打交道，也不喜欢啰嗦。你跟他交往，不需要太谦虚。 别绕圈儿就事论事">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vmware通过OpenVpn访问网络">
-<meta property="og:url" content="http://example.com/2022/04/11/Vmware%E9%80%9A%E8%BF%87OpenVpn%E8%AE%BF%E9%97%AE%E7%BD%91%E7%BB%9C/index.html">
+<meta property="og:title" content="人性学习-人性35个真相">
+<meta property="og:url" content="http://example.com/2022/04/29/%E4%BA%BA%E6%80%A7%E5%AD%A6%E4%B9%A0-%EF%BC%88%E4%BA%BA%E6%80%A7%EF%BC%89%E9%AC%BC%E8%B0%B7%E5%AD%90%E7%95%99%E4%B8%8B%E7%9A%847%E6%9D%A1%E4%BA%BA%E6%80%A7%E6%B3%95%E5%88%99%EF%BC%8C%E6%B0%B8%E4%B8%8D%E8%BF%87%E6%97%B6/index.html">
 <meta property="og:site_name" content="神刀安全网www.shellsec.com">
-<meta property="og:description" content="1 系统环境此次我的计算机环境如下：  上网方式：Wifi，无有线 Vpn环境：OpenVpn 虚拟机：Vmware 系统：Win10  2 描述虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会">
+<meta property="og:description" content="鬼谷子 留给我们的七条人性法则，永不过时的人生智慧，一定要收藏起来。 一：穷者重利，以利切入。 跟没钱的人就不要谈啥理想愿景了，直接告诉他能赚多少钱就行了。跟操心柴米油盐的人谈什么琴棋书画有啥意义呢？ 第二条：弱者重尊，以谦切入，你求地位低下的人办事，你就要格外的尊重他，因为他最缺这个。 第三：强者重果，以事切入。强者，不喜欢跟弱者打交道，也不喜欢啰嗦。你跟他交往，不需要太谦虚。 别绕圈儿就事论事">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-11T02:56:28.000Z">
-<meta property="article:modified_time" content="2022-04-11T03:38:30.005Z">
+<meta property="article:published_time" content="2022-04-29T02:56:28.000Z">
+<meta property="article:modified_time" content="2022-04-29T07:28:58.181Z">
 <meta property="article:author" content="shellsec">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>Vmware通过OpenVpn访问网络 - 神刀安全网www.shellsec.com</title>
+  <title>人性学习-人性35个真相 - 神刀安全网www.shellsec.com</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -175,7 +175,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Vmware通过OpenVpn访问网络">
+            <span class="h2" id="subtitle" title="人性学习-人性35个真相">
               
             </span>
 
@@ -185,8 +185,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-04-11 10:56" pubdate>
-        2022年4月11日 上午
+      <time datetime="2022-04-29 10:56" pubdate>
+        2022年4月29日 上午
       </time>
     </span>
   
@@ -196,7 +196,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      935 字
+      887 字
     </span>
   
 
@@ -234,31 +234,32 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Vmware通过OpenVpn访问网络</h1>
+            <h1 style="display: none">人性学习-人性35个真相</h1>
             
             <div class="markdown-body">
-              <h3 id="1-系统环境"><a href="#1-系统环境" class="headerlink" title="1 系统环境"></a>1 系统环境</h3><p>此次我的计算机环境如下：</p>
-<blockquote>
-<p>上网方式：Wifi，无有线</p>
-<p>Vpn环境：OpenVpn</p>
-<p>虚拟机：Vmware</p>
-<p>系统：Win10</p>
-</blockquote>
-<h3 id="2-描述"><a href="#2-描述" class="headerlink" title="2 描述"></a>2 描述</h3><p>虚拟机里安装了Nessus，平时都是通过桥接到物理网卡的方式上网，但是今天的一次扫描中，需要通过OpenVpn连接到目的网络来进行远程扫描，但是桥接到物理网卡的方式会导致虚拟机无法通过vpn出去，而使用Nat上网方式的话，当开启扫描的时候，Nat网卡就会直接死掉，ping的时候会显示网络不可用，这个问题也困扰我很久了，一直没找到问题所在。</p>
-<p>所以，现在就出现这么个问题了，使用桥接物理网卡，可以连接网络，但是无法通过openvpn访问内部网络；使用NAT方式，可以上网，可以通过OpenVpn访问内部网络，但是开启扫描的时候，虚拟网卡便会Down掉，导致网络出现问题。后来在好朋友的帮助下成功解决该问题，下面记录下。</p>
-<h3 id="3-解决"><a href="#3-解决" class="headerlink" title="3 解决"></a>3 解决</h3><p>首先我的电脑里安装了Nmap，Nmap会自动安装一个虚拟网卡Ncap Lookback Adapter，而就是这个网卡解决了这个问题。</p>
-<p>朋友刚开始给我说的解决方式是将OpenVpn的虚拟网卡分享给无线网卡，但是这样，两个便会冲突了，因为OpenVpn想要连接外部网络肯定是需要一个可以正常连接外网的网络的，而将自己的网络分享给无线网卡，而它本身没法连接外部网络，所以便会导致无网络。</p>
-<p>这时我看到电脑里有一个Nmap创建的网卡，于是我便想，分享给它行不行，于是便尝试着将OpenVpn的网络分享给了该网卡，然后我虚拟机再桥接到这个网卡上，虚拟机获取ip的方式为DHCP，可以正常获取IP，尝试着Ping了下远程的内部网络，可以ping通，到此，问题终于被解决了。</p>
-<p>注：</p>
-<blockquote>
-<p>分享网络的方式</p>
-<p>1.打开网络适配器</p>
-<p>2.选择要分享的网卡，右键选择属性</p>
-<p>3.属性打开后，上面有两个选项卡，选择共享选项卡</p>
-<p>4.勾选允许其他网络用户通过计算机的Internet连接来连接，并且在家庭网络连接选择要分享到的网卡</p>
-<p>5.点击确定</p>
-</blockquote>
-<h3 id="4-结语"><a href="#4-结语" class="headerlink" title="4 结语"></a>4 结语</h3><p>其实整个步骤很简单，耐何自己网络基础太差，对一些东西并不了解，才导致了这种问题，其实不是Nmap的网卡也是可以的，只是正好我这里只有它是多余的，所以就使用他了。看来以后有时间得补习下网络的基础了，大学学的网络全交给老师了，真丢人…..</p>
+              <p>鬼谷子</p>
+<p>留给我们的七条人性法则，永不过时的人生智慧，一定要收藏起来。</p>
+<p>一：穷者重利，以利切入。</p>
+<p>跟没钱的人就不要谈啥理想愿景了，直接告诉他能赚多少钱就行了。跟操心柴米油盐的人谈什么琴棋书画有啥意义呢？</p>
+<p>第二条：弱者重尊，以谦切入，你求地位低下的人办事，你就要格外的尊重他，因为他最缺这个。</p>
+<p>第三：强者重果，以事切入。强者，不喜欢跟弱者打交道，也不喜欢啰嗦。你跟他交往，不需要太谦虚。</p>
+<p>别绕圈儿就事论事，直奔主题就行了，他们最反感的就是形式化的废话。所以他们只跟有结果的人玩，你就直接了当点儿，你想要什么，你能贡献什么，直接点就是他们想要的东西。</p>
+<p>第四：老者重捧，以礼切入。</p>
+<p>跟年长的人打交道，一定要有礼貌，多听他们讲过去的事，多捧着他们点，因为在他们的观念里，认为自己年纪大，就很有智慧。你嘴上要顺着他们，但是心里面有自己的主见。</p>
+<p>第五：妇者重情，以柔切入。</p>
+<p>最蠢的男人就是总喜欢跟女人讲道理，女人的道理就是情绪，你让她难受了，你对的都是错，你让她开心了，你错都是对。</p>
+<p>这就是女人的逻辑。女人生气时说的话，别当真，都是相反的。她生气的时候说，我们分手吧，意思就是你赶紧来跟我很好啊。</p>
+<p>她生气是说我们各自冷静几天吧。意思就是说，这几天你千万不能冷落我，所以你要整明白呀。</p>
+<p>第六：智者重修，以真切入。</p>
+<p>真正的高手都是注重每天修炼自己，反省自己，提升自己的人，简称就是活明白了的人。</p>
+<p>在这种人面前，其实你就是透明的，你那点什么小套路啊，小技巧小算计啊，人家一眼就能看出来，所以你唯一的选择就是绝对的真实。跟高手过招，最大的套路叫真诚。</p>
+<p>第七条：小人重计，以虚切入。</p>
+<p>对待智者越真越好。讲真话，干真事做真人对待小人越虚越好，说假话干假事交假心。</p>
+<p>有句话说得很好：用钱谈来的女人，在她身上就少花点儿感情，用感情谈来的女人，在她身上就多花点钱，就这个意思。</p>
+<p>如果你对虚情的人动了你的真心，你就会受伤。</p>
+<p>越是满嘴漂亮话，称兄道弟的人，你越要小心，这种人往往在准备在钱上给你设套。</p>
+<p>所以该要钱时，你千万别含糊。该谈规则时，你千万别疏忽啊。对小人，你要远离他，但别得罪他。</p>
+<p>要把这两句话背下来，永远不要相信任何人，也永远不要得罪任何人。</p>
 
             </div>
             <hr>
@@ -279,9 +280,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/04/29/%E4%BA%BA%E6%80%A7%E5%AD%A6%E4%B9%A0-%EF%BC%88%E4%BA%BA%E6%80%A7%EF%BC%89%E7%9C%8B%E9%80%8F%E4%BA%BA%E6%80%A7%E7%9A%84%E4%BA%94%E5%A4%A7%E9%87%91%E5%8F%A5/">
+                      <a href="/2022/04/29/%E4%BA%BA%E6%80%A7%E5%AD%A6%E4%B9%A0-%EF%BC%88%E4%BA%BA%E6%80%A7%EF%BC%89%E5%9B%9B%E5%8F%A5%E7%8B%A0%E8%AF%9D%E5%86%8D%E4%B9%9F%E6%B2%A1%E6%9C%89%E4%BA%BA%E6%95%A2%E6%AC%BA%E8%B4%9F%E4%BD%A0/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">人性学习-（人性）看透人性的五大金句</span>
+                        <span class="hidden-mobile">人性学习-（人性）四句狠话再也没有人敢欺负你</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -289,8 +290,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/04/08/%E8%A2%AB%E9%9A%94%E7%A6%BB%E9%9C%80%E8%A6%81%E5%B8%A6%E7%9A%84%E7%94%9F%E6%B4%BB%E5%BF%85%E9%9C%80%E5%93%81/">
-                        <span class="hidden-mobile">被隔离需要带的生活必需品</span>
+                      <a href="/2022/04/29/%E4%BA%BA%E6%80%A7%E5%AD%A6%E4%B9%A0-%EF%BC%88%E4%BA%BA%E6%80%A7%EF%BC%89%E7%9C%8B%E9%80%8F%E4%BA%BA%E6%80%A7%E7%9A%84%E4%BA%94%E5%A4%A7%E9%87%91%E5%8F%A5/">
+                        <span class="hidden-mobile">人性学习-（人性）看透人性的五大金句</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
