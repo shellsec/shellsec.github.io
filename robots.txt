@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://shellsec.com/lx-music-guide/sitemap.xml
