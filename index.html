@@ -17,33 +17,112 @@
 {"@context":"https://schema.org","@type":"WebSite","name":"shellsec","url":"https://shellsec.com/","inLanguage":"zh-CN"}
 </script>
 <style>
-:root { color-scheme: light; font: 16px/1.65 system-ui, "Microsoft YaHei", sans-serif; color: #211c36; background: #f9f7fc; }
+:root {
+  color-scheme: light;
+  --paper: #f5f6fa;
+  --ink: #1b2340;
+  --muted: #515b75;
+  --border: #dbe0ee;
+  --navy: #20274c;
+  --accent: #ffd69a;
+  font: 16px/1.65 system-ui, "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
 body { margin: 0; }
-main { width: min(720px, calc(100% - 48px)); margin: 0 auto; padding: clamp(48px, 12vw, 116px) 0 48px; }
-h1 { margin: 0; font-size: clamp(3rem, 11vw, 6.5rem); line-height: 1; letter-spacing: -.065em; }
-header p { margin: 16px 0 44px; color: #615773; }
-article { padding: 24px 0; border-top: 1px solid #dcd5e8; }
-article:last-of-type { border-bottom: 1px solid #dcd5e8; }
-h2, article p { margin: 0 0 8px; }
-h2 { font-size: 1.3rem; }
-a { color: #52378e; text-underline-offset: .2em; }
-a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
-footer { margin-top: 24px; }
+a { color: inherit; text-underline-offset: .22em; }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 3px solid #8059c3;
+  outline-offset: 4px;
+}
+.wrap { width: min(1112px, calc(100% - 64px)); margin-inline: auto; }
+.topbar, .footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.topbar { min-height: 78px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-size: 1.25rem; font-weight: 760; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 31px; height: 31px; border-radius: 10px 10px 10px 3px; background: var(--navy); color: white; font: 700 16px/1 ui-monospace, monospace; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px 25px; color: var(--muted); font-size: .88rem; }
+.nav a { text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(25px, 6vw, 76px); align-items: center; padding: clamp(28px, 6vw, 74px); background: var(--navy); color: #f4f5ff; border-radius: 26px 26px 26px 8px; }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(2.15rem, 5vw, 4rem); line-height: 1.14; font-weight: 760; letter-spacing: -.035em; }
+.hero-copy p { color: #d9def1; margin-top: 18px; max-width: 32em; }
+.search { background: #eef0fa; color: var(--ink); padding: clamp(16px, 3vw, 27px); border-radius: 16px; }
+.search label { display: block; margin-bottom: 10px; font-weight: 740; }
+.search-row { display: flex; gap: 8px; }
+.search input { min-width: 0; flex: 1; border: 1px solid #a8b2ce; border-radius: 8px; padding: 10px 11px; background: white; color: var(--ink); font: inherit; }
+.search button { border: 0; border-radius: 8px; background: var(--accent); color: #29263a; padding: 10px 16px; font: 750 .9rem/1.4 system-ui, "Microsoft YaHei", sans-serif; cursor: pointer; }
+.search button:hover { background: #ffcb7e; }
+.quick { display: flex; flex-wrap: wrap; gap: 5px 16px; margin-top: 12px; color: #434c6d; font-size: .82rem; }
+.projects { padding-block: clamp(26px, 5vw, 48px); }
+.projects h2 { font-size: 1.4rem; margin-bottom: 15px; }
+.project-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 18px; }
+.project { display: flex; flex-direction: column; min-height: 185px; padding: clamp(18px, 3vw, 30px); border: 1px solid var(--border); border-radius: 15px; background: white; }
+.music { background: #f2edfb; border-color: #e0d6ef; }
+.project h3 { font-size: clamp(1.12rem, 2.4vw, 1.38rem); line-height: 1.35; }
+.project p { color: var(--muted); margin-top: 9px; margin-bottom: 20px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: auto; font-weight: 680; font-size: .88rem; }
+.footer { padding-block: 16px 25px; border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; }
+@media (max-width: 720px) {
+  .wrap { width: calc(100% - 32px); }
+  .topbar { min-height: 64px; }
+  .hero, .project-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 380px) {
+  .topbar { align-items: flex-start; flex-direction: column; gap: 5px; padding-block: 12px; }
+  .hero { padding: 22px 15px; }
+  .search button { padding-inline: 10px; }
+}
 </style>
 </head>
 <body>
-<main>
-<header><h1>shellsec</h1><p>开源软件目录、Agent Skills 与使用指南</p></header>
-<article>
-<h2><a href="/gh-release-fetch/">GH Release Fetch 软件目录</a></h2>
-<p>按平台和分类查找 Windows、macOS、Linux、Android、iOS 等平台的软件，以及面向编程和创作的 Agent Skills。</p>
-<p><a href="/gh-release-fetch/catalog.html">搜索软件与 Agent Skills</a> · <a href="https://github.com/shellsec/gh-release-fetch/releases/latest">下载客户端</a></p>
-</article>
-<article>
-<h2><a href="/lx-music-guide/">洛雪音乐指南</a></h2>
-<p>按设备查找客户端、配置音源订阅和搭建家庭播放服务。</p>
-</article>
-<footer><a href="https://github.com/shellsec">GitHub 上的项目</a></footer>
+<header class="topbar wrap">
+  <a class="brand" href="/" aria-label="shellsec 首页"><span class="brand-mark" aria-hidden="true">&gt;_</span>shellsec</a>
+  <nav class="nav" aria-label="主导航">
+    <a href="/gh-release-fetch/">软件目录</a>
+    <a href="/lx-music-guide/">洛雪音乐</a>
+    <a href="https://github.com/shellsec">GitHub</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="headline">
+    <div class="hero-copy">
+      <h1 id="headline">开源软件与<br>Agent Skills</h1>
+      <p>按平台查找常用软件，按用途发现编程、设计和创作技能。</p>
+    </div>
+    <form class="search" action="/gh-release-fetch/search/" method="get" role="search">
+      <label for="q">搜索软件目录</label>
+      <div class="search-row">
+        <input id="q" name="q" type="search" maxlength="120" placeholder="例如 CrossDesk、录屏、PPT">
+        <button type="submit">搜索</button>
+      </div>
+      <div class="quick" aria-label="常用搜索">
+        <a href="/gh-release-fetch/catalog.html#skillsShortcut">Agent Skills 目录</a>
+        <a href="/gh-release-fetch/search/?platform=windows">Windows</a>
+        <a href="/gh-release-fetch/search/?platform=darwin">macOS</a>
+      </div>
+    </form>
+  </section>
+  <section class="projects" aria-labelledby="projects">
+    <h2 id="projects">项目与指南</h2>
+    <div class="project-grid">
+      <article class="project">
+        <h3>GH Release Fetch</h3>
+        <p>在浏览器里按平台筛选项目，查看官方发布页。用客户端批量下载、加速和断点续传。</p>
+        <div class="project-links">
+          <a href="/gh-release-fetch/catalog.html">浏览完整目录</a>
+          <a href="https://github.com/shellsec/gh-release-fetch/releases/latest">下载客户端</a>
+        </div>
+      </article>
+      <article class="project music">
+        <h3>洛雪音乐指南</h3>
+        <p>按设备查找客户端、配置音源订阅和搭建家庭播放服务。</p>
+        <div class="project-links"><a href="/lx-music-guide/">阅读使用指南</a></div>
+      </article>
+    </div>
+  </section>
 </main>
+<footer class="footer wrap"><span>shellsec</span><a href="https://github.com/shellsec">查看 GitHub 项目</a></footer>
 </body>
 </html>
