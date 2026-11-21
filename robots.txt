@@ -1,4 +1,6 @@
 User-agent: *
 Disallow:
 
+Sitemap: https://shellsec.com/sitemap.xml
 Sitemap: https://shellsec.com/lx-music-guide/sitemap.xml
+Sitemap: https://shellsec.com/gh-release-fetch/sitemap.xml
