@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="浏览 shellsec 的开源项目与使用指南。GH Release Fetch 提供多平台软件目录和 Agent Skills 索引，洛雪音乐指南提供客户端与配置说明。">
+<meta name="description" content="浏览 shellsec 的开源项目与使用指南，包括多平台软件目录、Agent Skills 索引、洛雪音乐指南和随机账号信息生成器。">
 <link rel="canonical" href="https://shellsec.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="shellsec">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:url" content="https://shellsec.com/">
 <meta property="og:title" content="shellsec · 开源软件目录、Agent Skills 与使用指南">
-<meta property="og:description" content="按平台和分类查找软件与 Agent Skills，也可浏览洛雪音乐客户端与配置指南。">
+<meta property="og:description" content="查找软件与 Agent Skills、浏览洛雪音乐指南，或在线生成随机用户名、密码和其他账号信息。">
 <meta name="twitter:card" content="summary">
 <title>shellsec · 开源软件目录、Agent Skills 与使用指南</title>
 <script type="application/ld+json">
@@ -57,7 +57,7 @@ h1 { font-size: clamp(2.15rem, 5vw, 4rem); line-height: 1.14; font-weight: 760; 
 .quick { display: flex; flex-wrap: wrap; gap: 5px 16px; margin-top: 12px; color: #434c6d; font-size: .82rem; }
 .projects { padding-block: clamp(26px, 5vw, 48px); }
 .projects h2 { font-size: 1.4rem; margin-bottom: 15px; }
-.project-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 18px; }
+.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .project { display: flex; flex-direction: column; min-height: 185px; padding: clamp(18px, 3vw, 30px); border: 1px solid var(--border); border-radius: 15px; background: white; }
 .music { background: #f2edfb; border-color: #e0d6ef; }
 .project h3 { font-size: clamp(1.12rem, 2.4vw, 1.38rem); line-height: 1.35; }
@@ -82,6 +82,7 @@ h1 { font-size: clamp(2.15rem, 5vw, 4rem); line-height: 1.14; font-weight: 760; 
   <nav class="nav" aria-label="主导航">
     <a href="/gh-release-fetch/">软件目录</a>
     <a href="/lx-music-guide/">洛雪音乐</a>
+    <a href="/gen/">账号生成器</a>
     <a href="https://github.com/shellsec">GitHub</a>
   </nav>
 </header>
@@ -119,6 +120,14 @@ h1 { font-size: clamp(2.15rem, 5vw, 4rem); line-height: 1.14; font-weight: 760; 
         <h3>洛雪音乐指南</h3>
         <p>按设备查找客户端、配置音源订阅和搭建家庭播放服务。</p>
         <div class="project-links"><a href="/lx-music-guide/">阅读使用指南</a></div>
+      </article>
+      <article class="project">
+        <h3>随机账号信息生成器</h3>
+        <p>在浏览器里一键生成随机用户名、密码、邮箱占位地址、昵称、UUID 和 PIN。</p>
+        <div class="project-links">
+          <a href="/gen/">打开生成器</a>
+          <a href="https://github.com/shellsec/gen">查看源码</a>
+        </div>
       </article>
     </div>
   </section>
