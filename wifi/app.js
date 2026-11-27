@@ -6,7 +6,7 @@ const results = document.querySelector('#results');
 const categories = {
   cafe: '咖啡茶饮', fastfood: '快餐', restaurant: '餐厅', hotel: '酒店',
   airport: '机场', transit: '交通', mall: '商场', public: '公共设施',
-  coworking: '联合办公', other: '其他',
+  coworking: '联合办公', leisure: '景区与文娱', other: '其他',
 };
 const auth = { password: '密码', portal: '网页认证', sms: '短信验证', open: '开放网络', unknown: '连接方式待确认' };
 const names = new Intl.DisplayNames(['zh-CN'], { type: 'region' });

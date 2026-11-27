@@ -4964,5 +4964,250 @@
     "city": "大连",
     "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
     "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn/4-stars.html"
+  },
+  {
+    "id": "cn-bj-universal",
+    "brand": "Universal Beijing Resort",
+    "brandZh": "北京环球度假区",
+    "ssid": [
+      "Universal"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "leisure",
+    "region": "CN",
+    "city": "北京",
+    "tips": "连接后按页面提示完成认证，园区提供免费 Wi-Fi。",
+    "source": "https://www.universalbeijingresort.com/zh_CN/contact/faq"
+  },
+  {
+    "id": "cn-sh-disney",
+    "brand": "Shanghai Disneyland",
+    "brandZh": "上海迪士尼乐园",
+    "ssid": [],
+    "password": "",
+    "auth": "portal",
+    "category": "leisure",
+    "region": "CN",
+    "city": "上海",
+    "tips": "度假区提供访客 Wi-Fi，按现场标识选择网络并完成认证。",
+    "source": "https://www.shanghaidisneyresort.com/privacy-policy"
+  },
+  {
+    "id": "cn-bj-palace-museum",
+    "brand": "The Palace Museum",
+    "brandZh": "故宫博物院",
+    "ssid": [
+      "PalaceMuseum-WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "leisure",
+    "region": "CN",
+    "city": "北京",
+    "tips": "馆方开通公告列出微信或短信认证。当前覆盖及接入方式以现场为准。",
+    "source": "https://www.dpm.org.cn/classify_detail/234822.html"
+  },
+  {
+    "id": "cn-gz-guangdong-museum",
+    "brand": "Guangdong Museum",
+    "brandZh": "广东省博物馆",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "leisure",
+    "region": "CN",
+    "city": "广州",
+    "tips": "馆方参观指南列出公共区域免费 Wi-Fi，请查看现场网络标识。",
+    "source": "https://www.gdmuseum.org.cn/col666/list"
+  },
+  {
+    "id": "cn-sh-shanghai-museum",
+    "brand": "Shanghai Museum",
+    "brandZh": "上海博物馆人民广场馆",
+    "ssid": [
+      "SHBWG"
+    ],
+    "password": "",
+    "auth": "unknown",
+    "category": "leisure",
+    "region": "CN",
+    "city": "上海",
+    "tips": "馆方早期导览说明列出的免费网络。当前接入方式以现场为准。",
+    "source": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004114"
+  },
+  {
+    "id": "cn-suzhou-museum",
+    "brand": "Suzhou Museum",
+    "brandZh": "苏州博物馆本馆",
+    "ssid": [
+      "Guest-free"
+    ],
+    "password": "",
+    "auth": "unknown",
+    "category": "leisure",
+    "region": "CN",
+    "city": "苏州",
+    "tips": "公开参观指南列出公共区域免费网络，请以现场公示为准。",
+    "source": "https://www.bw10000.com/article/57",
+    "sourceLabel": "公开参观指南"
+  },
+  {
+    "id": "cn-sh-necc",
+    "brand": "National Exhibition and Convention Center",
+    "brandZh": "国家会展中心（上海）",
+    "ssid": [
+      "NECC-FREE"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "leisure",
+    "region": "CN",
+    "city": "上海",
+    "tips": "场馆手册列出短信验证码认证，当前展会覆盖以现场为准。",
+    "source": "https://nccsh.neccsh.com/cms/file/public/cms/neccsh/annex/2019/0809/201908091910242.pdf"
+  },
+  {
+    "id": "cn-gz-taikoo-hui",
+    "brand": "Taikoo Hui",
+    "brandZh": "广州太古汇",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "mall",
+    "region": "CN",
+    "city": "广州",
+    "tips": "商场服务资料列有 Wi-Fi，网络名称与接入流程请咨询服务台。",
+    "source": "https://www.taikoohui.com/-/media/images/taikoohui2/pdf/clean---privay-policy-cn_comparison---ww-0215%281%29.ashx"
+  },
+  {
+    "id": "cn-hz-west-lake",
+    "brand": "West Lake",
+    "brandZh": "杭州西湖环湖公共区",
+    "ssid": [
+      "i-xihu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "leisure",
+    "region": "CN",
+    "city": "杭州",
+    "tips": "景区管委会曾公布环湖覆盖及短信认证，当前服务以现场为准。",
+    "source": "https://www.thepaper.cn/newsDetail_forward_1536974",
+    "sourceLabel": "澎湃新闻报道"
+  },
+  {
+    "id": "cn-huangshan-scenic",
+    "brand": "Mount Huangshan",
+    "brandZh": "黄山风景区",
+    "ssid": [
+      "黄山风景区"
+    ],
+    "password": "",
+    "auth": "unknown",
+    "category": "leisure",
+    "region": "CN",
+    "city": "黄山",
+    "tips": "景区历史开通公告列出游客集散中心、售票点及部分核心游览区。当前覆盖以现场为准。",
+    "source": "https://lxs.cncn.com/66905/n609892",
+    "sourceLabel": "景区公告转载"
+  },
+  {
+    "id": "cn-haidilao-dali-hx",
+    "brand": "Haidilao",
+    "brandZh": "海底捞（大理中红海峡广场店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "大理",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://hk.trip.com/restaurant/china/dali-city/detail/restaurant-121149216/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-haidilao-hz-yt",
+    "brand": "Haidilao",
+    "brandZh": "海底捞（杭州中大银泰城店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "杭州",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://ae.trip.com/restaurant/china/hangzhou/detail/restaurant-42053100/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-haidilao-hy-bbg",
+    "brand": "Haidilao",
+    "brandZh": "海底捞（衡阳步步高广场店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "衡阳",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/hengyang/detail/haidilao-hot-pot-56171265/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-taotaoju-gz-zhengjia",
+    "brand": "Taotaoju",
+    "brandZh": "陶陶居（广州正佳广场店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "广州",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/guangzhou/detail/tou-tou-koi-25301427/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-taotaoju-gz-bjl",
+    "brand": "Taotaoju",
+    "brandZh": "陶陶居（广州北京路店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "广州",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://sg.trip.com/restaurant/china/guangzhou/detail/taotaojubeijing-road-90680815/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-taotaoju-sh-one-itc",
+    "brand": "Taotaoju",
+    "brandZh": "陶陶居（上海 One ITC 店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "上海",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://hk.trip.com/restaurant/china/shanghai/detail/restaurant-130059698/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-chayanyuese-cs-hx",
+    "brand": "Sexy Tea",
+    "brandZh": "茶颜悦色（长沙河西王府井负一楼店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "长沙",
+    "tips": "携程门店资料列有免费 Wi-Fi，请向店员确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/changsha/detail/restaurant-31598560/",
+    "sourceLabel": "携程门店资料"
   }
 ]
