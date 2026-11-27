@@ -10,7 +10,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: #101322; color: #edf0ff; font: 16px/1.6 system-ui, sans-serif; color-scheme: dark; }
 header { border-bottom: 1px solid #353c58; background: #20274c; }
-header a { display: block; max-width: 76rem; margin: auto; padding: .75rem 1.25rem; color: #ffd69a; text-decoration: none; font-weight: 700; }
+header nav { display: flex; flex-wrap: wrap; gap: 1.25rem; max-width: 76rem; margin: auto; padding: .75rem 1.25rem; }
+header a { color: #ffd69a; text-decoration: none; font-weight: 700; }
 main { max-width: 76rem; margin: auto; padding: 2rem 1.25rem 4rem; }
 h1 { margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 3rem); }
 .filters { display: grid; grid-template-columns: minmax(12rem, 1fr) repeat(2, minmax(8rem, 12rem)); gap: 1rem; }
@@ -32,7 +33,7 @@ code { color: #ffd69a; }
 <script defer src="app.js"></script>
 </head>
 <body>
-<header><a href="/">shellsec 首页</a></header>
+<header><nav aria-label="页面导航"><a href="/">shellsec 首页</a><a href="https://github.com/shellsec/wifi-finder">GitHub 仓库</a></nav></header>
 <main>
   <h1>Wi-Fi Finder</h1>
   <div class="filters">
