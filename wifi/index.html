@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="按地区、类别、品牌或 SSID 查询公共 Wi-Fi 连接信息。">
+<link rel="canonical" href="https://shellsec.com/wifi/">
+<title>Wi-Fi Finder · shellsec</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #101322; color: #edf0ff; font: 16px/1.6 system-ui, sans-serif; color-scheme: dark; }
+header { border-bottom: 1px solid #353c58; background: #20274c; }
+header a { display: block; max-width: 76rem; margin: auto; padding: .75rem 1.25rem; color: #ffd69a; text-decoration: none; font-weight: 700; }
+main { max-width: 76rem; margin: auto; padding: 2rem 1.25rem 4rem; }
+h1 { margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 3rem); }
+.filters { display: grid; grid-template-columns: minmax(12rem, 1fr) repeat(2, minmax(8rem, 12rem)); gap: 1rem; }
+label { display: grid; gap: .25rem; }
+input, select, button { font: inherit; color: inherit; background: #202744; border: 1px solid #535e83; border-radius: .4rem; padding: .45rem .7rem; min-width: 0; }
+button { cursor: pointer; padding: .15rem .6rem; }
+#status, .meta, .tips { color: #b7bfdc; }
+#results { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: .85rem; }
+article { min-width: 0; background: #191e34; border: 1px solid #353c58; border-left: 3px solid #ad9fea; border-radius: .55rem; padding: .85rem 1rem; overflow-wrap: anywhere; }
+h2 { margin: 0; font-size: 1.1rem; }
+article p { margin: .3rem 0; }
+.meta, .tips { font-size: .875rem; }
+code { color: #ffd69a; }
+@media (max-width: 38rem) {
+  .filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .filters label:first-child { grid-column: 1 / -1; }
+}
+</style>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><a href="/">shellsec 首页</a></header>
+<main>
+  <h1>Wi-Fi Finder</h1>
+  <div class="filters">
+    <label>搜索 <input id="query" type="search" placeholder="品牌、SSID、城市或密码"></label>
+    <label>地区 <select id="region"><option value="">全部地区</option></select></label>
+    <label>类别 <select id="category"><option value="">全部类别</option></select></label>
+  </div>
+  <p id="status" role="status">正在加载 Wi-Fi 记录…</p>
+  <div id="results"></div>
+  <noscript>请启用 JavaScript 后使用查询功能。</noscript>
+  <p class="tips">连接信息可能已变化，请以场所公布的信息为准。</p>
+</main>
+</body>
+</html>

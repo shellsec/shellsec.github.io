@@ -1,0 +1,2669 @@
+[
+  {
+    "id": "cn-luckin-1",
+    "brand": "Luckin Coffee",
+    "brandZh": "瑞幸咖啡",
+    "ssid": [
+      "Luckin Coffee"
+    ],
+    "password": "luckin123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Most common password across stores",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-luckin-2",
+    "brand": "Luckin Coffee",
+    "brandZh": "瑞幸咖啡",
+    "ssid": [
+      "Luckin Coffee"
+    ],
+    "password": "luckin123456",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Alternative password in some stores",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-luckin-3",
+    "brand": "Luckin Coffee",
+    "brandZh": "瑞幸咖啡",
+    "ssid": [
+      "Luckin Coffee"
+    ],
+    "password": "stnt819",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Seen in some locations, passwords rotate every 3 months",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-heytea",
+    "brand": "HEYTEA",
+    "brandZh": "喜茶",
+    "ssid": [
+      "HEYTEA",
+      "HEYTEA_5G"
+    ],
+    "password": "zsttsftsng",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Relatively consistent password across stores",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-nayuki",
+    "brand": "Nayuki",
+    "brandZh": "奈雪的茶",
+    "ssid": [
+      "NaixueVip",
+      "Nayuki"
+    ],
+    "password": "ykhcykrob",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "一口好茶一口软欧包 (yi kou hao cha yi kou ruan ou bao) initials",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-bawangchaji",
+    "brand": "Chagee",
+    "brandZh": "霸王茶姬",
+    "ssid": [
+      "霸王茶姬",
+      "BWCJ"
+    ],
+    "password": "bwcj1117",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand founding date Nov 17",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-mixue-1",
+    "brand": "Mixue Bingcheng",
+    "brandZh": "蜜雪冰城",
+    "ssid": [
+      "蜜雪冰城",
+      "MXBC"
+    ],
+    "password": "mxbc1997",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand founded in 1997",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-mixue-2",
+    "brand": "Mixue Bingcheng",
+    "brandZh": "蜜雪冰城",
+    "ssid": [
+      "蜜雪冰城",
+      "MXBC"
+    ],
+    "password": "mxbc8888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Alternative lucky number password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-guming-1",
+    "brand": "Gu Ming",
+    "brandZh": "古茗",
+    "ssid": [
+      "古茗",
+      "GUMING"
+    ],
+    "password": "GUMING123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand name + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-guming-2",
+    "brand": "Gu Ming",
+    "brandZh": "古茗",
+    "ssid": [
+      "古茗",
+      "GUMING"
+    ],
+    "password": "goodme123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "English name variant",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-cotti",
+    "brand": "Cotti Coffee",
+    "brandZh": "库迪咖啡",
+    "ssid": [
+      "CottiCoffee",
+      "库迪咖啡"
+    ],
+    "password": "Cotti123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand name + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-chabaidao",
+    "brand": "Cha Bai Dao",
+    "brandZh": "茶百道",
+    "ssid": [
+      "茶百道",
+      "CBD"
+    ],
+    "password": "bhqf2356",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Internal code",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-molinai",
+    "brand": "Moli Naibai",
+    "brandZh": "茉莉奶白",
+    "ssid": [
+      "茉莉奶白"
+    ],
+    "password": "xiaomoli2022",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "小茉莉2022",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-molinai-2",
+    "brand": "Moli Naibai",
+    "brandZh": "茉莉奶白",
+    "ssid": [
+      "茉莉奶白"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Alternative lucky 8s password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-costa",
+    "brand": "Costa Coffee",
+    "brandZh": "Costa咖啡",
+    "ssid": [
+      "Costa",
+      "CostaCoffee"
+    ],
+    "password": "costa123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Simple brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-starbucks",
+    "brand": "Starbucks",
+    "brandZh": "星巴克",
+    "ssid": [
+      "CMCC-Starbucks",
+      "Starbucks"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Phone number registration + SMS code via portal page",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-manner",
+    "brand": "Manner Coffee",
+    "brandZh": "Manner咖啡",
+    "ssid": [
+      "Manner",
+      "MannerCoffee"
+    ],
+    "password": "manner123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Ask staff for current password, varies by store",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-tims",
+    "brand": "Tim Hortons",
+    "brandZh": "Tims咖啡",
+    "ssid": [
+      "TimsCoffee",
+      "Tims"
+    ],
+    "password": "tims1234",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "May vary by location",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pacific",
+    "brand": "Pacific Coffee",
+    "brandZh": "太平洋咖啡",
+    "ssid": [
+      "PacificCoffee"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Portal-based, accept terms",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-yidiandian",
+    "brand": "Yi Dian Dian",
+    "brandZh": "一点点",
+    "ssid": [
+      "一点点"
+    ],
+    "password": "1dd12345",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "May vary by franchise",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-shuyi",
+    "brand": "Shuyi Shaoxiancao",
+    "brandZh": "书亦烧仙草",
+    "ssid": [
+      "书亦烧仙草"
+    ],
+    "password": "shuyi666",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand name + lucky number",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-7fenchatang",
+    "brand": "7 Fen Tian",
+    "brandZh": "七分甜",
+    "ssid": [
+      "七分甜"
+    ],
+    "password": "qifentian",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-yihetang",
+    "brand": "Yi He Tang",
+    "brandZh": "益禾堂",
+    "ssid": [
+      "益禾堂",
+      "YHT"
+    ],
+    "password": "yihetang",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-chayan",
+    "brand": "Cha Yan Yue Se",
+    "brandZh": "茶颜悦色",
+    "ssid": [
+      "茶颜悦色"
+    ],
+    "password": "chayanyuese",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "Changsha",
+    "tips": "Changsha-based brand, pinyin password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-lelecha",
+    "brand": "Le Le Cha",
+    "brandZh": "乐乐茶",
+    "ssid": [
+      "乐乐茶",
+      "LELECHA"
+    ],
+    "password": "lelecha1",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand name + 1",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-nowwa",
+    "brand": "Nowwa Coffee",
+    "brandZh": "挚禄咖啡",
+    "ssid": [
+      "Nowwa"
+    ],
+    "password": "nowwa123",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-mcd",
+    "brand": "McDonald's",
+    "brandZh": "麦当劳",
+    "ssid": [
+      "McDonald-OC"
+    ],
+    "password": "Ac28Idfjla92ifjsl3jsHdowIo",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Hidden SSID - must add manually. Note: l=lowercase L, o=letter O not zero. Some stores switched to SMS auth.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-kfc",
+    "brand": "KFC",
+    "brandZh": "肯德基",
+    "ssid": [
+      "KFC FREE WIFI"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Phone number + SMS verification code via portal page",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pizzahut",
+    "brand": "Pizza Hut",
+    "brandZh": "必胜客",
+    "ssid": [
+      "PizzaHut",
+      "必胜客WiFi"
+    ],
+    "password": "pizza789",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "May vary by store",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-tastien",
+    "brand": "Tastien",
+    "brandZh": "塔斯汀",
+    "ssid": [
+      "塔斯汀",
+      "TASTIEN"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lucky 8s - very common default",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-wallace",
+    "brand": "Wallace",
+    "brandZh": "华莱士",
+    "ssid": [
+      "华莱士",
+      "Wallace"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Simple numeric password, varies by franchise",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-zhengxin",
+    "brand": "Zhengxin Chicken",
+    "brandZh": "正新鸡排",
+    "ssid": [
+      "正新鸡排"
+    ],
+    "password": "zhengxin1",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 1",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-dicos",
+    "brand": "Dicos",
+    "brandZh": "德克士",
+    "ssid": [
+      "Dicos",
+      "德克士WiFi"
+    ],
+    "password": "dicos123",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-burger-king",
+    "brand": "Burger King",
+    "brandZh": "汉堡王",
+    "ssid": [
+      "BurgerKing",
+      "汉堡王"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "Portal authentication in most stores",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-laoxiangji",
+    "brand": "Lao Xiang Ji",
+    "brandZh": "老乡鸡",
+    "ssid": [
+      "老乡鸡",
+      "LaoxiangJi"
+    ],
+    "password": "ganjingweisheng",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "干净卫生 (clean & hygienic) - brand slogan in pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-micun",
+    "brand": "Mi Cun Ban Fan",
+    "brandZh": "米村拌饭",
+    "ssid": [
+      "米村拌饭",
+      "MiCun"
+    ],
+    "password": "woaimicun",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "我爱米村 (I love Micun) in pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-bantianyao",
+    "brand": "Ban Tian Yao",
+    "brandZh": "半天妖",
+    "ssid": [
+      "半天妖"
+    ],
+    "password": "bantianyao",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-xibei",
+    "brand": "Xibei",
+    "brandZh": "西贝菜面村",
+    "ssid": [
+      "西贝",
+      "XIBEI"
+    ],
+    "password": "15880529",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Some stores use this, not universal. Ask staff.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-haidilao",
+    "brand": "Haidilao",
+    "brandZh": "海底捞",
+    "ssid": [
+      "海底捞",
+      "Haidilao"
+    ],
+    "password": "",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "No universal password - ask your server. Different per store.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-xiabuxiabu",
+    "brand": "Xiabu Xiabu",
+    "brandZh": "呆呆呆呆",
+    "ssid": [
+      "呆呆呆呆"
+    ],
+    "password": "xiabuxiabu",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-yangguofu",
+    "brand": "Yang Guo Fu Malatang",
+    "brandZh": "杨国福麻辣烫",
+    "ssid": [
+      "杨国福",
+      "YGF"
+    ],
+    "password": "yangguofu",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-zhangliangmlt",
+    "brand": "Zhang Liang Malatang",
+    "brandZh": "张亮麻辣烫",
+    "ssid": [
+      "张亮麻辣烫"
+    ],
+    "password": "zhangliang",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-manzu",
+    "brand": "Man Zu Fan",
+    "brandZh": "满足饭",
+    "ssid": [
+      "满足饭"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lucky 8s default",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-juewei",
+    "brand": "Juewei Duck Neck",
+    "brandZh": "绝味鸭脖",
+    "ssid": [
+      "绝味"
+    ],
+    "password": "juewei123",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-luckyhunan",
+    "brand": "Feichangxiang",
+    "brandZh": "费大厨辣椒炒肉",
+    "ssid": [
+      "费大厨"
+    ],
+    "password": "feidachu1",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin + 1",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-nayou",
+    "brand": "Nayou Ramen",
+    "brandZh": "那有拉面",
+    "ssid": [
+      "那有拉面"
+    ],
+    "password": "nayou123",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-tongxianghui",
+    "brand": "Tong Xiang Hui",
+    "brandZh": "同享汇",
+    "ssid": [
+      "同享汇"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Common 8s password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-wuming",
+    "brand": "Wu Ming Fen",
+    "brandZh": "无名粉",
+    "ssid": [
+      "无名粉"
+    ],
+    "password": "wumingfen",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-laoyuchun",
+    "brand": "Lao Yu Chun",
+    "brandZh": "老于春",
+    "ssid": [
+      "老于春"
+    ],
+    "password": "laoyuchun",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-xiaoyang",
+    "brand": "Xiao Yang Sheng Jian",
+    "brandZh": "小杨生煎",
+    "ssid": [
+      "小杨生煎"
+    ],
+    "password": "xysj1234",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand abbreviation + 1234",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-yonghe",
+    "brand": "Yonghe King",
+    "brandZh": "永和大王",
+    "ssid": [
+      "永和大王",
+      "YongheKing"
+    ],
+    "password": "yonghe123",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 123",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-kungfu",
+    "brand": "Real Kungfu",
+    "brandZh": "真功夫",
+    "ssid": [
+      "真功夫",
+      "ZGF"
+    ],
+    "password": "zhengongfu",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-caidian",
+    "brand": "Cai Dian",
+    "brandZh": "菜店",
+    "ssid": [
+      "菜店WiFi"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Common simple password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-grilledfish",
+    "brand": "Tan Shao",
+    "brandZh": "探鱼",
+    "ssid": [
+      "探鱼"
+    ],
+    "password": "tanyu2015",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + founding year",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-tongderen",
+    "brand": "Tong De Ren",
+    "brandZh": "同德仁",
+    "ssid": [
+      "同德仁"
+    ],
+    "password": "tongderen",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-sisyphe",
+    "brand": "Sisyphe Books",
+    "brandZh": "西西弗书店",
+    "ssid": [
+      "SISYPHE",
+      "西西弗"
+    ],
+    "password": "sysphe1993",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand abbreviation + founding year 1993",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-fandeng",
+    "brand": "Fan Deng Reading",
+    "brandZh": "樊登读书",
+    "ssid": [
+      "樊登读书"
+    ],
+    "password": "fandeng66",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 66",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-zhongshuge",
+    "brand": "Zhongshu Ge",
+    "brandZh": "钟书阁",
+    "ssid": [
+      "钟书阁"
+    ],
+    "password": "zhongshuge",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-yanji",
+    "brand": "Yan Ji You",
+    "brandZh": "言几又",
+    "ssid": [
+      "言几又",
+      "YanJiYou"
+    ],
+    "password": "yanjiyou1",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand pinyin + 1",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-hanting",
+    "brand": "Hanting Hotel",
+    "brandZh": "汉庭酒店",
+    "ssid": [
+      "Hanting",
+      "汉庭 WiFi"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Common default. Check room card or hallway signs.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-homeinns",
+    "brand": "Home Inn",
+    "brandZh": "如家酒店",
+    "ssid": [
+      "HomeInn",
+      "如家WiFi"
+    ],
+    "password": "4008203333",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Customer service hotline. Also check order card in room.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-ji-lobby",
+    "brand": "Ji Hotel (lobby)",
+    "brandZh": "全季酒店(大厅)",
+    "ssid": [
+      "JiHotel",
+      "全季WiFi"
+    ],
+    "password": "7777777",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lobby WiFi. Can also use phone portal auth.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-ji-room",
+    "brand": "Ji Hotel (room)",
+    "brandZh": "全季酒店(客房)",
+    "ssid": [
+      "JiHotel_Room"
+    ],
+    "password": "(room number)",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Room WiFi password = your room number",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-7days",
+    "brand": "7 Days Inn",
+    "brandZh": "7天酒店",
+    "ssid": [
+      "7DaysInn",
+      "7天WiFi"
+    ],
+    "password": "77777777",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lucky 7s. May differ by franchise.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-jinjiang",
+    "brand": "Jinjiang Inn",
+    "brandZh": "锦江之星",
+    "ssid": [
+      "JinjiangInn",
+      "锦江之星"
+    ],
+    "password": "4008209999",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Hotline number.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-huazhu",
+    "brand": "Huazhu Group",
+    "brandZh": "华住集团",
+    "ssid": [
+      "Huazhu",
+      "华住WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Portal auth: room number + surname.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-atour",
+    "brand": "Atour Hotel",
+    "brandZh": "亚朵酒店",
+    "ssid": [
+      "Atour",
+      "亚朵WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Get credentials via Atour app after check-in",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-greentree",
+    "brand": "GreenTree Inn",
+    "brandZh": "格林豪泰",
+    "ssid": [
+      "GreenTree",
+      "格林WiFi"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Common simple password",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-viennahotel",
+    "brand": "Vienna Hotel",
+    "brandZh": "维也纳酒店",
+    "ssid": [
+      "Vienna",
+      "维也纳WiFi"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lucky 8s",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-ibis",
+    "brand": "Ibis Hotel",
+    "brandZh": "宜必思酒店",
+    "ssid": [
+      "ibis",
+      "宜必思WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Portal: room + name. Part of Accor group.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-orangehotel",
+    "brand": "Orange Hotel",
+    "brandZh": "橘子酒店",
+    "ssid": [
+      "OrangeHotel"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Ask front desk",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-podinns",
+    "brand": "Pod Inn",
+    "brandZh": "布丁酒店",
+    "ssid": [
+      "PodInn",
+      "布丁WiFi"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Common default",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-citycomfort",
+    "brand": "City Comfort Inn",
+    "brandZh": "城市便捷酒店",
+    "ssid": [
+      "CityComfort"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Lucky 8s default",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-lavande",
+    "brand": "Lavande Hotel",
+    "brandZh": "丽枫酒店",
+    "ssid": [
+      "Lavande",
+      "丽枫WiFi"
+    ],
+    "password": "lavande1",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "Brand + 1",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pek",
+    "brand": "Beijing Capital Airport",
+    "brandZh": "北京首都机场",
+    "ssid": [
+      "Airport-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Beijing",
+    "tips": "SMS verification, 2-hour sessions",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pkx",
+    "brand": "Beijing Daxing Airport",
+    "brandZh": "北京大兴机场",
+    "ssid": [
+      "PKX-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Beijing",
+    "tips": "SMS verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pvg",
+    "brand": "Shanghai Pudong Airport",
+    "brandZh": "上海浦东机场",
+    "ssid": [
+      "Airport-Free-WiFi",
+      "#PVG-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Shanghai",
+    "tips": "SMS verification, portal login",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-sha",
+    "brand": "Shanghai Hongqiao Airport",
+    "brandZh": "上海虹桥机场",
+    "ssid": [
+      "Airport-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Shanghai",
+    "tips": "SMS verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-can",
+    "brand": "Guangzhou Baiyun Airport",
+    "brandZh": "广州白云机场",
+    "ssid": [
+      "CAN-Airport-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Guangzhou",
+    "tips": "SMS verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-szx",
+    "brand": "Shenzhen Baoan Airport",
+    "brandZh": "深圳宝安机场",
+    "ssid": [
+      "SZX-Airport-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Shenzhen",
+    "tips": "SMS verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-ctu",
+    "brand": "Chengdu Tianfu Airport",
+    "brandZh": "成都天府机场",
+    "ssid": [
+      "CTU-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "airport",
+    "region": "CN",
+    "city": "Chengdu",
+    "tips": "SMS verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-crwifi",
+    "brand": "China Railway WiFi",
+    "brandZh": "高铁WiFi",
+    "ssid": [
+      "CR-WiFi",
+      "高铁WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "transit",
+    "region": "CN",
+    "city": "*",
+    "tips": "Download dedicated app or scan QR code.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-wanda",
+    "brand": "Wanda Plaza",
+    "brandZh": "万达广场",
+    "ssid": [
+      "Wanda",
+      "万达智WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "mall",
+    "region": "CN",
+    "city": "*",
+    "tips": "Phone + SMS verification. Works across all Wanda malls.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-joycity",
+    "brand": "Joy City",
+    "brandZh": "大悦城",
+    "ssid": [
+      "JoyCity",
+      "大悦城WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "mall",
+    "region": "CN",
+    "city": "*",
+    "tips": "Follow WeChat official account or ask info desk.",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-ikea",
+    "brand": "IKEA",
+    "brandZh": "宜家",
+    "ssid": [
+      "IKEA-WiFi"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "mall",
+    "region": "CN",
+    "city": "*",
+    "tips": "SMS real-name verification",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-cmcc",
+    "brand": "China Mobile",
+    "brandZh": "中国移动",
+    "ssid": [
+      "CMCC",
+      "CMCC-FREE"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "*",
+    "tips": "Auto-connect for China Mobile subscribers",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-chinanet",
+    "brand": "China Telecom",
+    "brandZh": "中国电信",
+    "ssid": [
+      "ChinaNet",
+      "ChinaNet-FREE"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "*",
+    "tips": "Auto-connect for China Telecom subscribers",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-unicom",
+    "brand": "China Unicom",
+    "brandZh": "中国联通",
+    "ssid": [
+      "ChinaUnicom",
+      "China-Unicom"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "*",
+    "tips": "Auto-connect for China Unicom subscribers",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pattern-8",
+    "brand": "Common Pattern: 8s",
+    "brandZh": "通用密码: 8个8",
+    "ssid": [
+      "Various"
+    ],
+    "password": "88888888",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "The most common WiFi password in China. Try this first!",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-pattern-123",
+    "brand": "Common Pattern: 12345678",
+    "brandZh": "通用密码: 12345678",
+    "ssid": [
+      "Various"
+    ],
+    "password": "12345678",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "Second most common default password in China",
+    "updated": "2025"
+  },
+  {
+    "id": "hk-airport",
+    "brand": "Hong Kong Airport",
+    "brandZh": "香港机场",
+    "ssid": [
+      "#HKAirport Free WiFi",
+      "#HKAirport Hi-Speed WiFi",
+      "Wi-Fi.HK via HKAirport"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "HK",
+    "city": "Hong Kong",
+    "tips": "无需注册，在网页同意条款后连接。",
+    "updated": "2026-11-27",
+    "source": "https://www.hongkongairport.com/en/passenger-guide/airport-facilities-services/wifi-and-internet-access"
+  },
+  {
+    "id": "hk-mtr",
+    "brand": "MTR WiFi",
+    "brandZh": "港铁WiFi",
+    "ssid": [
+      "MTR Free Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "transit",
+    "region": "HK",
+    "city": "Hong Kong",
+    "tips": "Available in stations, 15 min sessions",
+    "updated": "2025"
+  },
+  {
+    "id": "hk-govwifi",
+    "brand": "GovWiFi",
+    "brandZh": "政府WiFi通",
+    "ssid": [
+      "freegovwifi-e"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "public",
+    "region": "HK",
+    "city": "Hong Kong",
+    "tips": "Free in government buildings, libraries, parks",
+    "updated": "2025"
+  },
+  {
+    "id": "jp-narita",
+    "brand": "Narita Airport",
+    "brandZh": "成田机场",
+    "ssid": [
+      "FreeWiFi-NARITA"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "JP",
+    "city": "Tokyo",
+    "tips": "Free, no registration",
+    "updated": "2025"
+  },
+  {
+    "id": "jp-haneda",
+    "brand": "Haneda Airport",
+    "brandZh": "羽田机场",
+    "ssid": [
+      "HANEDA-FREE-WIFI"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "JP",
+    "city": "Tokyo",
+    "tips": "Free, no registration",
+    "updated": "2025"
+  },
+  {
+    "id": "jp-7spot",
+    "brand": "7-Eleven Japan",
+    "brandZh": "7-11(日本)",
+    "ssid": [
+      "7SPOT"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "other",
+    "region": "JP",
+    "city": "*",
+    "tips": "Email registration, 60 min x 3 per day",
+    "updated": "2025"
+  },
+  {
+    "id": "jp-jreast",
+    "brand": "JR East Stations",
+    "brandZh": "JR东日本车站",
+    "ssid": [
+      "JR-EAST_FREE_Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "transit",
+    "region": "JP",
+    "city": "*",
+    "tips": "Email registration, 3-hour sessions",
+    "updated": "2025"
+  },
+  {
+    "id": "jp-starbucks",
+    "brand": "Starbucks Japan",
+    "brandZh": "星巴克(日本)",
+    "ssid": [
+      "at_STARBUCKS_Wi2"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "JP",
+    "city": "*",
+    "tips": "Email registration required",
+    "updated": "2025"
+  },
+  {
+    "id": "kr-seoul",
+    "brand": "Seoul City WiFi",
+    "brandZh": "首尔公共WiFi",
+    "ssid": [
+      "SEOUL"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "public",
+    "region": "KR",
+    "city": "Seoul",
+    "tips": "Free citywide WiFi, open access",
+    "updated": "2025"
+  },
+  {
+    "id": "kr-incheon",
+    "brand": "Incheon Airport",
+    "brandZh": "仁川机场",
+    "ssid": [
+      "AirportWiFi"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "KR",
+    "city": "Incheon",
+    "tips": "Free, open access",
+    "updated": "2025"
+  },
+  {
+    "id": "sg-changi",
+    "brand": "Changi Airport",
+    "brandZh": "樟宜机场",
+    "ssid": [
+      "#WiFi@Changi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "SG",
+    "city": "Singapore",
+    "tips": "在登录页点击连接，无需注册或提供个人信息。",
+    "updated": "2026-11-27",
+    "source": "https://www.changiairport.com/en/at-changi/facilities-and-services-directory/internet-connection.html"
+  },
+  {
+    "id": "sg-wireless",
+    "brand": "Wireless@SG",
+    "brandZh": "新加坡公共WiFi",
+    "ssid": [
+      "Wireless@SG",
+      "Wireless@SGx"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "SG",
+    "city": "Singapore",
+    "tips": "Free nationwide. Register via SingPass or SMS.",
+    "updated": "2025"
+  },
+  {
+    "id": "th-bkk",
+    "brand": "Suvarnabhumi Airport",
+    "brandZh": "素万那普机场",
+    "ssid": [
+      "Airport Free WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "TH",
+    "city": "Bangkok",
+    "tips": "Free, accept terms",
+    "updated": "2025"
+  },
+  {
+    "id": "us-starbucks",
+    "brand": "Starbucks",
+    "brandZh": "星巴克(美国)",
+    "ssid": [
+      "Google Starbucks"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "US",
+    "city": "*",
+    "tips": "No password, captive portal. Powered by Google.",
+    "updated": "2025"
+  },
+  {
+    "id": "us-mcd",
+    "brand": "McDonald's",
+    "brandZh": "麦当劳(美国)",
+    "ssid": [
+      "McDonald's Free WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "fastfood",
+    "region": "US",
+    "city": "*",
+    "tips": "Accept terms",
+    "updated": "2025"
+  },
+  {
+    "id": "us-panera",
+    "brand": "Panera Bread",
+    "brandZh": "Panera面包",
+    "ssid": [
+      "Panera Wi-Fi",
+      "Panera_Guest"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "cafe",
+    "region": "US",
+    "city": "*",
+    "tips": "No password",
+    "updated": "2025"
+  },
+  {
+    "id": "us-walmart",
+    "brand": "Walmart",
+    "brandZh": "沃尔玛",
+    "ssid": [
+      "Walmart WiFi",
+      "WMGuest"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "mall",
+    "region": "US",
+    "city": "*",
+    "tips": "No password",
+    "updated": "2025"
+  },
+  {
+    "id": "us-target",
+    "brand": "Target",
+    "brandZh": "Target",
+    "ssid": [
+      "Target Wireless"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "mall",
+    "region": "US",
+    "city": "*",
+    "tips": "No password",
+    "updated": "2025"
+  },
+  {
+    "id": "us-sfo",
+    "brand": "San Francisco Airport",
+    "brandZh": "旧金山机场",
+    "ssid": [
+      "#SFO FREE WIFI"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "US",
+    "city": "San Francisco",
+    "tips": "Open, free",
+    "updated": "2025"
+  },
+  {
+    "id": "us-jfk-delta",
+    "brand": "Delta Sky Club JFK",
+    "brandZh": "达美贵宾室(JFK)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "faster",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "New York",
+    "tips": "",
+    "updated": "2025"
+  },
+  {
+    "id": "us-jfk-admirals",
+    "brand": "Admirals Club JFK",
+    "brandZh": "海军上将俱乐部(JFK)",
+    "ssid": [
+      "Admirals Club"
+    ],
+    "password": "StVincent2019",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "New York",
+    "tips": "Same password across many AA lounges",
+    "updated": "2025"
+  },
+  {
+    "id": "us-lax-oneworld",
+    "brand": "Oneworld Lounge LAX",
+    "brandZh": "寐宇一家贵宾室(LAX)",
+    "ssid": [
+      "oneworld"
+    ],
+    "password": "oneworld",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Los Angeles",
+    "tips": "",
+    "updated": "2025"
+  },
+  {
+    "id": "us-lax-delta",
+    "brand": "Delta Sky Club LAX",
+    "brandZh": "达美贵宾室(LAX)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "faster",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Los Angeles",
+    "tips": "",
+    "updated": "2025"
+  },
+  {
+    "id": "us-marriott",
+    "brand": "Marriott",
+    "brandZh": "万豪酒店",
+    "ssid": [
+      "MarriottBonvoy_Guest"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "US",
+    "city": "*",
+    "tips": "Last name + room number",
+    "updated": "2025"
+  },
+  {
+    "id": "us-hilton",
+    "brand": "Hilton",
+    "brandZh": "希尔顿酒店",
+    "ssid": [
+      "Hilton Honors",
+      "hhonors"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "US",
+    "city": "*",
+    "tips": "Last name + room number or HHonors login",
+    "updated": "2025"
+  },
+  {
+    "id": "ca-timhortons",
+    "brand": "Tim Hortons",
+    "brandZh": "Tim Hortons",
+    "ssid": [
+      "Tim Hortons WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "CA",
+    "city": "*",
+    "tips": "No password, accept use policy",
+    "updated": "2025"
+  },
+  {
+    "id": "ca-yvr",
+    "brand": "Vancouver Airport",
+    "brandZh": "温哥华机场",
+    "ssid": [
+      "#YVR Free WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "CA",
+    "city": "Vancouver",
+    "tips": "Captive portal",
+    "updated": "2025"
+  },
+  {
+    "id": "gb-lhr",
+    "brand": "Heathrow Airport",
+    "brandZh": "希思罗机场",
+    "ssid": [
+      "Heathrow Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "GB",
+    "city": "London",
+    "tips": "各航站楼均可使用，按网页提示登记。",
+    "updated": "2026-11-27",
+    "source": "https://www.heathrow.com/at-the-airport/airport-services/internet-and-wifi"
+  },
+  {
+    "id": "gb-pret",
+    "brand": "Pret a Manger",
+    "brandZh": "Pret三明治",
+    "ssid": [
+      "Pret WiFi"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "cafe",
+    "region": "GB",
+    "city": "*",
+    "tips": "No password",
+    "updated": "2025"
+  },
+  {
+    "id": "fr-cdg",
+    "brand": "Paris CDG Airport",
+    "brandZh": "巴黎戴高乐机场",
+    "ssid": [
+      "WIFI-AIRPORT"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "FR",
+    "city": "Paris",
+    "tips": "Free, portal login",
+    "updated": "2025"
+  },
+  {
+    "id": "de-fra",
+    "brand": "Frankfurt Airport",
+    "brandZh": "法兰克福机场",
+    "ssid": [
+      "Airport-Frankfurt-Free-WiFi"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "DE",
+    "city": "Frankfurt",
+    "tips": "Open, free",
+    "updated": "2025"
+  },
+  {
+    "id": "de-db-ice",
+    "brand": "ICE Train WiFi",
+    "brandZh": "ICE高速WiFi",
+    "ssid": [
+      "WIFIonICE"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "transit",
+    "region": "DE",
+    "city": "*",
+    "tips": "Free on ICE trains",
+    "updated": "2025"
+  },
+  {
+    "id": "ae-dxb",
+    "brand": "Dubai Airport",
+    "brandZh": "迪拜机场",
+    "ssid": [
+      "DXB Free WiFi"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "AE",
+    "city": "Dubai",
+    "tips": "Open, free",
+    "updated": "2025"
+  },
+  {
+    "id": "au-syd",
+    "brand": "Sydney Airport",
+    "brandZh": "悉尼机场",
+    "ssid": [
+      "Sydney Airport Free WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "AU",
+    "city": "Sydney",
+    "tips": "悉尼机场 T2 官方指引为回答页面问题并接受条款。",
+    "updated": "2026-11-27",
+    "source": "https://www.sydneyairport.com.au/info-sheet/t2-facilities"
+  },
+  {
+    "id": "gl-mcd",
+    "brand": "McDonald's (Global)",
+    "brandZh": "麦当劳(全球)",
+    "ssid": [
+      "McDonald's Free WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "fastfood",
+    "region": "GLOBAL",
+    "city": "*",
+    "tips": "Accept terms. Available in 30,000+ locations worldwide.",
+    "updated": "2025"
+  },
+  {
+    "id": "gl-starbucks",
+    "brand": "Starbucks (Global)",
+    "brandZh": "星巴克(全球)",
+    "ssid": [
+      "Starbucks WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "cafe",
+    "region": "GLOBAL",
+    "city": "*",
+    "tips": "No password in most countries. Portal login.",
+    "updated": "2025"
+  },
+  {
+    "id": "gl-marriott",
+    "brand": "Marriott (Global)",
+    "brandZh": "万豪(全球)",
+    "ssid": [
+      "MarriottBonvoy_Guest",
+      "Sheraton_Guest",
+      "Westin_Guest"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "GLOBAL",
+    "city": "*",
+    "tips": "Last name + room number. All Marriott brands.",
+    "updated": "2025"
+  },
+  {
+    "id": "gl-hilton",
+    "brand": "Hilton (Global)",
+    "brandZh": "希尔顿(全球)",
+    "ssid": [
+      "Hilton Honors",
+      "hhonors"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "hotel",
+    "region": "GLOBAL",
+    "city": "*",
+    "tips": "Last name + room number, or HHonors member login",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-xicha-2",
+    "brand": "HEYTEA",
+    "brandZh": "喜茶",
+    "ssid": [
+      "HEYTEA"
+    ],
+    "password": "xc888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "微博流传密码，部分门店有效",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-bwcj-2",
+    "brand": "BWCJ",
+    "brandZh": "霸王茶姬",
+    "ssid": [
+      "BWCJ"
+    ],
+    "password": "bwcj8888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "微博流传密码，部分门店有效",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-1dd-2",
+    "brand": "1点点",
+    "brandZh": "一点点",
+    "ssid": [
+      "一点点WiFi"
+    ],
+    "password": "alittletea",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "微博流传英文密码",
+    "updated": "2025"
+  },
+  {
+    "id": "cn-hanting-2",
+    "brand": "Hanting",
+    "brandZh": "汉庭酒店(全国通用)",
+    "ssid": [
+      "Hanting",
+      "Huazhu"
+    ],
+    "password": "hantinghotels",
+    "auth": "password",
+    "category": "hotel",
+    "region": "CN",
+    "city": "*",
+    "tips": "全国汉庭通用管理密码，百度知道多人确认",
+    "updated": "2025"
+  },
+  {
+    "id": "us-delta-ewr",
+    "brand": "Delta Sky Club",
+    "brandZh": "达美贵宾室(纽瓦克)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "godelta",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Newark",
+    "tips": "纽瓦克机场 Delta Sky Club",
+    "updated": "2024"
+  },
+  {
+    "id": "us-delta-ord",
+    "brand": "Delta Sky Club",
+    "brandZh": "达美贵宾室(芝加哥)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "smile",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Chicago",
+    "tips": "奥黑尔机场 Delta Sky Club",
+    "updated": "2024"
+  },
+  {
+    "id": "us-delta-dca",
+    "brand": "Delta Sky Club",
+    "brandZh": "达美贵宾室(华盛顿)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "smile",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Washington DC",
+    "tips": "里根机场 Delta Sky Club",
+    "updated": "2024"
+  },
+  {
+    "id": "us-delta-jfk-2",
+    "brand": "Delta Sky Club",
+    "brandZh": "达美贵宾室(JFK)",
+    "ssid": [
+      "Delta Sky Club"
+    ],
+    "password": "romamilano",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "New York",
+    "tips": "JFK 机场密码",
+    "updated": "2024"
+  },
+  {
+    "id": "us-admirals-ord",
+    "brand": "Admirals Club",
+    "brandZh": "海军上将俱乐部(芝加哥)",
+    "ssid": [
+      "Admirals Club"
+    ],
+    "password": "Miami2017",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Chicago",
+    "tips": "奥黑尔机场 Admirals Club",
+    "updated": "2024"
+  },
+  {
+    "id": "us-admirals-ewr",
+    "brand": "Admirals Club",
+    "brandZh": "海军上将俱乐部(纽瓦克)",
+    "ssid": [
+      "Admirals Club"
+    ],
+    "password": "Miami2017",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Newark",
+    "tips": "纽瓦克机场 Admirals Club",
+    "updated": "2024"
+  },
+  {
+    "id": "us-ba-ewr",
+    "brand": "British Airways Lounge",
+    "brandZh": "英航贵宾室(纽瓦克)",
+    "ssid": [
+      "BA Lounge"
+    ],
+    "password": "vancouver",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Newark",
+    "tips": "纽瓦克机场英航休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "us-ba-ord",
+    "brand": "British Airways Lounge",
+    "brandZh": "英航贵宾室(芝加哥)",
+    "ssid": [
+      "BA Lounge"
+    ],
+    "password": "budapest",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "Chicago",
+    "tips": "奥黑尔机场英航休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "us-centurion-lga",
+    "brand": "Centurion Lounge",
+    "brandZh": "百夫长贵宾室(拉瓜迪亚)",
+    "ssid": [
+      "Centurion Lounge"
+    ],
+    "password": "MemberSince",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "New York",
+    "tips": "拉瓜迪亚机场 Amex Centurion Lounge",
+    "updated": "2024"
+  },
+  {
+    "id": "au-skyteam-syd",
+    "brand": "SkyTeam Lounge",
+    "brandZh": "天合联盟贵宾室(悉尼)",
+    "ssid": [
+      "SkyTeam Lounge"
+    ],
+    "password": "skyteam2015",
+    "auth": "password",
+    "category": "airport",
+    "region": "AU",
+    "city": "Sydney",
+    "tips": "悉尼机场天合联盟休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "au-emirates-syd",
+    "brand": "Emirates Lounge",
+    "brandZh": "阿联酋航空贵宾室(悉尼)",
+    "ssid": [
+      "EK Lounges"
+    ],
+    "password": "DXB-Lounge",
+    "auth": "password",
+    "category": "airport",
+    "region": "AU",
+    "city": "Sydney",
+    "tips": "悉尼机场阿联酋航空休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "my-emirates-kul",
+    "brand": "Emirates Lounge",
+    "brandZh": "阿联酋航空贵宾室(吉隆坡)",
+    "ssid": [
+      "Emirates_Lounge"
+    ],
+    "password": "abcde12345",
+    "auth": "password",
+    "category": "airport",
+    "region": "MY",
+    "city": "Kuala Lumpur",
+    "tips": "吉隆坡国际机场阿联酋休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "th-thai-bkk",
+    "brand": "Thai Lounge",
+    "brandZh": "泰航贵宾室(曼谷)",
+    "ssid": [
+      "THAINETWORK_SILK"
+    ],
+    "password": "tglounge",
+    "auth": "password",
+    "category": "airport",
+    "region": "TH",
+    "city": "Bangkok",
+    "tips": "曼谷素万那普机场泰航休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "us-alitalia-jfk",
+    "brand": "Alitalia VIP Lounge",
+    "brandZh": "意大利航空贵宾室(JFK)",
+    "ssid": [
+      "AlitaliaVIP"
+    ],
+    "password": "Miami2017",
+    "auth": "password",
+    "category": "airport",
+    "region": "US",
+    "city": "New York",
+    "tips": "JFK 机场意大利航空VIP休息室",
+    "updated": "2024"
+  },
+  {
+    "id": "gb-lgw",
+    "brand": "London Gatwick Airport",
+    "brandZh": "伦敦盖特威克机场",
+    "ssid": [
+      "Free Gatwick Wi-Fi Vinci Airports"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "GB",
+    "city": "London",
+    "tips": "选择免费选项并输入有效邮箱。",
+    "updated": "2026-11-27",
+    "source": "https://www.gatwickairport.com/passenger-guides/wifi-charging.html"
+  },
+  {
+    "id": "nl-ams",
+    "brand": "Amsterdam Schiphol Airport",
+    "brandZh": "阿姆斯特丹史基浦机场",
+    "ssid": [
+      "Schiphol_Free_Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "NL",
+    "city": "Amsterdam",
+    "tips": "每次可免费使用 4 小时，之后可以重新登录。",
+    "updated": "2026-11-27",
+    "source": "https://www.schiphol.nl/en/at-schiphol/services/wifi-at-schiphol/"
+  },
+  {
+    "id": "au-mel",
+    "brand": "Melbourne Airport",
+    "brandZh": "墨尔本机场",
+    "ssid": [
+      "Airport Free Wi-Fi"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "AU",
+    "city": "Melbourne",
+    "tips": "机场公共区域和登机候机区提供免费 Wi-Fi。",
+    "updated": "2026-11-27",
+    "source": "https://www.melbourneairport.com.au/website-wifi-contact"
+  },
+  {
+    "id": "au-bne",
+    "brand": "Brisbane Airport",
+    "brandZh": "布里斯班机场",
+    "ssid": [
+      "BNE Free Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "AU",
+    "city": "Brisbane",
+    "tips": "国内与国际航站楼均可使用，按页面提示登记。",
+    "updated": "2026-11-27",
+    "source": "https://www.bne.com.au/passenger/passenger-information/services-facilities"
+  },
+  {
+    "id": "nz-akl",
+    "brand": "Auckland Airport",
+    "brandZh": "奥克兰机场",
+    "ssid": [
+      "Auckland Airport"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "NZ",
+    "city": "Auckland",
+    "tips": "进登录页填写资料，国内及国际航站楼均可免费使用。",
+    "updated": "2026-11-27",
+    "source": "https://www.aucklandairport.co.nz/eat-and-relax/internet-access"
+  },
+  {
+    "id": "ae-auh",
+    "brand": "Zayed International Airport",
+    "brandZh": "扎耶德国际机场",
+    "ssid": [
+      "Zayed International Airport Free Wifi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "AE",
+    "city": "Abu Dhabi",
+    "tips": "在欢迎页面选择连接，机场提供免费不限量服务。",
+    "updated": "2026-11-27",
+    "source": "https://www.zayedinternationalairport.ae/general/wifi"
+  },
+  {
+    "id": "tr-ist-tk",
+    "brand": "Istanbul Airport Turkish Airlines",
+    "brandZh": "伊斯坦布尔机场土耳其航空 Wi-Fi",
+    "ssid": [
+      "TK WiFi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "TR",
+    "city": "Istanbul",
+    "tips": "在登录页使用 Miles&Smiles 会员信息或航班信息连接。",
+    "updated": "2026-11-27",
+    "source": "https://www.turkishairlines.com/en-us/announcements/free-and-unlimited-internet-with-tk-wifi-at-istanbul-airport/"
+  },
+  {
+    "id": "ca-yyz",
+    "brand": "Toronto Pearson Airport",
+    "brandZh": "多伦多皮尔逊机场",
+    "ssid": [
+      "Toronto Pearson Public Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "CA",
+    "city": "Toronto",
+    "tips": "打开登录页，同意条款后点击连接。",
+    "updated": "2026-11-27",
+    "source": "https://www.torontopearson.com/en/while-you-are-here/free-wifi"
+  },
+  {
+    "id": "us-ord",
+    "brand": "Chicago O’Hare Airport",
+    "brandZh": "芝加哥奥黑尔机场",
+    "ssid": [
+      "Boingo Hotspot",
+      "_Free_ORD _Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "US",
+    "city": "Chicago",
+    "tips": "各航站楼均可使用，登录页选择观看广告以免费连接。",
+    "updated": "2026-11-27",
+    "source": "https://www.flychicago.com/ohare/servicesamenities/services/pages/technology.aspx"
+  },
+  {
+    "id": "us-den",
+    "brand": "Denver International Airport",
+    "brandZh": "丹佛国际机场",
+    "ssid": [
+      "DEN Airport Free WiFi",
+      "DEN Airport Free WiFi 2.4G",
+      "DEN FREE WIFI 6E"
+    ],
+    "password": "",
+    "auth": "open",
+    "category": "airport",
+    "region": "US",
+    "city": "Denver",
+    "tips": "机场官方列出了三个可用网络，选中即可连接。",
+    "updated": "2026-11-27",
+    "source": "https://www.flydenver.com/at-the-airport/services-and-amenities/wifi-and-technology/"
+  },
+  {
+    "id": "us-sea",
+    "brand": "Seattle-Tacoma International Airport",
+    "brandZh": "西雅图塔科马机场",
+    "ssid": [
+      "SEA-FREE-WIFI"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "US",
+    "city": "Seattle",
+    "tips": "接受条款，部分会话可能需要观看简短广告。",
+    "updated": "2026-11-27",
+    "source": "https://www.portseattle.org/sea/traveling-with-kids?page=2"
+  },
+  {
+    "id": "za-acsa",
+    "brand": "Airports Company South Africa",
+    "brandZh": "南非机场公司公共 Wi-Fi",
+    "ssid": [
+      "# AIRPORTS FREE"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "airport",
+    "region": "ZA",
+    "city": "*",
+    "tips": "旗下九座机场可用，邮箱登记后免费 4 小时，流量上限因机场而异。",
+    "updated": "2026-11-27",
+    "source": "https://www.airports.co.za/utilities/wifi"
+  },
+  {
+    "id": "jp-shinkansen-tokaido",
+    "brand": "Tokaido, Sanyo and Kyushu Shinkansen",
+    "brandZh": "东海道、山阳及九州新干线",
+    "ssid": [
+      "Shinkansen_Free_Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "transit",
+    "region": "JP",
+    "city": "*",
+    "tips": "车内可用，使用邮箱或社交账号登记，每 30 分钟重新登录。",
+    "updated": "2026-11-27",
+    "source": "https://global.jr-central.co.jp/en/info/wireless/index.html"
+  },
+  {
+    "id": "us-linknyc",
+    "brand": "LinkNYC",
+    "brandZh": "纽约 LinkNYC 公共热点",
+    "ssid": [
+      "LinkNYC Free Wi-Fi"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "US",
+    "city": "New York",
+    "tips": "靠近服务亭后连接，首次使用需以邮箱登记。",
+    "updated": "2026-11-27",
+    "source": "https://www.link.nyc/faq.html"
+  },
+  {
+    "id": "ca-tpl",
+    "brand": "Toronto Public Library",
+    "brandZh": "多伦多公共图书馆",
+    "ssid": [
+      "Toronto Public Library"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CA",
+    "city": "Toronto",
+    "tips": "各分馆均可使用，在欢迎页接受条款后登录。",
+    "updated": "2026-11-27",
+    "source": "https://tpl.ca/using-the-library/computer-services/wireless-internet-access/"
+  },
+  {
+    "id": "us-philadelphia-ocf",
+    "brand": "Philadelphia City Wi-Fi",
+    "brandZh": "费城市政公共 Wi-Fi",
+    "ssid": [
+      "OCF Guest"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "US",
+    "city": "Philadelphia",
+    "tips": "适用地点以市政官网的热点清单和地图为准。",
+    "updated": "2026-11-27",
+    "source": "https://www.phila.gov/services/education-learning/get-help-with-technology/find-free-city-wi-fi/"
+  },
+  {
+    "id": "cn-cainiao-community",
+    "brand": "Cainiao Station",
+    "brandZh": "菜鸟驿站",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-starbucks-community",
+    "brand": "Starbucks",
+    "brandZh": "星巴克",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-mcd-community",
+    "brand": "McDonald's",
+    "brandZh": "麦当劳",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-kfc-community",
+    "brand": "KFC",
+    "brandZh": "肯德基",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-shaxian-community",
+    "brand": "Shaxian Snacks",
+    "brandZh": "沙县小吃",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-yangguofu-community",
+    "brand": "Yang Guo Fu Malatang",
+    "brandZh": "杨国福麻辣烫",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-huawei-store-community",
+    "brand": "Huawei Store",
+    "brandZh": "华为门店",
+    "ssid": [],
+    "password": "Huawei123",
+    "auth": "password",
+    "category": "other",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-mixue-community",
+    "brand": "Mixue Bingcheng",
+    "brandZh": "蜜雪冰城",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-coco-community",
+    "brand": "CoCo",
+    "brandZh": "CoCo 都可",
+    "ssid": [],
+    "password": "coc06683",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-heytea-community",
+    "brand": "HEYTEA",
+    "brandZh": "喜茶",
+    "ssid": [],
+    "password": "88888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-auntea-jenny-community",
+    "brand": "Auntea Jenny",
+    "brandZh": "沪上阿姨",
+    "ssid": [],
+    "password": "jfjxhsay",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-yeye-community",
+    "brand": "YeYe",
+    "brandZh": "爷爷不泡茶",
+    "ssid": [],
+    "password": "yyc888888",
+    "auth": "password",
+    "category": "cafe",
+    "region": "CN",
+    "city": "*",
+    "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
+    "updated": "2026-11-27"
+  }
+]
