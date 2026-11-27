@@ -8,7 +8,7 @@ const categories = {
   airport: '机场', transit: '交通', mall: '商场', public: '公共设施',
   coworking: '联合办公', other: '其他',
 };
-const auth = { password: '密码', portal: '网页认证', sms: '短信验证', open: '开放网络' };
+const auth = { password: '密码', portal: '网页认证', sms: '短信验证', open: '开放网络', unknown: '连接方式待确认' };
 const names = new Intl.DisplayNames(['zh-CN'], { type: 'region' });
 const regionName = code => code === 'GLOBAL' ? '全球' : /^[A-Z]{2}$/.test(code) ? names.of(code) : code;
 
@@ -28,6 +28,7 @@ function renderCard(record) {
     record.brandZh && record.brandZh !== record.brand ? record.brand : '',
     regionName(record.region), city, auth[record.auth] ?? record.auth,
   ].filter(Boolean).join(' · '), 'meta');
+  if (record.address) addText(card, 'p', record.address, 'meta');
   addText(addText(card, 'p', 'SSID  '), 'code', record.ssid.join(' / ') || '待确认');
   if (record.password) {
     const line = addText(card, 'p', '密码  ');
@@ -47,7 +48,7 @@ function renderCard(record) {
   if (record.tips) addText(card, 'p', record.tips, 'tips');
   if (record.source?.startsWith('https://')) {
     const details = addText(card, 'p', '', 'meta');
-    const source = addText(details, 'a', '官方指引');
+    const source = addText(details, 'a', record.sourceLabel || '官方来源');
     source.href = record.source;
     if (record.updated) details.append(' · 核验于 ' + record.updated);
   }
@@ -72,7 +73,7 @@ async function init() {
     const matches = records.filter(record =>
       (!region.value || record.region === region.value) &&
       (!category.value || record.category === category.value) &&
-      [record.brand, record.brandZh, record.city, record.password, ...record.ssid]
+      [record.brand, record.brandZh, record.city, record.address, record.password, ...record.ssid]
         .some(value => String(value ?? '').toLowerCase().includes(keyword)),
     );
     status.textContent = matches.length

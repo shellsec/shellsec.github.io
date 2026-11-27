@@ -2665,5 +2665,2304 @@
     "city": "*",
     "tips": "用户提供，适用门店和网络名称待核验。请以门店公布的访客 Wi-Fi 信息为准。",
     "updated": "2026-11-27"
+  },
+  {
+    "id": "cn-sh-yangpu-1-1",
+    "brand": "i-Yangpu",
+    "brandZh": "波阳公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区波阳路200号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-2",
+    "brand": "i-Yangpu",
+    "brandZh": "城建大厦办事大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区宁国路121号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-4",
+    "brand": "i-Yangpu",
+    "brandZh": "定海路街道阳光综合服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区黎平路7号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-5",
+    "brand": "i-Yangpu",
+    "brandZh": "工农公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区包头路929号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-6",
+    "brand": "i-Yangpu",
+    "brandZh": "国济路人行道",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区翔殷路至政通路",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-7",
+    "brand": "i-Yangpu",
+    "brandZh": "合生广场外围人行道",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区翔殷路1099号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-8",
+    "brand": "i-Yangpu",
+    "brandZh": "沪东工人文化宫",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区平凉路1500号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-9",
+    "brand": "i-Yangpu",
+    "brandZh": "惠民公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区惠民路724号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-11",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦街道经济园区",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区周家嘴路2299号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-12",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦街道社区服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区许昌路1150号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-14",
+    "brand": "i-Yangpu",
+    "brandZh": "控江街道社区生活服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区靖宇南路99弄17号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-15",
+    "brand": "i-Yangpu",
+    "brandZh": "控江街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区黄兴路572号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-16",
+    "brand": "i-Yangpu",
+    "brandZh": "控江街道文化活动中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区凤城二村19号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-17",
+    "brand": "i-Yangpu",
+    "brandZh": "民星公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区嫩江路1111号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-18",
+    "brand": "i-Yangpu",
+    "brandZh": "内江公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区控江路261号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-19",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区平凉路1738号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-21",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区吉林路18号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-22",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉社区文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区怀德路399号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-23",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉齐齐哈尔门诊部",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区齐齐哈尔路828号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-24",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区霍山路890号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-25",
+    "brand": "i-Yangpu",
+    "brandZh": "区妇幼保健院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区宁国路241号宁国坊31-32",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-26",
+    "brand": "i-Yangpu",
+    "brandZh": "区科技经济发展中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区江浦路627号2号楼4层",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-28",
+    "brand": "i-Yangpu",
+    "brandZh": "四平街道文化活动中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区抚顺路360号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-29",
+    "brand": "i-Yangpu",
+    "brandZh": "松鹤公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区抚顺路240号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-30",
+    "brand": "i-Yangpu",
+    "brandZh": "同叶大厦",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区铁岭路32号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-31",
+    "brand": "i-Yangpu",
+    "brandZh": "湾谷科技园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国权北路1688弄",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-32",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场街道家庭人口计划中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区仁德路67弄10 支弄42号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-33",
+    "brand": "i-Yangpu",
+    "brandZh": "延春公园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区营口路20号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-34",
+    "brand": "i-Yangpu",
+    "brandZh": "杨浦科技大厦",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区黄兴路2005弄2号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-36",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国和路1047号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-37",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行社区文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区市光三村164号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-38",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区殷行路429号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-39",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行社区卫生中心国和分部",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国和路1045号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-40",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行社区卫生中心民星分部",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区嫩江路872号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-41",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行社区卫生中心市光四村分部",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区市光四村56号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-42",
+    "brand": "i-Yangpu",
+    "brandZh": "长白社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区松花江路15号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-43",
+    "brand": "i-Yangpu",
+    "brandZh": "大桥社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区眉州路昆明路口西南（暂无门牌）",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-44",
+    "brand": "i-Yangpu",
+    "brandZh": "第一康复医院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区杭州路349号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-45",
+    "brand": "i-Yangpu",
+    "brandZh": "民星地段医院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区民星路574号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-46",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区武东路9号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-47",
+    "brand": "i-Yangpu",
+    "brandZh": "长海路街道综治中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区长海路605号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-48",
+    "brand": "i-Yangpu",
+    "brandZh": "区精神卫生中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区军工路585号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-49",
+    "brand": "i-Yangpu",
+    "brandZh": "市东医院营口分院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区营口路762号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-50",
+    "brand": "i-Yangpu",
+    "brandZh": "杨中心新综合大楼",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区平凉路2200号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-51",
+    "brand": "i-Yangpu",
+    "brandZh": "长海民京社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区民京路837弄9号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-1-52",
+    "brand": "i-Yangpu",
+    "brandZh": "长海社区卫生服务分中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区市京一村79号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-2",
+    "brand": "i-Yangpu",
+    "brandZh": "大桥街道公益性社会组织孵化园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区杭州路66弄35号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-3",
+    "brand": "i-Yangpu",
+    "brandZh": "大桥街道社区事务受理/文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区平凉路1730号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-5",
+    "brand": "i-Yangpu",
+    "brandZh": "定海街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区长阳路3066号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-6",
+    "brand": "i-Yangpu",
+    "brandZh": "国权北路休闲广场",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国权北路东侧（政立路北）",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-7",
+    "brand": "i-Yangpu",
+    "brandZh": "区投促中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区隆昌路690号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-9",
+    "brand": "i-Yangpu",
+    "brandZh": "区政务服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区怀德路600号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-10",
+    "brand": "i-Yangpu",
+    "brandZh": "尚景园小区门口车站区域",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国权北路1460号附近",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-11",
+    "brand": "i-Yangpu",
+    "brandZh": "淞沪路殷行路公交站点区域",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区淞沪路殷行路口以北100 米东侧",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-13",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政通路100弄",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-14",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场街道文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政化路257号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-16",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城社区文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国秀路700号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-17",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政和路107号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-19",
+    "brand": "i-Yangpu",
+    "brandZh": "延吉街道网格中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区周家嘴路3889号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-20",
+    "brand": "i-Yangpu",
+    "brandZh": "延吉街道综治中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区控江路650弄15号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-21",
+    "brand": "i-Yangpu",
+    "brandZh": "延吉社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区水丰路383号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-23",
+    "brand": "i-Yangpu",
+    "brandZh": "长白街道老乐汇",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区长白路162号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-24",
+    "brand": "i-Yangpu",
+    "brandZh": "长白街道社区事务受理/文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区延吉东路105号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-26",
+    "brand": "i-Yangpu",
+    "brandZh": "长海街道社区事务受理中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国和路425号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-27",
+    "brand": "i-Yangpu",
+    "brandZh": "长海街道文化中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区翔殷路505号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-28",
+    "brand": "i-Yangpu",
+    "brandZh": "政悦路社区公共运动场",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政悦路88号对面",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-29",
+    "brand": "i-Yangpu",
+    "brandZh": "第一康复医院分院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区控江路25号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-30",
+    "brand": "i-Yangpu",
+    "brandZh": "沪东老年护理院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区双阳路488号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-31",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦金鹏卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区兰州路1153号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-32",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦双辽卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区双辽路345号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-33",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦五环卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区辽源西路190弄6号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-34",
+    "brand": "i-Yangpu",
+    "brandZh": "区卫管中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区舒兰路51号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-35",
+    "brand": "i-Yangpu",
+    "brandZh": "区中医医院",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区眉州路185号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-36",
+    "brand": "i-Yangpu",
+    "brandZh": "区中医医院老院区",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区眉州路80号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-37",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场建新社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区邯郸路470弄8号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-38",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场三门社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区三门路358弄5号（甲）",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-39",
+    "brand": "i-Yangpu",
+    "brandZh": "五角场铁村社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政化路269号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-40",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城清流环二路卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区清流环二路351号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-41",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城睿达路健康站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区殷行路1628弄1号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-42",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城时代花园卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区殷行路850弄53号1楼",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-43",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城湾谷卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国权北路1688弄34号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-44",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城星汇卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国安路758弄22号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-45",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城政和路卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政和路1011号1楼",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-46",
+    "brand": "i-Yangpu",
+    "brandZh": "新江湾城政立卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政云路220号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-47",
+    "brand": "i-Yangpu",
+    "brandZh": "杨中心安图分部",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区延吉东路200号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-48",
+    "brand": "i-Yangpu",
+    "brandZh": "杨中心老院区",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区腾越路450号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-49",
+    "brand": "i-Yangpu",
+    "brandZh": "殷行闸殷路卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区闸殷路86号1楼",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-50",
+    "brand": "i-Yangpu",
+    "brandZh": "长海洪东社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区翔殷路287号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-51",
+    "brand": "i-Yangpu",
+    "brandZh": "长海浣沙社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区浣沙三村东小区64-1",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-52",
+    "brand": "i-Yangpu",
+    "brandZh": "长海兰馨社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区翔殷路791弄3号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-53",
+    "brand": "i-Yangpu",
+    "brandZh": "长海市光二社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国和路600弄28号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-54",
+    "brand": "i-Yangpu",
+    "brandZh": "长海市光社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区三门路11弄",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-2-55",
+    "brand": "i-Yangpu",
+    "brandZh": "长海文化佳园社区卫生服务站",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国权东路99弄3号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-1",
+    "brand": "i-Yangpu",
+    "brandZh": "白洋淀足球场",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区周家嘴路4214弄22号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-2",
+    "brand": "i-Yangpu",
+    "brandZh": "创智天地科技中心广场",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区政立路477号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-3",
+    "brand": "i-Yangpu",
+    "brandZh": "大桥市场监管所服务大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区黄兴路217号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-4",
+    "brand": "i-Yangpu",
+    "brandZh": "定海市场监管所服务大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区长阳路2094号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-5",
+    "brand": "i-Yangpu",
+    "brandZh": "复旦科技园体育中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区密云路1018号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-6",
+    "brand": "i-Yangpu",
+    "brandZh": "复旦科技园",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国泰路11号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-7",
+    "brand": "i-Yangpu",
+    "brandZh": "公共实训基地管理服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区国定东路200号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-8",
+    "brand": "i-Yangpu",
+    "brandZh": "江浦市场监管所服务大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区江浦路1095号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-9",
+    "brand": "i-Yangpu",
+    "brandZh": "控江社区卫生服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区延吉西路100号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-10",
+    "brand": "i-Yangpu",
+    "brandZh": "控江市场监管所服务大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区周家嘴路2809号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-11",
+    "brand": "i-Yangpu",
+    "brandZh": "平凉市场监管所服务大厅",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区兰州路681号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-12",
+    "brand": "i-Yangpu",
+    "brandZh": "区不动产登记事务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区长岭路111号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-14",
+    "brand": "i-Yangpu",
+    "brandZh": "区就业促进中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区淞沪路605号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-15",
+    "brand": "i-Yangpu",
+    "brandZh": "区就业促进中心江浦分中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区江浦路728号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-16",
+    "brand": "i-Yangpu",
+    "brandZh": "区少体校",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区隆昌路640号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sh-yangpu-3-17",
+    "brand": "i-Yangpu",
+    "brandZh": "区社会保障服务中心",
+    "ssid": [
+      "i-Yangpu"
+    ],
+    "password": "",
+    "auth": "sms",
+    "category": "public",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区济宁路363号",
+    "tips": "列入杨浦区公共 Wi-Fi 服务场点清单。按认证页提示接收短信，当前覆盖以现场为准。",
+    "source": "https://jpg.zfcg.sh.gov.cn/sh-gov-open-doc/1108QZ/e2ef2138-d612-44ed-bfbd-cd6153bcca3f.pdf"
+  },
+  {
+    "id": "cn-sz-park-garden-expo",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "深圳国际园林花卉博览园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括南门迎宾广场、欢乐剧场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-lianhuashan",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "莲花山公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括风筝广场、椰风林。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-huanggang",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "皇岗公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括南门、西门和东门广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-honghu",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "洪湖公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括正门、荷花展览馆附近。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-nanshan",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "南山公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括北登山口休息平台、山顶游客服务中心。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-shenzhen-bay",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "深圳湾公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括红树林避雨长廊、红树林竹林小道。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-dashahe",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "大沙河公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括三生广场、生命广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-donghu",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "东湖公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括西大门、南门文化广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-lizhi",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "荔枝公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括园林书吧、寄趣园附近。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-childrens",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "深圳市儿童公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括南门三角亭、休闲广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-cuizhu",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "翠竹公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括西大门月影广场、北大门。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-meilin",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "梅林公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括西入口、东入口、四季广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-sz-park-renmin",
+    "brand": "Shenzhen Parks Wi-Fi",
+    "brandZh": "深圳人民公园",
+    "ssid": [
+      "SZPARKS"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "福田区政府公开报道的覆盖点包括月季园、老人活动广场。当前服务以现场为准。",
+    "source": "https://www.szft.gov.cn/mszc/znshp/xgfw/cyfw/content/post_10865291.html"
+  },
+  {
+    "id": "cn-mohe-memorial",
+    "brand": "Mohe Public Wi-Fi",
+    "brandZh": "五六火灾纪念馆",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "public",
+    "region": "CN",
+    "city": "漠河",
+    "tips": "漠河市政府列出的公共 Wi-Fi 覆盖场所。网络名称及连接方式请查看现场标识。",
+    "source": "https://mohe.gov.cn/mohe/c101074/202609/c13_345474.shtml"
+  },
+  {
+    "id": "cn-mohe-songyuan",
+    "brand": "Mohe Public Wi-Fi",
+    "brandZh": "松苑公园",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "public",
+    "region": "CN",
+    "city": "漠河",
+    "tips": "漠河市政府列出的公共 Wi-Fi 覆盖场所。网络名称及连接方式请查看现场标识。",
+    "source": "https://mohe.gov.cn/mohe/c101074/202609/c13_345474.shtml"
+  },
+  {
+    "id": "cn-mohe-dance-hall",
+    "brand": "Mohe Public Wi-Fi",
+    "brandZh": "漠河舞厅",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "public",
+    "region": "CN",
+    "city": "漠河",
+    "tips": "漠河市政府列出的公共 Wi-Fi 覆盖场所。网络名称及连接方式请查看现场标识。",
+    "source": "https://mohe.gov.cn/mohe/c101074/202609/c13_345474.shtml"
+  },
+  {
+    "id": "cn-sz-nanshan-library",
+    "brand": "Nanshan Library",
+    "brandZh": "深圳市南山图书馆",
+    "ssid": [
+      "www.nslib.cn",
+      "南山图书馆-读者证"
+    ],
+    "password": "",
+    "auth": "portal",
+    "category": "public",
+    "region": "CN",
+    "city": "深圳",
+    "address": "南山区常兴路176号",
+    "tips": "在认证页使用本人的读者证登录。",
+    "source": "https://www.nslib.cn/information/30096"
+  },
+  {
+    "id": "cn-mstand-sh-new-world",
+    "brand": "M Stand",
+    "brandZh": "M Stand（上海新世界店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "上海",
+    "address": "黄浦区南京西路2–68号新世界城北楼一层",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/shanghai/detail/restaurant-136599018/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-mstand-sh-daning",
+    "brand": "M Stand",
+    "brandZh": "M Stand（上海大宁国际店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "上海",
+    "address": "共和新路1898号大宁国际商业广场5座一层",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/shanghai/detail/restaurant-136442665/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-mstand-sh-hongyi",
+    "brand": "M Stand",
+    "brandZh": "M Stand（上海宏伊国际广场店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "上海",
+    "address": "南京东路299号宏伊国际广场一层",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/shanghai/detail/restaurant-133711893/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-mstand-sz-raffles",
+    "brand": "M Stand",
+    "brandZh": "M Stand（深圳来福士广场店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "深圳",
+    "address": "登良路来福士广场 L1 层",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/shenzhen/detail/restaurant-127728674/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-mstand-sz-yongxinhui",
+    "brand": "M Stand",
+    "brandZh": "M Stand（深圳永新汇店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/shenzhen/detail/restaurant-136242465/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-mstand-cd-raffles",
+    "brand": "M Stand",
+    "brandZh": "M Stand（成都来福士店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "成都",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/chengdu/detail/restaurant-136021726/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-peets-hz-mixc",
+    "brand": "Peet’s Coffee",
+    "brandZh": "皮爷咖啡（杭州万象城店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "cafe",
+    "region": "CN",
+    "city": "杭州",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/hangzhou/detail/restaurant-78905620/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-saizeriya-sh-cifi",
+    "brand": "Saizeriya",
+    "brandZh": "萨莉亚（上海旭辉 Mall 店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "上海",
+    "address": "杨浦区控江路2068号控江海际商业广场",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/shanghai/detail/restaurant-31513546/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-saizeriya-gz-shangxiajiu",
+    "brand": "Saizeriya",
+    "brandZh": "萨莉亚（广州上下九店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "restaurant",
+    "region": "CN",
+    "city": "广州",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/guangzhou/detail/saliyayishi-restaurant-11475743/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-subway-bj-zhongguancun",
+    "brand": "Subway",
+    "brandZh": "赛百味（北京中关村软件园二期店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "北京",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://us.trip.com/restaurant/china/beijing/detail/restaurant-31119253/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-zhengongfu-sz-xili",
+    "brand": "Zhen Gongfu",
+    "brandZh": "真功夫（深圳西丽店）",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "fastfood",
+    "region": "CN",
+    "city": "深圳",
+    "tips": "携程门店页列有免费 Wi-Fi。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.trip.com/restaurant/china/shenzhen/detail/zhengongfu-11319397/",
+    "sourceLabel": "携程门店资料"
+  },
+  {
+    "id": "cn-ikea-shenyang",
+    "brand": "IKEA",
+    "brandZh": "宜家沈阳商场",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "mall",
+    "region": "CN",
+    "city": "沈阳",
+    "tips": "品牌官网列有 Wi-Fi 服务。请向该门店确认网络名称和接入方式。",
+    "source": "https://www.ikea.cn/cn/zh/stores/shenyang/"
+  },
+  {
+    "id": "cn-novotel-sz-watergate",
+    "brand": "Novotel",
+    "brandZh": "深圳万德雅高诺富特酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "深圳",
+    "address": "深南中路1019号",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/hotel/3601/index.en.shtml"
+  },
+  {
+    "id": "cn-ibis-sz-nanxin",
+    "brand": "ibis",
+    "brandZh": "宜必思深圳南新路酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "深圳",
+    "address": "南山区南新路3020号",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/hotel/B5X6/index.zh.shtml"
+  },
+  {
+    "id": "cn-mercure-bj-huateng",
+    "brand": "Mercure",
+    "brandZh": "北京华腾美居酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "北京",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn.html"
+  },
+  {
+    "id": "cn-mercure-xa-dazhai",
+    "brand": "Mercure",
+    "brandZh": "西安高新大寨路美居酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "西安",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn.html"
+  },
+  {
+    "id": "cn-novotel-zz-meihao",
+    "brand": "Novotel",
+    "brandZh": "郑州美豪雅高诺富特酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "郑州",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn.html"
+  },
+  {
+    "id": "cn-novotel-km-dianchi",
+    "brand": "Novotel",
+    "brandZh": "昆明滇池诺富特酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "昆明",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn.html"
+  },
+  {
+    "id": "cn-mercure-hz-qianjiang",
+    "brand": "Mercure",
+    "brandZh": "杭州钱江新城美居酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "杭州",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn/4-stars.html"
+  },
+  {
+    "id": "cn-novotel-hz-east-station",
+    "brand": "Novotel",
+    "brandZh": "杭州东站诺富特酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "杭州",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn/4-stars.html"
+  },
+  {
+    "id": "cn-novotel-ks-yangcheng-lake",
+    "brand": "Novotel",
+    "brandZh": "昆山阳澄湖汇金诺富特酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "昆山",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn/4-stars.html"
+  },
+  {
+    "id": "cn-mercure-dl-youhao",
+    "brand": "Mercure",
+    "brandZh": "大连友好美居酒店",
+    "ssid": [],
+    "password": "",
+    "auth": "unknown",
+    "category": "hotel",
+    "region": "CN",
+    "city": "大连",
+    "tips": "品牌官网列有免费 Wi-Fi。请向前台确认住客网络和接入方式。",
+    "source": "https://all.accor.com/a/zh/destination/country/hotels-china-pcn/4-stars.html"
   }
 ]
